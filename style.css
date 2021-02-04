@@ -1,0 +1,643 @@
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('polices/Raleway.eot');
+    src: url('polices/Raleway.eot?#iefix') format('embedded-opentype'),
+         url('polices/Raleway.woff') format('woff'),
+         url('polices/Raleway.ttf') format('truetype'),
+      url('polices/Raleway.svg#Raleway') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font-family: Raleway, Arial, serif;
+    width: 1200px;
+    margin: auto;
+    padding-top: 10px;
+}
+/* Logo + lien navig */
+.en_tete{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/*logo Reservia*/
+#logo{                  
+   display: flex;
+   flex-direction: row;
+   align-items: baseline;
+}
+
+/*dimension logo Reservia*/
+#logo img               
+{
+    width: 97px;
+    height: 45px;
+}
+/* FIN logo Reservia*/
+
+
+/* Mise en place liens navigation */
+/*suppression des puces de navig*/
+nav ul                  
+{
+   list-style-type: none;
+   display: flex;
+}
+
+/*Début de mise en page lien*/
+nav li                     
+{
+    margin-right: 80px;
+}
+
+/*Début de mise en page lien*/
+nav a                       
+{
+    font-size: 1.3em;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+/*Apparence au survol liens navig*/
+nav a:hover             
+{
+    color: blue;
+    border-top: 3px solid blue;
+    padding-top: 15px;
+}
+/*  FIN Mise en place liens navigation */
+
+
+/* Mise en normal le texte l42*/
+.cen_vill p{
+    font-weight: normal;
+}
+
+/*Mise en place barre rechercher*/
+.recherche {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    padding: 10px;
+}
+
+.ico_rech {
+    border: 1px solid rgb(242, 242, 242);;
+    border-radius: 12px 0 0 12px;
+    text-align: center;
+    background-color: rgb(242, 242, 242);
+    width: 5%;
+    padding: 10px;
+}
+
+.tex_rech{
+    border: 1px solid rgb(242, 242, 242);;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    
+}
+.bout_rech{
+    color: white;
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 0 12px 12px 0;
+    padding: 5px;
+    background-color: blue;
+    padding: 10px;
+}
+
+
+
+/*Mise en place barre Filtres*/ /*0000000000000000000000*/
+
+.filtre{
+    display: flex;
+    justify-content: space-between;
+    /*margin: 0;*/
+}
+
+.bord1 i{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: auto;
+    border: 1em solid #ddebfe;
+    border-radius: 3em;
+    content: "\f3d1";
+
+}
+
+.bord1 {
+    display: flex;
+    border: 1px solid #ddebfe;
+    border-radius:3em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 1em;
+}
+
+
+.fa-money{
+    background-color: #ddebfe;
+    color: blue;
+   
+}
+.fa-child{
+    background-color: #ddebfe;
+    color: blue;
+}
+.fa-heart{
+    background-color: #ddebfe;
+    color: blue;    
+}
+.fa-dog{
+    background-color: #ddebfe;
+    color: blue;    
+}
+
+.filtre {
+    display: flex;
+}
+
+.filtre{
+display: flex;
+}
+
+.filtre > div a{
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold; 
+}
+
+.info p{
+    font-weight: normal;
+}
+
+/**/
+.info i{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: auto;
+    border: .5em solid #ddebfe;
+    border-radius: 10px;
+    content: "\f3d1";
+}
+
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.info > div i{
+    margin: 20px;
+    color: blue;
+}
+
+
+
+/*Bloc de photo hébergement*/
+/*Hébergements à Marseille*/
+section{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 12px;
+    background-color: rgb(242, 242, 242); 
+}
+.hebergement {
+    display: flex;
+    float: right; /* A VIRER*/
+}
+
+
+/*Première ligne de photos*/
+
+.pre_ligne_photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+}
+/*Première ligne de photos*/
+.mis_pag_prem1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.mis_pag_prem1 img {
+    border: 0px;
+    border-radius: 12px 12pX 0 0;
+}
+/*Texte mis en gras sous photos*/
+.pre_ligne_photo p {
+    font-weight: bold;
+}
+
+/*Texte mis en normal sous texte*/
+.pre_ligne_photo span {
+    font-weight: normal;
+}
+
+/*Modif color des icones étoiles*/
+.mis_pag_prem1 .fa-star {
+    color: blue;
+}
+
+/*Modif color des icones étoiles*/
+/*
+ .mis_pag_prem1
+{
+    color: gray;
+}
+*/
+.mis_pag_prem2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.mis_pag_prem2 img {
+    border: 0px;
+    border-radius: 12px 12pX 0 0;
+}
+
+/*Modif color des icones étoiles*/
+.mis_pag_prem2 .fa-star {
+    color: blue;
+}
+
+.mis_pag_prem3 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.mis_pag_prem3 img {
+    border: 0px;
+    border-radius: 12px 12pX 0 0;
+}
+
+/*Modif color des icones étoiles*/
+.mis_pag_prem3 .fa-star {
+    color: blue;
+}
+
+/* FIN Première ligne de photos*/
+
+/*Deuxième ligne de photos*/
+
+.deux_ligne_photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+}
+
+.mis_pag_deux1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.mis_pag_deux1 img {
+    border: 0px;
+    border-radius: 12px 12pX 0 0;
+}
+
+/*Texte mis en gras sous photos*/
+.deux_ligne_photo p {
+    font-weight: bold;
+}
+
+/*Texte mis en normal sous texte*/
+.deux_ligne_photo span {
+    font-weight: normal;
+}
+
+/*Modif color des icones étoiles*/
+.mis_pag_deux1 .fa-star {
+    color: blue;
+}
+
+/*Modif color des icones étoiles*/
+/*
+ .mis_pag_prem1
+{
+    color: gray;
+}
+*/
+
+.mis_pag_deux2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.mis_pag_deux2 img {
+    border: 0px;
+    border-radius: 12px 12pX 0 0;
+}
+
+/*Modif color des icones étoiles*/
+.mis_pag_deux2 .fa-star {
+    color: blue;
+}
+
+.mis_pag_deux3 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.mis_pag_deux3 img {
+    border: 0px;
+    border-radius: 12px 12pX 0 0;
+}
+
+/*Modif color des icones étoiles*/
+.mis_pag_deux3 .fa-star {
+    color: blue;
+}
+
+/*FIN Deuxième ligne de photos*/
+
+/*Les plus populaires*/
+
+.mis_pag_popu1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 5px solid white;
+    border-bottom: 3.5px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.mis_pag_popu1 p{
+    padding-left: 1em;
+    padding-right: 2em;
+}
+
+.mis_pag_popu1 .fa-star {
+    color: blue;
+    padding-top: 2.5em;
+    
+}
+
+
+.mis_pag_popu1 img {
+    border: 0px;
+    border-radius: 12px 0 0 12px;
+}
+
+.mis_pag_popu1 div{
+    display: flex;
+    flex-direction: row;
+}
+
+.mis_pag_popu2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 5px solid white;
+    border-bottom: 3.5px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.mis_pag_popu2 img {
+    border: 0px;
+    border-radius: 12px 0 0 12px;
+}
+
+.mis_pag_popu2 p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.mis_pag_popu2 .fa-star {
+    color: blue;
+    padding-top: 2.5em;
+    
+}
+
+.mis_pag_popu3 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 5px solid white;
+    border-bottom: 3.5px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.mis_pag_popu3 img {
+    border: 0px;
+    border-radius: 12px 0 0 12px;
+}
+
+.mis_pag_popu3 p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.mis_pag_popu1{
+    display: flex;
+    
+}
+
+.mis_pag_popu2{
+    display: flex;
+}
+
+.mis_pag_popu3 .fa-star {
+    color: blue;
+    padding-top: 2.5em;
+    
+}
+
+.mis_pag_popu3 {
+    display: flex;
+}
+
+
+/*Texte mis en gras sous photos*/
+.plus_pop p {
+    font-weight: bold;
+}
+
+/*Texte mis en normal sous texte*/
+.plus_pop span {
+    font-weight: normal;
+}
+/*
+.plus_pop li {
+    list-style-type: none;
+}*/
+
+.titre_popul i {
+    display: flex;
+    float: right;
+}
+
+
+/*
+.etoi_gris{
+    color: grey; 
+}
+*/
+/*Les plus populaires*/
+
+.plus_pop {
+    background-color: rgb(242, 242, 242);
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 12px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+
+/*Texte mis en gras sous photos*/
+.plus_pop p {
+    font-weight: bold;
+}
+
+/*Texte mis en normal sous texte*/
+.plus_pop span {
+    font-weight: normal;
+}
+
+
+/* FIN Les plus populaires*/
+
+
+/*Activités à Marseille*/
+
+.activites,
+p {
+    font-weight: bold;
+}
+
+.activites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+    
+}
+
+.vieux_port img {
+    border: 0;
+    border-radius: 12px 12px 0 0;
+}
+
+.vieux_port div {
+    border: 1px solid blue
+    border-radius: 12px 12px 12px 12px;  
+}
+
+/*
+.pre_groupe img{
+    border: 25px blue;
+    border-radius: 12px 12px 0 0;
+}
+.pre_groupe {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 12px 12px 12px 12px;
+}
+*/
+
+
+.deux_group img{
+    border: 0;
+    border-radius: 12px 12px 0 0;
+}
+.deux_group img{
+    border: 1px solid blue
+    border-radius: 12px 12px 12px 12px;  
+}
+
+
+
+
+
+/* PIED DE PAGE */
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(242, 242, 242);
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 12px;
+}
+
+
+.charte1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.charte2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.charte3 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+footer > div span {
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    margin: 20px;
+    padding: 10px;
+    line-height: 1px;
+}
+
+
+
+
+
+/* I C I */
