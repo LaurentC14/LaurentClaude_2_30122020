@@ -15,7 +15,7 @@ body
     font-family: Raleway, Arial, serif;
     width: 1200px;
     margin: auto;
-    padding-top: 10px;
+    padding-top: 1em;
 }
 /* Logo + lien navig */
 .en_tete{
@@ -58,7 +58,7 @@ nav li
 nav a                       
 {
     font-size: 1.3em;
-    padding-bottom: 3px;
+    padding-bottom: .3em;
     text-decoration: none;
 }
 
@@ -67,13 +67,11 @@ nav a:hover
 {
     color: blue;
     border-top: 3px solid blue;
-    padding-top: 15px;
+    padding-top: 1.5em;
 }
 /*  FIN Mise en place liens navigation */
 
-
-/* Mise en normal le texte l42*/
-.cen_vill p{
+.cen_vill{
     font-weight: normal;
 }
 
@@ -82,7 +80,7 @@ nav a:hover
     display: flex;
     flex-direction: row;
     width: 30%;
-    padding: 10px;
+    padding: 1em;
 }
 
 .ico_rech {
@@ -91,29 +89,28 @@ nav a:hover
     text-align: center;
     background-color: rgb(242, 242, 242);
     width: 5%;
-    padding: 10px;
+    padding: 1em;
 }
 
 .tex_rech{
     border: 1px solid rgb(242, 242, 242);;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-top: .5em;
+    padding-bottom: 1em;
     background-color: white;
-    padding: 10px;
+    padding: 1em;
     
 }
 .bout_rech{
     color: white;
     border: 1px solid rgb(242, 242, 242);
     border-radius: 0 12px 12px 0;
-    padding: 5px;
+    padding: .5em;
     background-color: blue;
-    padding: 10px;
 }
 
 
 
-/*Mise en place barre Filtres*/ /*0000000000000000000000*/
+/*Mise en place barre Filtres*/
 
 .filtre{
     display: flex;
@@ -170,7 +167,7 @@ display: flex;
 }
 
 .filtre > div a{
-    margin: 30px;
+    margin: 3em;
     text-decoration: none;
     color: black;
     font-weight: bold; 
@@ -179,8 +176,9 @@ display: flex;
 .info p{
     font-weight: normal;
 }
+.info{
 
-/**/
+}
 .info i{
     display: flex;
     justify-content: space-around;
@@ -198,7 +196,7 @@ display: flex;
 }
 
 .info > div i{
-    margin: 20px;
+    margin: 2em;
     color: blue;
 }
 
@@ -209,12 +207,13 @@ display: flex;
 section{
     display: flex;
     flex-direction: row;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 0.5em;
     border: 1px solid rgb(242, 242, 242);
     border-radius: 12px;
-    background-color: rgb(242, 242, 242); 
+}
+.bloc{
+    background-color: rgb(242, 242, 242);
+    border-radius: 12px;
 }
 .hebergement {
     display: flex;
@@ -228,8 +227,8 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 20px;
-    padding: 20px;
+    margin: 2em;
+    padding: 2em;
 }
 /*Première ligne de photos*/
 .mis_pag_prem1 {
@@ -310,8 +309,8 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 20px;
-    padding: 20px;
+    margin: 2em;
+    padding: 2em;
 }
 
 .mis_pag_deux1 {
@@ -389,15 +388,54 @@ section{
 /*FIN Deuxième ligne de photos*/
 
 /*Les plus populaires*/
+/*Texte mis en gras sous photos*/
+
+.plus_pop p {
+    font-weight: bold;
+}
+
+/*Texte mis en normal sous texte*/
+.plus_pop span {
+    font-weight: normal;
+}
+.titre_popul i {
+    display: flex;
+    float: right;
+}
+
+/*Les plus populaires*/
+
+.plus_pop {
+    background-color: rgb(242, 242, 242);
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 12px;
+    margin-left: 3em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    padding-right: 50px;
+}
+
+
+/*Texte mis en gras sous photos*/
+.plus_pop p {
+    font-weight: bold;
+}
+
+/*Texte mis en normal sous texte*/
+.plus_pop span {
+    font-weight: normal;
+}
+
+/*Hôtel le soleil 181*/
 
 .mis_pag_popu1 {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
     background-color: white;
     border: 5px solid white;
     border-bottom: 3.5px;
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 12px;
 }
 
 .mis_pag_popu1 p{
@@ -408,28 +446,28 @@ section{
 .mis_pag_popu1 .fa-star {
     color: blue;
     padding-top: 2.5em;
-    
 }
 
-
 .mis_pag_popu1 img {
+    height: 100%;
+    width: 100%;
     border: 0px;
     border-radius: 12px 0 0 12px;
 }
+/* FIN Hôtel le soleil */
 
-.mis_pag_popu1 div{
-    display: flex;
-    flex-direction: row;
-}
 
+/*Les plus populaires*/
+
+/*Au coeur de l'eau Chambres d'hôtes 187*/
 .mis_pag_popu2 {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 2em;
     background-color: white;
-    border: 5px solid white;
-    border-bottom: 3.5px;
-    border-radius: 12px 12px 12px 12px;
+    border: 1px solid white;
+    border-bottom: 1px;
+    border-radius: 12px;
 }
 
 .mis_pag_popu2 img {
@@ -439,22 +477,24 @@ section{
 
 .mis_pag_popu2 p{
     padding-left: 1em;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
 .mis_pag_popu2 .fa-star {
     color: blue;
     padding-top: 2.5em;
-    
 }
+/*FIN Au coeur de l'eau Chambres d'hôtes */
 
+/*Les plus populaires*/
+/*Hôtel Tout bleu et Blanc 194*/
 .mis_pag_popu3 {
     display: flex;
     flex-direction: row;
     background-color: white;
     border: 5px solid white;
     border-bottom: 3.5px;
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 12px;
 }
 
 .mis_pag_popu3 img {
@@ -464,16 +504,7 @@ section{
 
 .mis_pag_popu3 p{
     padding-left: 1em;
-    padding-right: 1em;
-}
-
-.mis_pag_popu1{
-    display: flex;
-    
-}
-
-.mis_pag_popu2{
-    display: flex;
+    padding-right: 2em;
 }
 
 .mis_pag_popu3 .fa-star {
@@ -481,59 +512,9 @@ section{
     padding-top: 2.5em;
     
 }
-
-.mis_pag_popu3 {
-    display: flex;
-}
-
-
-/*Texte mis en gras sous photos*/
-.plus_pop p {
-    font-weight: bold;
-}
-
-/*Texte mis en normal sous texte*/
-.plus_pop span {
-    font-weight: normal;
-}
-/*
-.plus_pop li {
-    list-style-type: none;
-}*/
-
-.titre_popul i {
-    display: flex;
-    float: right;
-}
-
-
-/*
-.etoi_gris{
-    color: grey; 
-}
-*/
-/*Les plus populaires*/
-
-.plus_pop {
-    background-color: rgb(242, 242, 242);
-    border: 1px solid rgb(242, 242, 242);
-    border-radius: 12px;
-    padding-right: 50px;
-    margin-top: 20px;
-}
-
-/*Texte mis en gras sous photos*/
-.plus_pop p {
-    font-weight: bold;
-}
-
-/*Texte mis en normal sous texte*/
-.plus_pop span {
-    font-weight: normal;
-}
-
-
+/* FIN Hôtel Tout bleu et Blanc*/
 /* FIN Les plus populaires*/
+
 
 
 /*Activités à Marseille*/
@@ -543,52 +524,102 @@ p {
     font-weight: bold;
 }
 
+#activites{
+    margin-top: 2em;
+}
+
 .activites {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
     text-decoration: none;
-    margin-top: 12px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-
-    
 }
-
-.vieux_port img {
-    border: 0;
-    border-radius: 12px 12px 0 0;
-}
-
+/*Vieux Port 214*/
 .vieux_port div {
-    border: 1px solid blue
-    border-radius: 12px 12px 12px 12px;  
+    border: 0.5px solid white;
+    border-radius: 12px; 
+}
+.vieux_port img{
+    border: 0.5px solid white;
+    border-radius: 12px 12px 0 0;  
 }
 
-/*
+/*Fort de Pomègues + iles du Frioul*/
+
 .pre_groupe img{
-    border: 25px blue;
-    border-radius: 12px 12px 0 0;
+    border: 0px solidcwhite ;
+    border-radius: 12px;  
 }
 .pre_groupe {
     display: flex;
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 12px;
 }
-*/
+.grou_un{
+    border: 1px solid white;
+    border-radius: 12px;  
+}
 
+.grou_un img{
+    border: 0px solid white;
+    border-radius: 12px 12px 0 0;  
+}
 
-.deux_group img{
-    border: 0;
+.group_unbis{
+    border: 1px solid white;
+    border-radius: 12px;  
+}
+.group_unbis img{
+    border: 0px solid white;
+    border-radius: 12px 12px 0 0;  
+}
+/*FIN Fort de Pomègues + iles du Frioul*/
+
+/*"Parc national des Calanques*/
+.parc_calan div{
+    border: 0.5px solid white;
+    border-radius: 12px;  
+}
+
+.parc_calan img{
+    border: 0px solid white;
     border-radius: 12px 12px 0 0;
 }
+/* FIN Parc national des Calanques*/
+
+/* Notre-Dame-de-la-Garde + Parc Longchamps*/
+
 .deux_group img{
-    border: 1px solid blue
-    border-radius: 12px 12px 12px 12px;  
+    border: 0px solid white ;
+    border-radius: 12px;  
+}
+.deux_group {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 12px;
+}
+.not_dam{
+    border: 1px solid white ;
+    border-radius: 12px;  
+}
+
+.not_dam img{
+    border: 0px solid white ;
+    border-radius: 12px 12px 0 0;  
+}
+
+.par_long{
+    border: 1px solid white ;
+    border-radius: 12px;  
+}
+.par_long img{
+    border: 0px solid white ;
+    border-radius: 12px 12px 0 0;  
 }
 
 
@@ -602,9 +633,7 @@ p {
     justify-content: space-between;
     background-color: rgb(242, 242, 242);
     border: 1px solid rgb(242, 242, 242);
-    border-radius: 12px;
 }
-
 
 .charte1 {
     display: flex;
@@ -619,7 +648,6 @@ p {
 .charte3 {
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -631,8 +659,8 @@ footer a {
     text-decoration: none;
     color: black;
     font-size: 1em;
-    margin: 20px;
-    padding: 10px;
+    margin: 0em;
+    padding: 1em;
     line-height: 1px;
 }
 
@@ -640,4 +668,4 @@ footer a {
 
 
 
-/* I C I */
+/* FIN PIED DE PAGE */
