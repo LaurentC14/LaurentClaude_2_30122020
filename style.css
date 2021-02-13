@@ -17,27 +17,6 @@ body
     margin: auto;
     padding-top: 1em;
 }
-/* Logo + lien navig */
-.en_tete{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-/*logo Reservia*/
-#logo{                  
-   display: flex;
-   flex-direction: row;
-   align-items: baseline;
-}
-
-/*dimension logo Reservia*/
-#logo img               
-{
-    width: 97px;
-    height: 45px;
-}
-/* FIN logo Reservia*/
 
 
 /* Mise en place liens navigation */
@@ -65,13 +44,13 @@ nav a
 /*Apparence au survol liens navig*/
 nav a:hover             
 {
-    color: blue;
-    border-top: 3px solid blue;
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
     padding-top: 1.5em;
 }
 /*  FIN Mise en place liens navigation */
 
-.cen_vill{
+.cen_ville{
     font-weight: normal;
 }
 
@@ -82,43 +61,42 @@ nav a:hover
     width: 30%;
     padding: 1em;
 }
-
 .ico_rech {
-    border: 1px solid rgb(242, 242, 242);;
+    border: 1px solid #DEEBFF;
     border-radius: 12px 0 0 12px;
     text-align: center;
-    background-color: rgb(242, 242, 242);
+    background-color: #F2F2F2;
     width: 5%;
     padding: 1em;
 }
-
 .tex_rech{
-    border: 1px solid rgb(242, 242, 242);;
+    border: 1px solid #F2F2F2;
     padding-top: .5em;
     padding-bottom: 1em;
     background-color: white;
-    padding: 1em;
-    
+    padding: 1em;   
 }
 .bout_rech{
     color: white;
-    border: 1px solid rgb(242, 242, 242);
+    border: 1px solid #F2F2F2;
     border-radius: 0 12px 12px 0;
     padding: .5em;
-    background-color: blue;
+    background-color: #0065FC;
 }
+/* FIN Mise en place barre rechercher*/
 
 
+/*Mise en place barre des Filtres*/
 
-/*Mise en place barre Filtres*/
-
-.filtre{
+.barre_filtre{
     display: flex;
     justify-content: space-between;
-    /*margin: 0;*/
 }
-
-.bord1 i{
+/*Ronds autour des icones*/
+.ico_money, 
+.ico_child, 
+.ico_romnant, 
+.ico_dog {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -126,58 +104,58 @@ nav a:hover
     border: 1em solid #ddebfe;
     border-radius: 3em;
     content: "\f3d1";
-
 }
 
-.bord1 {
-    display: flex;
-    border: 1px solid #ddebfe;
-    border-radius:3em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 0em;
-    padding-right: 1em;
-}
-
-
-.fa-money{
+.fa-money, .ico_child, 
+.ico_romnant, .ico_dog{
     background-color: #ddebfe;
-    color: blue;
-   
+    color: #0065FC;
 }
-.fa-child{
-    background-color: #ddebfe;
-    color: blue;
-}
-.fa-heart{
-    background-color: #ddebfe;
-    color: blue;    
-}
-.fa-dog{
-    background-color: #ddebfe;
-    color: blue;    
-}
-
-.filtre {
+.barre_filtre {
     display: flex;
 }
-
-.filtre{
-display: flex;
-}
-
-.filtre > div a{
-    margin: 3em;
+.barre_filtre > div a{
+    margin: 1em;
     text-decoration: none;
     color: black;
     font-weight: bold; 
 }
+/* FIN Mise en place barre des Filtres*/
 
-.info p{
-    font-weight: normal;
+.recher_form_row-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    min-height: 3rem;
+    background-color: var(--color-gray);
 }
-.info{
 
+.recher_result {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.recher_result_row_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.75rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    border: 2px solid var(--color-gray);
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.fa-info {
+    font-size: 0.75rem;
+    color: var(--color-blue);
+}
+
+.recher_result {
+    justify-content: flex-start;
 }
 .info i{
     display: flex;
@@ -189,6 +167,20 @@ display: flex;
     content: "\f3d1";
 }
 
+/*
+info{
+    padding-left: 2em;
+}*/
+
+/*
+.info p{
+    font-weight: normal;
+}
+.info{
+
+}
+
+
 
 .info{
     display: flex;
@@ -197,32 +189,26 @@ display: flex;
 
 .info > div i{
     margin: 2em;
-    color: blue;
-}
+    color: #0065FC;
+}*/
 
 
-
-/*Bloc de photo hébergement*/
 /*Hébergements à Marseille*/
+/*Première ligne de photos*/
 section{
     display: flex;
     flex-direction: row;
     margin-right: 0.5em;
-    border: 1px solid rgb(242, 242, 242);
+    border: 1px solid #F2F2F2;
     border-radius: 12px;
 }
-.bloc{
-    background-color: rgb(242, 242, 242);
+.pre_lign_photo{
+    background-color: #F2F2F2;
     border-radius: 12px;
 }
-.hebergement {
-    display: flex;
-    float: right; /* A VIRER*/
+.hebergements {
+    display: flex; 
 }
-
-
-/*Première ligne de photos*/
-
 .pre_ligne_photo {
     display: flex;
     flex-direction: row;
@@ -230,16 +216,15 @@ section{
     margin: 2em;
     padding: 2em;
 }
-/*Première ligne de photos*/
-.mis_pag_prem1 {
+/* Mise en page Auberge La Cannebière*/
+.mis_pag_cannebiere {
     display: flex;
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
     border-radius: 12px 12px 12px 12px;
 }
-
-.mis_pag_prem1 img {
+.mis_pag_cannebiere img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
@@ -247,59 +232,52 @@ section{
 .pre_ligne_photo p {
     font-weight: bold;
 }
-
 /*Texte mis en normal sous texte*/
 .pre_ligne_photo span {
     font-weight: normal;
 }
-
 /*Modif color des icones étoiles*/
-.mis_pag_prem1 .fa-star {
-    color: blue;
+.mis_pag_cannebiere .fa-star {
+    color: #0065FC;
 }
+/* FIN Mise en page Auberge La Cannebière*/
 
-/*Modif color des icones étoiles*/
-/*
- .mis_pag_prem1
-{
-    color: gray;
-}
-*/
-.mis_pag_prem2 {
+/* Mise en page Hôtel du port*/
+.mis_pag_hotel_du_port {
     display: flex;
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
     border-radius: 12px 12px 12px 12px;
 }
-
-.mis_pag_prem2 img {
+.mis_pag_hotel_du_port img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
-
 /*Modif color des icones étoiles*/
-.mis_pag_prem2 .fa-star {
-    color: blue;
+.mis_pag_hotel_du_port .fa-star {
+    color: #0065FC;
 }
+/* FIN Mise en page Hôtel du port*/
 
-.mis_pag_prem3 {
+/* Mise en page Hôtel Les Mouettes*/
+.mis_pag_hotel_les_mouettes {
     display: flex;
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
     border-radius: 12px 12px 12px 12px;
 }
-
-.mis_pag_prem3 img {
+.mis_pag_hotel_les_mouettes img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
-
 /*Modif color des icones étoiles*/
-.mis_pag_prem3 .fa-star {
-    color: blue;
+.mis_pag_hotel_les_mouettes .fa-star {
+    color: #0065FC;
 }
+/* FIN Mise en page Hôtel Les Mouettes*/
+
 
 /* FIN Première ligne de photos*/
 
@@ -313,7 +291,7 @@ section{
     padding: 2em;
 }
 
-.mis_pag_deux1 {
+.mis_pag_hotel_de_la_mer {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -321,7 +299,7 @@ section{
     border-radius: 12px 12px 12px 12px;
 }
 
-.mis_pag_deux1 img {
+.mis_pag_hotel_de_la_mer img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
@@ -337,19 +315,13 @@ section{
 }
 
 /*Modif color des icones étoiles*/
-.mis_pag_deux1 .fa-star {
-    color: blue;
+.mis_pag_hotel_de_la_mer .fa-star {
+    color: #0065FC;
 }
 
 /*Modif color des icones étoiles*/
-/*
- .mis_pag_prem1
-{
-    color: gray;
-}
-*/
 
-.mis_pag_deux2 {
+.mis_pag_auberge_le_panier {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -357,17 +329,18 @@ section{
     border-radius: 12px 12px 12px 12px;
 }
 
-.mis_pag_deux2 img {
+.mis_pag_auberge_le_panier img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
 
 /*Modif color des icones étoiles*/
-.mis_pag_deux2 .fa-star {
-    color: blue;
+.mis_pag_auberge_le_panier 
+.fa-star {
+    color: #0065FC;
 }
 
-.mis_pag_deux3 {
+.mis_pag_hotel_chez_amina {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -375,14 +348,14 @@ section{
     border-radius: 12px 12px 12px 12px;
 }
 
-.mis_pag_deux3 img {
+.mis_pag_hotel_chez_amina img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
 
 /*Modif color des icones étoiles*/
-.mis_pag_deux3 .fa-star {
-    color: blue;
+.mis_pag_hotel_chez_amina .fa-star {
+    color: #0065FC;
 }
 
 /*FIN Deuxième ligne de photos*/
@@ -400,21 +373,19 @@ section{
 }
 .titre_popul i {
     display: flex;
-    float: right;
 }
 
 /*Les plus populaires*/
 
 .plus_pop {
-    background-color: rgb(242, 242, 242);
-    border: 1px solid rgb(242, 242, 242);
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 12px;
     margin-left: 3em;
     padding-left: 2em;
     padding-bottom: 2em;
     padding-right: 50px;
 }
-
 
 /*Texte mis en gras sous photos*/
 .plus_pop p {
@@ -428,7 +399,7 @@ section{
 
 /*Hôtel le soleil 181*/
 
-.mis_pag_popu1 {
+.mis_pag_hotel_le_soleil_du_matin {
     display: flex;
     flex-direction: row;
     margin-bottom: 2em;
@@ -438,17 +409,17 @@ section{
     border-radius: 12px;
 }
 
-.mis_pag_popu1 p{
+.mis_pag_hotel_le_soleil_du_matin p{
     padding-left: 1em;
     padding-right: 2em;
 }
 
-.mis_pag_popu1 .fa-star {
-    color: blue;
+.mis_pag_hotel_le_soleil_du_matin .fa-star {
+    color: #0065FC;
     padding-top: 2.5em;
 }
 
-.mis_pag_popu1 img {
+.mis_pag_hotel_le_soleil_du_matin img {
     height: 100%;
     width: 100%;
     border: 0px;
@@ -460,7 +431,7 @@ section{
 /*Les plus populaires*/
 
 /*Au coeur de l'eau Chambres d'hôtes 187*/
-.mis_pag_popu2 {
+.mis_pag_au_coeur_de_l_eau {
     display: flex;
     flex-direction: row;
     margin-bottom: 2em;
@@ -470,25 +441,25 @@ section{
     border-radius: 12px;
 }
 
-.mis_pag_popu2 img {
+.mis_pag_au_coeur_de_l_eau img {
     border: 0px;
     border-radius: 12px 0 0 12px;
 }
 
-.mis_pag_popu2 p{
+.mis_pag_au_coeur_de_l_eau p{
     padding-left: 1em;
     padding-right: 2em;
 }
 
-.mis_pag_popu2 .fa-star {
-    color: blue;
+.mis_pag_au_coeur_de_l_eau .fa-star {
+    color: #0065FC;
     padding-top: 2.5em;
 }
 /*FIN Au coeur de l'eau Chambres d'hôtes */
 
 /*Les plus populaires*/
 /*Hôtel Tout bleu et Blanc 194*/
-.mis_pag_popu3 {
+.mis_pag_hotel_tout_bleu {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -497,18 +468,18 @@ section{
     border-radius: 12px;
 }
 
-.mis_pag_popu3 img {
+.mis_pag_hotel_tout_bleu img {
     border: 0px;
     border-radius: 12px 0 0 12px;
 }
 
-.mis_pag_popu3 p{
+.mis_pag_hotel_tout_bleu p{
     padding-left: 1em;
     padding-right: 2em;
 }
 
-.mis_pag_popu3 .fa-star {
-    color: blue;
+.mis_pag_hotel_tout_bleu .fa-star {
+    color: #0065FC;
     padding-top: 2.5em;
     
 }
@@ -536,43 +507,43 @@ p {
     text-decoration: none;
 }
 /*Vieux Port 214*/
-.vieux_port div {
+.mis_pag_vieux_port div {
     border: 0.5px solid white;
     border-radius: 12px; 
 }
-.vieux_port img{
+.mis_pag_vieux_port img{
     border: 0.5px solid white;
     border-radius: 12px 12px 0 0;  
 }
 
 /*Fort de Pomègues + iles du Frioul*/
 
-.pre_groupe img{
+.group_pomegues_et_frioul img{
     border: 0px solidcwhite ;
     border-radius: 12px;  
 }
-.pre_groupe {
+.group_pomegues_et_frioul {
     display: flex;
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
     border-radius: 12px;
 }
-.grou_un{
+.fort_de_pomegues{
     border: 1px solid white;
     border-radius: 12px;  
 }
 
-.grou_un img{
+.fort_de_pomegues img{
     border: 0px solid white;
     border-radius: 12px 12px 0 0;  
 }
 
-.group_unbis{
+.iles_du_frioul{
     border: 1px solid white;
     border-radius: 12px;  
 }
-.group_unbis img{
+.iles_du_frioul img{
     border: 0px solid white;
     border-radius: 12px 12px 0 0;  
 }
@@ -592,11 +563,11 @@ p {
 
 /* Notre-Dame-de-la-Garde + Parc Longchamps*/
 
-.deux_group img{
+.group_notre_dame_et_parc_longchamps img{
     border: 0px solid white ;
     border-radius: 12px;  
 }
-.deux_group {
+.group_notre_dame_et_parc_longchamps {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -613,17 +584,17 @@ p {
     border-radius: 12px 12px 0 0;  
 }
 
-.par_long{
+.parc_longchamps{
     border: 1px solid white ;
     border-radius: 12px;  
 }
-.par_long img{
+.parc_longchamps img{
     border: 0px solid white ;
     border-radius: 12px 12px 0 0;  
 }
+/* FIN Notre-Dame-de-la-Garde + Parc Longchamps*/
 
-
-
+/* FIN Activités à Marseille*/
 
 
 /* PIED DE PAGE */
@@ -631,21 +602,21 @@ p {
 .foot {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(242, 242, 242);
-    border: 1px solid rgb(242, 242, 242);
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
 }
 
-.charte1 {
+.left_text {
     display: flex;
     flex-direction: column;
 }
 
-.charte2 {
+.middle_text {
     display: flex;
     flex-direction: column;
 }
 
-.charte3 {
+.right_text {
     display: flex;
     flex-direction: column;
 }
@@ -663,9 +634,6 @@ footer a {
     padding: 1em;
     line-height: 1px;
 }
-
-
-
 
 
 /* FIN PIED DE PAGE */
