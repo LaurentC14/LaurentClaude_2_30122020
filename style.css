@@ -114,7 +114,6 @@ nav a:hover
 .filtre{
     display: flex;
     justify-content: space-between;
-    /*margin: 0;*/
 }
 
 .bord1 i{
@@ -226,8 +225,13 @@ section{
     margin: 2em;
     padding: 2em;
 }
-/*Première ligne de photos*/
-.mis_pag_prem1 {
+
+.pre_ligne_photo p{
+    color: black;
+}
+
+/*Auberge La Cannebière*/
+.auberge_cannebiere {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -235,23 +239,24 @@ section{
     border-radius: 12px 12px 12px 12px;
 }
 
-.mis_pag_prem1 img {
+.auberge_cannebiere img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
+
 /*Texte mis en gras sous photos*/
 .pre_ligne_photo p {
     font-weight: bold;
 }
 
 /*Texte mis en normal sous texte*/
-.pre_ligne_photo span {
+.pre_ligne_photo {
     font-weight: normal;
 }
 
 /*Modif color des icones étoiles*/
-.mis_pag_prem1 .fa-star {
-    color: blue;
+.auberge_cannebiere .fa-star {
+    color: #0065FC;
 }
 
 /*Modif color des icones étoiles*/
@@ -261,7 +266,7 @@ section{
     color: gray;
 }
 */
-.mis_pag_prem2 {
+.hotel_port {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -269,17 +274,20 @@ section{
     border-radius: 12px 12px 12px 12px;
 }
 
-.mis_pag_prem2 img {
+.hotel_port img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
-
-/*Modif color des icones étoiles*/
-.mis_pag_prem2 .fa-star {
-    color: blue;
+.deux_ligne_photo p{
+    font-weight: bold;
 }
 
-.mis_pag_prem3 {
+/*Modif color des icones étoiles*/
+.hotel_port .fa-star {
+    color: #0065FC;
+}
+
+.hotel_mouettes {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -287,14 +295,14 @@ section{
     border-radius: 12px 12px 12px 12px;
 }
 
-.mis_pag_prem3 img {
+.hotel_mouettes img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
 
 /*Modif color des icones étoiles*/
-.mis_pag_prem3 .fa-star {
-    color: blue;
+.hotel_mouettes .fa-star {
+    color: #0065FC;
 }
 
 /* FIN Première ligne de photos*/
@@ -309,7 +317,7 @@ section{
     padding: 2em;
 }
 
-.mis_pag_deux1 {
+.hotel_de_mer {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -317,35 +325,29 @@ section{
     border-radius: 12px 12px 12px 12px;
 }
 
-.mis_pag_deux1 img {
+.hotel_de_mer img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
 
-/*Texte mis en gras sous photos*/
-.deux_ligne_photo p {
+.hotel_de_mer p {
     font-weight: bold;
 }
 
-/*Texte mis en normal sous texte*/
-.deux_ligne_photo span {
-    font-weight: normal;
-}
-
 /*Modif color des icones étoiles*/
-.mis_pag_deux1 .fa-star {
-    color: blue;
+.hotel_de_mer .fa-star {
+    color: #0065FC;
 }
 
 /*Modif color des icones étoiles*/
 /*
- .mis_pag_prem1
+ 
 {
     color: gray;
 }
 */
 
-.mis_pag_deux2 {
+.auberge_panier {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -353,17 +355,17 @@ section{
     border-radius: 12px 12px 12px 12px;
 }
 
-.mis_pag_deux2 img {
+.auberge_panier img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
 
 /*Modif color des icones étoiles*/
-.mis_pag_deux2 .fa-star {
+.auberge_panier .fa-star {
     color: blue;
 }
 
-.mis_pag_deux3 {
+.hotel_amina {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -371,17 +373,19 @@ section{
     border-radius: 12px 12px 12px 12px;
 }
 
-.mis_pag_deux3 img {
+.hotel_amina img {
     border: 0px;
     border-radius: 12px 12pX 0 0;
 }
 
 /*Modif color des icones étoiles*/
-.mis_pag_deux3 .fa-star {
+.hotel_amina .fa-star {
     color: blue;
 }
 
 /*FIN Deuxième ligne de photos*/
+
+/*000000000 i c i 0000000000000000000000*/
 
 /*Les plus populaires*/
 /*Texte mis en gras sous photos*/
