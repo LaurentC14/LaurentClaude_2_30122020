@@ -19,20 +19,19 @@ body
 }
 
 .logo{
-    text-decoration: none;
+text-decoration: none;
 }
 
 /* Logo + lien navig */
-.en_tete{
+/*.en_tete{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-}
+}*/
 
 /* Header */
 /* Mise en place liens navigation */
 /*suppression des puces de navig*/
-
 ul {
     display: flex;
     justify-content: space-between;
@@ -43,7 +42,10 @@ ul {
     line-height: 3em;   /*centré les liens sur la ligne*/
     padding-left: 30em; /* ???*/
 }
-.lien_activite,
+.lien_activite{
+    line-height: 3em;
+}
+
 .lien_s_inscrire {
     line-height: 3em;
 }
@@ -99,30 +101,43 @@ nav a:hover
     border: 1px solid #F2F2F2;
     border-radius: 0 12px 12px 0;
     padding: .5em;
-    /*padding-right: 3em;*/
+    padding-right: 3em;
     background-color: #0065FC;
     font-size: 1em;
 }
-/*
-.recherche,
-.tex_rech,
-.bout_rech{
-    padding-right: 5em;
-
-}*/
-
 /* FIN Mise en place barre rechercher*/
 
 
-
 /*Mise en place barre Filtres*/
-
 .filtre{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
-.bord1 i{
+.fa_money i{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: auto;
+    border: 1em solid #ddebfe;
+    border-radius: 50%;
+    content: "\f3d1";
+}
+.fa_money {
+    display: flex;
+    border: 1px solid #ddebfe;
+    border-radius:3em;
+    /*padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;*/
+    padding-right: 1em;
+    align-items: center;
+}
+.fa-money{
+    background-color: #ddebfe;
+    color: blue;
+}
+.fa_child i{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -130,38 +145,67 @@ nav a:hover
     border: 1em solid #ddebfe;
     border-radius: 3em;
     content: "\f3d1";
-
 }
-
-.bord1 {
+.fa_child {
     display: flex;
     border: 1px solid #ddebfe;
     border-radius:3em;
-    padding-top: 0em;
+    /*padding-top: 0em;
     padding-bottom: 0em;
-    padding-left: 0em;
+    padding-left: 0em;*/
     padding-right: 1em;
-}
-
-
-.fa-money{
-    background-color: #ddebfe;
-    color: blue;
-   
+    align-items: center;
 }
 .fa-child{
     background-color: #ddebfe;
     color: blue;
 }
+.fa_heart i{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: auto;
+    border: 1em solid #ddebfe;
+    border-radius: 3em;
+    content: "\f3d1";
+}
+.fa_heart {
+    display: flex;
+    border: 1px solid #ddebfe;
+    border-radius:3em;
+    /*padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;*/
+    padding-right: 1em;
+    align-items: center;
+}
 .fa-heart{
     background-color: #ddebfe;
     color: blue;    
+}
+.fa_dog i{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: auto;
+    border: 1em solid #ddebfe;
+    border-radius: 3em;
+    content: "\f3d1";
+}
+.fa_dog {
+    display: flex;
+    border: 1px solid #ddebfe;
+    border-radius:3em;
+    /*padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;*/
+    padding-right: 1em;
+    align-items: center;
 }
 .fa-dog{
     background-color: #ddebfe;
     color: blue;    
 }
-
 .filtre {
     display: flex;
 }
@@ -220,8 +264,6 @@ section{
     border-radius: 12px;
 }
 
-
-
 /*Première ligne de photos*/
 
 .pre_ligne_photo {
@@ -231,38 +273,24 @@ section{
     margin: 2em;
     padding: 2em;
 }
-
 .pre_ligne_photo p{
     color: black;
 }
-
 /*Auberge La Cannebière*/
 .auberge_cannebiere {
     display: flex;
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 12px;
 }
-
 .auberge_cannebiere img {
     border-radius: 12px 12pX 0 0;
 }
-
 /*Texte mis en gras sous photos*/
 .pre_ligne_photo p {
     font-weight: bold;
 }
-
-/*Texte mis en normal sous texte*/
-.pre_ligne_photo {
-    font-weight: normal;
-}
-
-/*Modif color des icones étoiles lig 257 */
-/*.auberge_cannebiere .fa-star {
-    color: #0065FC;
-}*/
 
 /*Modif color des icones étoiles*/
 .auberge_cannebiere_fullstar {
@@ -274,13 +302,6 @@ section{
     color: #F2F2F2;
 }
 
-/*Modif color des icones étoiles*/
-/*
- .mis_pag_prem1
-{
-    color: gray;
-}
-*/
 .hotel_port {
     display: flex;
     flex-direction: column;
@@ -288,7 +309,6 @@ section{
     border: 5px solid white;
     border-radius: 12px 12px 12px 12px;
 }
-
 .hotel_port img {
     border-radius: 12px 12pX 0 0;
 }
@@ -296,26 +316,30 @@ section{
     font-weight: bold;
 }
 
+
 /*Modif color des icones étoiles*/
 .hotel_port .fa-star {
     color: #0065FC;
 }
-
 .hotel_mouettes {
     display: flex;
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 12px;
 }
-
 .hotel_mouettes img {
     border-radius: 12px 12pX 0 0;
 }
 
 /*Modif color des icones étoiles*/
-.hotel_mouettes .fa-star {
+.hotel_mouettes_fullstar {
     color: #0065FC;
+}
+
+/*Modif color des icones étoiles*/
+.hotel_mouettes_emptystar {
+    color: #F2F2F2;
 }
 
 /* FIN Première ligne de photos*/
