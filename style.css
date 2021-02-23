@@ -18,29 +18,21 @@ body
     padding-top: 1em;
 }
 
-.logo{
-text-decoration: none;
-}
-
-/* Logo + lien navig */
-/*.en_tete{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}*/
-
 /* Header */
 /* Mise en place liens navigation */
-/*suppression des puces de navig*/
 ul {
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
+    padding-inline-start: 40px;
+    list-style-type: none;  /*suppression des puces de navig*/
 }
+
+
+/*Alignement texte des liens navigation*/
 .lien_heber
  {
-    line-height: 3em;   /*centré les liens sur la ligne*/
-    padding-left: 30em; /* ???*/
+    line-height: 3em;   
+    padding-left: 38em;
 }
 .lien_activite{
     line-height: 3em;
@@ -65,78 +57,79 @@ nav a:hover
 }
 /*  FIN Mise en place liens navigation */
 
-
-.cen_vill{
-    font-weight: normal;
-}
-
 /*Mise en place barre rechercher*/
 .recherche {
     display: flex;
     flex-direction: row;
     width: 30%;
     padding: 1em;
+    margin-bottom: 1em;
 }
 
 .ico_rech {
     border: 1px solid #DEEBFF;
-    border-radius: 12px 0 0 12px;
+    border-radius: 20% 0 0 20%;
     background-color: #F2F2F2;
     width: 5%;
     padding: 1em;
 }
-
+/*Barre de recherche*/
 .tex_rech{
     border: 1px solid #F2F2F2;
     padding-top: .5em;
     padding-bottom: 1em;
     background-color: white;
     padding: 1em;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
-
 
 .bout_rech{
     color: white;
     border: 1px solid #F2F2F2;
-    border-radius: 0 12px 12px 0;
+    border-radius: 0 14% 14% 0;
     padding: .5em;
     padding-right: 3em;
     background-color: #0065FC;
     font-size: 1em;
+    font-weight: bold;
+    align-items: center;
 }
 /* FIN Mise en place barre rechercher*/
 
 
 /*Mise en place barre Filtres*/
-.filtre{
+.filtre {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.fa_money i{
+.fa_money i {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    width: auto;
     border: 1em solid #ddebfe;
     border-radius: 50%;
     content: "\f3d1";
+    
 }
 .fa_money {
     display: flex;
     border: 1px solid #ddebfe;
     border-radius:3em;
-    /*padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 0em;*/
-    padding-right: 1em;
     align-items: center;
 }
 .fa-money{
     background-color: #ddebfe;
-    color: blue;
+    color: #0065FC;
 }
+.fa-money a{
+    margin: 1.5em;
+}
+.fa_money a:hover{
+    color: #0065FC;
+}
+
 .fa_child i{
     display: flex;
     justify-content: space-around;
@@ -150,15 +143,15 @@ nav a:hover
     display: flex;
     border: 1px solid #ddebfe;
     border-radius:3em;
-    /*padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 0em;*/
     padding-right: 1em;
     align-items: center;
 }
 .fa-child{
     background-color: #ddebfe;
-    color: blue;
+    color: #0065FC;
+}
+.fa_child a:hover{
+    color: #0065FC;
 }
 .fa_heart i{
     display: flex;
@@ -173,15 +166,15 @@ nav a:hover
     display: flex;
     border: 1px solid #ddebfe;
     border-radius:3em;
-    /*padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 0em;*/
     padding-right: 1em;
     align-items: center;
 }
 .fa-heart{
     background-color: #ddebfe;
-    color: blue;    
+    color: #0065FC;    
+}
+.fa_heart a:hover{
+    color: #0065FC;
 }
 .fa_dog i{
     display: flex;
@@ -196,26 +189,22 @@ nav a:hover
     display: flex;
     border: 1px solid #ddebfe;
     border-radius:3em;
-    /*padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 0em;*/
     padding-right: 1em;
     align-items: center;
 }
 .fa-dog{
     background-color: #ddebfe;
-    color: blue;    
+    color: #0065FC;    
+}
+.fa_dog a:hover{
+    color: #0065FC;
 }
 .filtre {
     display: flex;
 }
 
-.filtre{
-display: flex;
-}
-
 .filtre > div a{
-    margin: 3em;
+    margin: 2.5em;
     text-decoration: none;
     color: black;
     font-weight: bold; 
@@ -223,40 +212,33 @@ display: flex;
 
 .info p{
     font-weight: normal;
+    color: black;
+    padding-left: 1em;
 }
-.info{
 
-}
 .info i{
-    display: flex;
     justify-content: space-around;
     flex-direction: row;
     width: auto;
-    border: .5em solid #ddebfe;
-    border-radius: 10px;
+    border: 1em solid #ddebfe;
+    border-radius: 3em;
     content: "\f3d1";
 }
 
-
-.info{
+.info {
+    margin-top: 3em;
     display: flex;
-    align-items: center;
+    content: "\f3d1";
+    color: #0065FC;
 }
-
-.info > div i{
-    margin: 2em;
-    color: blue;
-}
-
 
 
 /*Bloc de photo hébergement*/
 /*Hébergements à Marseille*/
 section{
+    margin-top: 2em;
     display: flex;
     flex-direction: row;
-    margin-right: 0.5em;
-    border: 1px solid #F2F2F2;
     border-radius: 12px;
 }
 .bloc{
@@ -271,10 +253,12 @@ section{
     flex-direction: row;
     justify-content: space-around;
     margin: 2em;
-    padding: 2em;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 .pre_ligne_photo p{
     color: black;
+
 }
 /*Auberge La Cannebière*/
 .auberge_cannebiere {
@@ -289,7 +273,7 @@ section{
 }
 /*Texte mis en gras sous photos*/
 .pre_ligne_photo p {
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 /*Modif color des icones étoiles*/
@@ -301,7 +285,9 @@ section{
 .auberge_cannebiere_emptystar {
     color: #F2F2F2;
 }
+/*FIN Auberge La Cannebière*/
 
+/*Hôtel du port*/
 .hotel_port {
     display: flex;
     flex-direction: column;
@@ -350,10 +336,10 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 2em;
+    /*margin: 2em;*/
     padding: 2em;
 }
-
+/*Hôtel de la mer*/
 .hotel_de_mer {
     display: flex;
     flex-direction: column;
@@ -361,28 +347,20 @@ section{
     border: 5px solid white;
     border-radius: 12px 12px 12px 12px;
 }
-
 .hotel_de_mer img {
     border-radius: 12px 12pX 0 0;
 }
-
 .hotel_de_mer p {
     font-weight: bold;
 }
-
 /*Modif color des icones étoiles*/
-.hotel_de_mer .fa-star {
+.hotel_de_mer_fullstar {
     color: #0065FC;
 }
-
-/*Modif color des icones étoiles*/
-/*
- 
-{
-    color: gray;
+.hotel_de_mer_emptystar {
+    color: #F2F2F2;
 }
-*/
-
+/*Auberge Le Panier*/
 .auberge_panier {
     display: flex;
     flex-direction: column;
@@ -390,16 +368,17 @@ section{
     border: 5px solid white;
     border-radius: 12px 12px 12px 12px;
 }
-
 .auberge_panier img {
     border-radius: 12px 12pX 0 0;
 }
-
-/*Modif color des icones étoiles*/
-.auberge_panier .fa-star {
-    color: blue;
+.auberge_panier_fullstar{
+    color: #0065FC;
+}
+.auberge_panier_emptystar{
+    color: #F2F2F2;
 }
 
+/*Hôtel chez Amina*/
 .hotel_amina {
     display: flex;
     flex-direction: column;
@@ -407,115 +386,92 @@ section{
     border: 5px solid white;
     border-radius: 12px 12px 12px 12px;
 }
-
 .hotel_amina img {
     border-radius: 12px 12pX 0 0;
 }
-
 /*Modif color des icones étoiles*/
 .hotel_amina .fa-star {
     color: blue;
 }
-
 /*FIN Deuxième ligne de photos*/
 
-/*000000000 i c i 0000000000000000000000*/
 
 /*Les plus populaires*/
 /*Texte mis en gras sous photos*/
 
-.plus_pop p {
-    font-weight: bold;
-}
-
-/*Texte mis en normal sous texte*/
-.plus_pop span {
-    font-weight: normal;
-}
-.titre_popul i {
-    display: flex;
-    /*float: right;* A VIRER/
-}
-
-/*Les plus populaires*/
-
-.plus_pop {
+.les_plus_pop {
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 12px;
     margin-left: 3em;
     padding-left: 2em;
     padding-bottom: 2em;
-    padding-right: 50px;
+    padding-right: 20em;
+}
+.titre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
-/*Texte mis en gras sous photos*/
-.plus_pop p {
-    font-weight: bold;
-}
+/*Hôtel le soleil du matin*/
 
-/*Texte mis en normal sous texte*/
-.plus_pop span {
-    font-weight: normal;
-}
-
-/*Hôtel le soleil 181*/
-
-.mis_pag_popu1 {
+.hotel_soleil_matin {
     display: flex;
     flex-direction: row;
-    margin-bottom: 2em;
+    margin-bottom: 20px;
     background-color: white;
     border: 5px solid white;
     border-bottom: 3.5px;
     border-radius: 12px;
 }
 
-.mis_pag_popu1 p{
+
+/*Texte mis en gras sous photos*/
+
+
+.hotel_soleil_matin .texte_gras {
+    font-weight: bold;
+}
+.hotel_soleil_matin.texte_normal{
+    font-weight: normal;
+}
+.hotel_soleil_matin .fa-star {
+    padding-top: 2.5em;
+}
+
+.hotel_soleil_matin_fullstar{
+    color: #0065FC;
+}
+.hotel_soleil_matin_emptystar{
+    color: #F2F2F2;
+}
+
+.hotel_soleil_matin img {
+    border-radius: 12px 0 0 12px;
+}
+
+.hotel_soleil_matin p{
     padding-left: 1em;
     padding-right: 2em;
 }
 
-.mis_pag_popu1 .fa-star {
-    color: blue;
-    padding-top: 2.5em;
-}
 
-.mis_pag_popu1 img {
-    height: 100%;
-    width: 100%;
-    border-radius: 12px 0 0 12px;
-}
 /* FIN Hôtel le soleil */
 
+/*Hôtel le soleil du matin*/
 
-/*Les plus populaires*/
 
-/*Au coeur de l'eau Chambres d'hôtes 187*/
-.mis_pag_popu2 {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2em;
-    background-color: white;
-    border: 1px solid white;
-    border-bottom: 1px;
-    border-radius: 12px;
+
+.au_coeur_de_l_eau_fullstar{
+    color: #0065FC;
+}
+.au_coeur_de_l_eau_emptystar{
+    color: #F2F2F2;
 }
 
-.mis_pag_popu2 img {
-    border-radius: 12px 0 0 12px;
-}
 
-.mis_pag_popu2 p{
-    padding-left: 1em;
-    padding-right: 2em;
-}
-
-.mis_pag_popu2 .fa-star {
-    color: blue;
-    padding-top: 2.5em;
-}
 /*FIN Au coeur de l'eau Chambres d'hôtes */
 
 /*Les plus populaires*/
