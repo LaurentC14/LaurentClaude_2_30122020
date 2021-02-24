@@ -20,10 +20,14 @@ body
 
 /* Header */
 /* Mise en place liens navigation */
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
 ul {
     display: flex;
     justify-content: space-between;
-    padding-inline-start: 40px;
     list-style-type: none;  /*suppression des puces de navig*/
 }
 
@@ -60,11 +64,12 @@ nav a:hover {
     flex-direction: row;
     width: 30%;
     padding: 1em;
+    border-radius: 4%;
     margin-bottom: 1em;
 }
 .ico_rech {
     border: 1px solid #DEEBFF;
-    border-radius: 20% 0 0 20%;
+    border-radius: 14% 0 0 14%;
     background-color: #F2F2F2;
     width: 5%;
     padding: 1em;
@@ -223,28 +228,36 @@ nav a:hover {
 /*Bloc de photo hébergement*/
 /*Hébergements à Marseille*/
 section{
-    margin-top: 2em;
-    display: flex;
-    flex-direction: row;
-    border-radius: 12px;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    border-radius: 4%;
 }
 
 /*Première ligne de photos*/
 .pre_ligne_photo {
     display: flex;
-    /*flex-direction: row;*/
+    flex-direction: row;
     justify-content: space-around;
-    /*margin: 2em;*/
-    padding-left: 5em;
-    padding-right: 5em;
+    margin: 2em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .pre_ligne_photo p{
     color: black;
 }
 
+
+
+.titre_hebergt{
+    padding-top: 3em;
+    padding-left: 3em;
+}
+
 .hebergt_marseil{
     background-color: #F2F2F2;
-    border-radius: 12px;
+    border-radius: 4%;
+    padding-bottom: 1em;
 }
 /*Auberge La Cannebière*/
 .auberge_cannebiere {
@@ -335,8 +348,10 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /*margin: 2em;*/
-    padding: 2em;
+    margin: 2em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 /*Hôtel de la mer*/
@@ -400,6 +415,10 @@ section{
 }
 /*FIN Auberge Le Panier*/
 
+.titre_afficher_plus{
+    font-size: 1.3em;
+    padding-left: 4em;
+}
 
 /*Hôtel chez Amina*/
 .hotel_amina {
@@ -424,9 +443,7 @@ section{
     color: #0065FC;
 }
 /*FIN Hôtel chez Amina*/
-section{
-    
-}
+
 /*FIN Deuxième ligne de photos*/
 
 
@@ -445,41 +462,34 @@ section{
     flex-direction: column;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
-    border-radius: 12px;
+    border-radius: 4%;
     padding-right: 50px;
     margin-left: 3em;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border: 5px solid white;
     border-bottom: 3.5px;
 }
 .hotel_soleil_matin{
     display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
-    border-radius: 12px 0px 0px 12px;
-    padding-right: 50px;
+    flex-direction: row;
+    background-color: white;
     margin-left: 3em;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 4%;
     border: 5px solid white;
     border-bottom: 3.5px;
+    padding: .1em;
 }
+
+/*.hotel_soleil_matin p{
+    display: flex;
+    padding-left: 1em;
+    padding-right: 2em;
+}*/
 
 .hotel_soleil_matin img {
     border: 0px;
     border-radius: 12px 0px 0px 12px;
-}
-
-.hotel_soleil_matin {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    background-color: white;
-    border: 5px solid white;
-    border-bottom: 3.5px;
-    border-radius: 12px;
 }
 
 /*Texte mis en gras et normal sous photos*/
@@ -489,28 +499,19 @@ section{
 .texte_normal_soleil_matin{
     font-weight: normal;
 }
+/*Texte mis en gras et normal sous photos*/
 
 .hotel_soleil_matin_fullstar{
     color: #0065FC;
 }
-
 .hotel_soleil_matin_emptystar{
     color: #F2F2F2;
 }
-.hotel_soleil_matin img {
-    border: 0px;
-    border-radius: 12px 0 0 12px;
-}
-
 .hotel_soleil_matin .fa-star {
     padding-top: 2.5em;
 }
 
-.hotel_soleil_matin p{
-    display: flex;
-    padding-left: 1em;
-    padding-right: 2em;
-}
+
 
 
 
@@ -557,10 +558,6 @@ section{
     border-radius: 12px 0 0 12px;
 }
 
-.hotel_soleil_matin img{
-    border: 0px;
-    border-radius: 12px;
-}
 
 /*
 .mis_pag_popu1 .fa-star {
@@ -574,29 +571,6 @@ section{
     display: flex;
     flex-direction: row;
 }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -654,198 +628,124 @@ section{
     color: #F2F2F2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*0000000000000000000000000000000000000000*/
-
-/*
-.au_coeur_de_l_eau img {
-    border-radius: 12px 0 0 12px;
-}
-.au_coeur_de_l_eau p{
-    padding-left: 1em;
-    padding-right: 2em;
-
-.hotel_tout_bleu_blanc {
-    color: blue;
-    padding-top: 2.5em; 
-}*/
 /* FIN Hôtel Tout bleu et Blanc*/
 /* FIN Les plus populaires*/
 
 
 /*Activités à Marseille*/
 
-/*
 #activites{
     margin-top: 2em;
 }
-*/
-.activites {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    text-decoration: none;
-}
-/*Vieux Port 214*/
-.vieux_port div {
-    border: 0.5px solid white;
-    border-radius: 12px; 
+
+
+/*Vieux Port*/
+.vieux_port {
+    border: 0px solid white;
+    border-radius: 4%; 
 }
 .vieux_port img{
-    border: 0.5px solid white;
-    border-radius: 12px 12px 0 0;  
+    border: 0px solid white;
+    border-radius: 4% 4% 0 0;  
 }
-
-
-
+/*Vieux Port*/
 
 /*Fort de Pomègues + iles du Frioul*/
-
-.pre_groupe img{
-    border-radius: 12px;  
-}
-.pre_groupe {
+.group_pomegue_frioul{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border: 5px solid white;
-    border-radius: 12px;
+    border: 0px solid white;
+    border-radius: 4%;
 }
-.grou_un{
-    border: 1px solid white;
-    border-radius: 12px;  
-}
-
-.grou_un img{
-    border: solid white;
-    border-radius: 12px 12px 0 0;  
-}
-
-.group_unbis{
-    border: 1px solid white;
-    border-radius: 12px;  
-}
-.group_unbis img{
-    border: solid white;
-    border-radius: 12px 12px 0 0;  
-}
-/*FIN Fort de Pomègues + iles du Frioul*/
-
-/*"Parc national des Calanques*/
-.parc_calan div{
-    border: 0.5px solid white;
-    border-radius: 12px;  
-}
-
-.parc_calan img{
-    border: solid white;
-    border-radius: 12px 12px 0 0;
-}
-/* FIN Parc national des Calanques*/
 
 /* Notre-Dame-de-la-Garde + Parc Longchamps*/
-
-
-.deux_group img{
-    border: solid white ;
-    border-radius: 12px;  
+.group_not_dam_par_long img{
+    border: 0px solid;
+    border-radius: 4%;  
 }
-.deux_group {
+.group_not_dam_par_long {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border: 5px solid white;
-    border-radius: 12px;
+    border: 0px solid white;
+    border-radius: 4%;
 }
 .not_dam{
-    border: 1px solid white ;
-    border-radius: 12px;  
+    border: 0px solid ;
+    border-radius: 4%;  
 }
 
 .not_dam img{
-    border: solid white ;
-    border-radius: 12px 12px 0 0;  
+    border: 0px solid ;
+    border-radius: 4% 4% 0 0;  
 }
 
 .par_long{
-    border: 1px solid white ;
-    border-radius: 12px;  
+    border: 0px solid ;
+    border-radius: 4%;  
 }
 .par_long img{
-    border: solid white ;
-    border-radius: 12px 12px 0 0;  
+    border: 0px solid ;
+    border-radius: 4% 4% 0 0;  
 }
+
+/*FIN Activités à Marseille*/
+
+
+/*"Parc national des Calanques*/
+.parc_calan {
+    border: 0px solid white;
+    border-radius: 4%;  
+}
+/*
+.parc_calan img{
+    border: solid white;
+    border-radius: 4% 4% 0 0;
+}*/
+
+
+/* FIN Parc national des Calanques*/
+
+
+/*Activités à Marseille*/
 
 
 /* PIED DE PAGE */
 
-footer a {
-   display: flex;
+.foot {
+    display: flex;
     justify-content: space-between;
-    text-decoration: none;
-    color: black;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
-    
 }
 
-.a_propos {
+.left_text {
     display: flex;
     flex-direction: column;
 }
 
-.nos_hebergement {
+.middle_text {
     display: flex;
     flex-direction: column;
 }
 
-.assistance {
+.right_text {
     display: flex;
     flex-direction: column;
-
 }
 
-/*
 footer > div span {
     font-weight: bold;
 }
-*/
 
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    margin: 0em;
+    padding: 1em;
+    line-height: 1px;
+}
 
-
-
-
-
-/* I C I */
+/* FIN PIED DE PAGE */
