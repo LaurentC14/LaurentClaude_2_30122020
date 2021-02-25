@@ -27,15 +27,27 @@ header{
 }
 ul {
     display: flex;
-    justify-content: space-between;
     list-style-type: none;  /*suppression des puces de navig*/
+}
+.nav_logo-li{
+    width: 80%;
 }
 
 /*Alignement texte des liens navigation*/
+.padd_hebergt{
+    padding: 3em;
+}
+..padd_activ{
+    padding: 3em;
+}
+.padd_s_insscrire{
+    padding: 3em;
+}
+
 .lien_heber
  {
     line-height: 3em;   
-    padding-left: 38em;
+    /*padding-left: 38em;*/
 }
 .lien_activite{
     line-height: 3em;
@@ -87,13 +99,12 @@ nav a:hover {
 .bout_rech{
     color: white;
     border: 1px solid #F2F2F2;
-    border-radius: 0 14% 14% 0;
+    border-radius: 0 10% 10% 0;
     padding: .5em;
-    padding-right: 3em;
     background-color: #0065FC;
     font-size: 1em;
     font-weight: bold;
-    align-items: center;
+    
 }
 /* FIN Mise en place barre rechercher*/
 
@@ -211,9 +222,9 @@ nav a:hover {
     padding-left: 1em;
 }
 .info i{
-    justify-content: space-around;
-    flex-direction: row;
-    width: auto;
+    /*justify-content: space-around;*/
+    /*flex-direction: row;*/
+    /*width: auto;*/
     border: 1em solid #ddebfe;
     border-radius: 3em;
     content: "\f3d1";
@@ -228,8 +239,8 @@ nav a:hover {
 /*Bloc de photo hébergement*/
 /*Hébergements à Marseille*/
 section{
-    /*display: flex;*/
-    /*flex-direction: row;*/
+    display: flex;
+    flex-direction: row;
     border-radius: 4%;
 }
 
@@ -466,7 +477,7 @@ section{
     padding-right: 50px;
     margin-left: 3em;
     border: 5px solid white;
-    border-bottom: 3.5px;
+    border-bottom: 5em;
 }
 .hotel_soleil_matin{
     display: flex;
@@ -477,15 +488,9 @@ section{
     margin-bottom: 20px;
     border-radius: 4%;
     border: 5px solid white;
-    border-bottom: 3.5px;
+    border-bottom: 5em;
     padding: .1em;
 }
-
-/*.hotel_soleil_matin p{
-    display: flex;
-    padding-left: 1em;
-    padding-right: 2em;
-}*/
 
 .hotel_soleil_matin img {
     border: 0px;
@@ -510,83 +515,28 @@ section{
 .hotel_soleil_matin .fa-star {
     padding-top: 2.5em;
 }
-
-
-
-
-
 /* FIN Hôtel le soleil du matin */
 
-/*Hôtel le soleil du matin*/
 
+/* Au coeur de l'eau Chambres d'hôtes */
 .au_coeur_de_l_eau{
     display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
-    border-radius: 12px;
-    padding-right: 50px;
+    flex-direction: row;
+    background-color: white;
     margin-left: 3em;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 4%;
     border: 5px solid white;
-    border-bottom: 3.5px;
+    border-bottom: 5em;
+    padding: .1em;
 }
 
 .au_coeur_de_l_eau img {
     border: 0px;
-    border-radius: 12px 0 0 12px;
+    border-radius: 12px 0px 0px 12px;
 }
 
-
-.hotel_tout_bleu_blanc{
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
-    border-radius: 12px;
-    padding-right: 50px;
-    margin-left: 3em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 5px solid white;
-    /*border-bottom: 3.5px;*/
-}
-
-.hotel_tout_bleu_blanc img {
-    border: 0px;
-    border-radius: 12px 0 0 12px;
-}
-
-
-/*
-.mis_pag_popu1 .fa-star {
-    color: #0065FC;
-    padding-top: 2.5em;
-    
-}*/
-
-/*
-.mis_pag_popu1 div{
-    display: flex;
-    flex-direction: row;
-}*/
-
-
-
-
-
-/*Au coeur de l'eau Chambres d'hôtes*/
-
-.au_coeur_de_l_eau {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    background-color: white;
-    border: 5px solid white;
-    border-bottom: 3.5px;
-    border-radius: 12px;
-}
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_coeur_de_l_eau{
     font-weight: bold;
@@ -594,26 +544,38 @@ section{
 .texte_normal_coeur_de_l_eau{
     font-weight: normal;
 }
+/*Texte mis en gras et normal sous photos*/
+
 .au_coeur_de_l_eau_fullstar{
     color: #0065FC;
 }
 .au_coeur_de_l_eau_emptystar{
     color: #F2F2F2;
 }
-/*FIN Au coeur de l'eau Chambres d'hôtes */
-
+.au_coeur_de_l_eau .fa-star {
+    padding-top: 2.5em;
+}
+/* FIN Au coeur de l'eau Chambres d'hôtes*/
 
 /*Hôtel Tout bleu et Blanc*/
-
-.hotel_tout_bleu_Blanc {
+.hotel_tout_bleu_blanc{
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
     background-color: white;
+    margin-left: 3em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4%;
     border: 5px solid white;
-    border-bottom: 3.5px;
-    border-radius: 12px;
+    border-bottom: 5em;
+    padding: .1em;
 }
+
+.hotel_tout_bleu_blanc img {
+    border: 0px;
+    border-radius: 12px 0px 0px 12px;
+}
+
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_tout_bleu_blanc{
     font-weight: bold;
@@ -621,94 +583,98 @@ section{
 .texte_normal_tout_bleu_blanc{
     font-weight: normal;
 }
+/*Texte mis en gras et normal sous photos*/
+
 .hotel_tout_bleu_blanc_fullstar{
     color: #0065FC;
 }
 .hotel_tout_bleu_blanc_emptystar{
     color: #F2F2F2;
 }
+.hotel_tout_bleu_blanc .fa-star {
+    padding-top: 2.5em;
+}
+/* FIN Hôtel Tout bleu et Blanc */
 
-/* FIN Hôtel Tout bleu et Blanc*/
-/* FIN Les plus populaires*/
 
-
-/*Activités à Marseille*/
-
-#activites{
-    margin-top: 2em;
+/* Activités à Marseille */
+aside{
+    display: flex;
+    flex-direction: column;
 }
 
-
+.activites {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/
+    /*list-style-type: none;*/
+    text-decoration: none;
+}
 /*Vieux Port*/
-.vieux_port {
-    border: 0px solid white;
-    border-radius: 4%; 
+.vieux_port div {
+    border: 0px solid;
+    border-radius: 4%;
+    padding-bottom: 2em;
 }
 .vieux_port img{
-    border: 0px solid white;
+    border: 0px solid;
     border-radius: 4% 4% 0 0;  
 }
-/*Vieux Port*/
 
 /*Fort de Pomègues + iles du Frioul*/
+
+.group_pomegue_frioul {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 4% 4% 0 0;
+}
+.group_pomegue_frioul img{
+    border: 0px solid ;
+    border-radius: 4% 4% 0 0;
+}
+
 .group_pomegue_frioul{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border: 0px solid white;
-    border-radius: 4%;
-}
-
-/* Notre-Dame-de-la-Garde + Parc Longchamps*/
-.group_not_dam_par_long img{
-    border: 0px solid;
-    border-radius: 4%;  
-}
-.group_not_dam_par_long {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border: 0px solid white;
-    border-radius: 4%;
-}
-.not_dam{
     border: 0px solid ;
-    border-radius: 4%;  
+    border-radius: 4% 4% 0 0;
 }
 
-.not_dam img{
-    border: 0px solid ;
-    border-radius: 4% 4% 0 0;  
-}
-
-.par_long{
-    border: 0px solid ;
-    border-radius: 4%;  
-}
-.par_long img{
-    border: 0px solid ;
-    border-radius: 4% 4% 0 0;  
-}
-
-/*FIN Activités à Marseille*/
-
+/*FIN Fort de Pomègues + iles du Frioul*/
 
 /*"Parc national des Calanques*/
 .parc_calan {
-    border: 0px solid white;
-    border-radius: 4%;  
+    border: 0px solid;
+    border-radius: 4% 4% 0 0;  
 }
-/*
+
 .parc_calan img{
-    border: solid white;
-    border-radius: 4% 4% 0 0;
-}*/
-
-
+    border: 0px solid;
+    border-radius: 4% 4% 0 0;  
+}
 /* FIN Parc national des Calanques*/
 
 
-/*Activités à Marseille*/
+/* Notre-Dame-de-la-Garde + Parc Longchamps*/
+
+.group_not_dam_par_long {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 4% 4% 0 0;
+}
+.group_not_dam_par_long img{
+    border: 0px solid ;
+    border-radius: 4% 4% 0 0;  
+}
+.group_not_dam_par_long{
+    border: 0px solid ;
+    border-radius: 4% 4% 0 0;  
+}
+/* FIN Notre-Dame-de-la-Garde + Parc Longchamps*/
+
+
 
 
 /* PIED DE PAGE */
@@ -734,6 +700,7 @@ section{
     display: flex;
     flex-direction: column;
 }
+
 
 footer > div span {
     font-weight: bold;
