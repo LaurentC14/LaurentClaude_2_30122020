@@ -22,10 +22,14 @@ body
 /* Mise en place liens navigation */
 
 .nav_logo-li{
-    display: flex;
     justify-content: space-between;
     width: 80%;
 }
+.align_liens{
+    display: flex;
+    align-items: flex-end;
+}
+
 ul {
     display: flex;
     list-style-type: none;  /*suppression des puces de navig*/
@@ -81,6 +85,16 @@ nav a:hover {
 }
 /*FIN Mise en place liens navigation*/
 
+/*Marge entre titre en H2 et phrase en p*/
+.trouver_hebergt{
+    margin: 0;
+    margin-bottom: .5em;
+}
+.centr_ville{
+    font-size: 20px;
+    margin: 0;
+}
+/*FIN Marge entre titre en H2 et phrase en p*/
 
 /*Mise en place barre rechercher*/
 .recherche {
@@ -504,24 +518,69 @@ div .hotel_amina a {
     border: 5px solid white;
     border-bottom: 5em;
 }
+/* Mise Cote à cote de Hebergement et Les plus populaires*/
+/*section{
+    display: flex;
+    flex-direction: row;
+}*/
+/* Titre Les plus populaires*/
+/*Flex sur le titre et l'icone*/
+.titre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Titre Les plus populaires*/
+
+.hotel_soleil_matin{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /*margin-left: 3em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4%;
+    border-bottom: 5em;
+    padding: .1em;*/
+}
 
 
 
 
 
 
+.hotel_soleil_matin img {
+    border: 0px;
+    border-radius: 12px 0px 0px 12px;
+}
 
+/*Texte mis en gras et normal sous photos*/
+.texte_gras_soleil_matin{
+    font-weight: bold;
+}
+.texte_normal_soleil_matin{
+    font-weight: normal;
+}
+/*Texte mis en gras et normal sous photos*/
 
-
-
+.hotel_soleil_matin_fullstar{
+    color: #0065FC;
+}
+.hotel_soleil_matin_emptystar{
+    color: #F2F2F2;
+}
+.hotel_soleil_matin .fa-star {
+    padding-top: 2.5em;
+}
+div .hotel_soleil_matin a { /*PAS OK VOIR au_coeur_de_l_eau*/
+    text-decoration: none;
+}
+/* FIN Hôtel le soleil du matin */
 
 
 
 /* Activités à Marseille */
-/*aside{
-    display: flex;
-    
-}*/
+
 
 /*.activites_marseille {
     display: flex;
