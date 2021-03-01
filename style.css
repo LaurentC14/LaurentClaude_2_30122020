@@ -88,7 +88,7 @@ nav a:hover {
 /*Marge entre titre en H2 et phrase en p*/
 .trouver_hebergt{
     margin: 0;
-    margin-bottom: .5em;
+    margin-bottom: .3em;
 }
 .centr_ville{
     font-size: 20px;
@@ -274,13 +274,17 @@ nav a:hover {
 
 /*FlexBox des blocs hébergement + Les plus populaires*/
 
+.plus_logemt{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
 /*Première ligne de photos*/
 .pre_ligne_photo {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 2em;
-    padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -289,14 +293,15 @@ nav a:hover {
 }
 
 .titre_hebergt{
-    padding-top: 1.5em;
-    padding-left: 3em;
+    padding-top: 1.1em;
+    padding-left: 2em;
 }
 
 .hebergt_marseil{
     background-color: #F2F2F2;
     border-radius: 4%;
     padding-bottom: 1em;
+    margin-bottom: 2em;
 }
 /*Auberge La Cannebière*/
 .auberge_cannebiere {
@@ -326,6 +331,7 @@ nav a:hover {
 }
 div .auberge_cannebiere a {
     text-decoration: none;
+    line-height: .5em;
 }
 /*FIN Auberge La Cannebière*/
 
@@ -354,6 +360,7 @@ div .auberge_cannebiere a {
 }
 div .hotel_port a {
     text-decoration: none;
+    line-height: .5em;
 }
 /*FIN Hôtel du port*/
 
@@ -385,6 +392,7 @@ div .hotel_port a {
 }
 div .hotel_mouettes a {
     text-decoration: none;
+    line-height: .5em;
 }
 /*FIN Hôtel Les Mouettes*/
 
@@ -416,9 +424,11 @@ div .hotel_mouettes a {
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_mer{
     font-weight: bold;
+    color: black;
 }
 .texte_normal_mer{
     font-weight: normal;
+    color: black;
 }
 /*Modif color des icones étoiles*/
 .hotel_de_mer_fullstar {
@@ -430,6 +440,7 @@ div .hotel_mouettes a {
 }
 div .hotel_de_mer a {
     text-decoration: none;
+    line-height: .5em;
 }
 /*FIN Hôtel de la mer*/
 
@@ -452,9 +463,11 @@ div .hotel_de_mer a {
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_panier{
     font-weight: bold;
+    color: black;
 }
 .texte_normal_panier{
     font-weight: normal;
+    color: black;
 }
 /*Modif color des icones étoiles*/
 .auberge_panier_fullstar {
@@ -466,12 +479,13 @@ div .hotel_de_mer a {
 }
 div .auberge_panier a {
     text-decoration: none;
+    line-height: .5em;
 }
 /*FIN Auberge Le Panier*/
 
 .titre_afficher_plus{
     font-size: 1.3em;
-    padding-left: 4em;
+    padding-left: 2.5em;
 }
 
 /*Hôtel chez Amina*/
@@ -486,9 +500,11 @@ div .auberge_panier a {
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_amina{
     font-weight: bold;
+    color: black;
 }
 .texte_normal_amina{
     font-weight: normal;
+    color: black;
 }
 /*Modif color des icones étoiles*/
 .auberge_panier_fullstar {
@@ -496,6 +512,7 @@ div .auberge_panier a {
 }
 div .hotel_amina a {
     text-decoration: none;
+    line-height: .5em;
 }
 /*FIN Hôtel chez Amina*/
 
@@ -514,11 +531,11 @@ section{
     flex-direction: column;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
-    border-radius: 12px;
+    border-radius: 4%;
     margin-left: 3em;
-    padding-left: 2em;
-    padding-bottom: 14em;
-    padding-right: 40em;
+    padding-left: 3em;
+    padding-right: 4em;
+    padding-bottom: 3em;
 }
 
 /*Hôtel le soleil*/
@@ -570,7 +587,6 @@ section{
 
 .titre i {
     display: flex;
-    float: right; /* A VIRER */ 
 }
 
 /*Texte mis en gras sous photos*/
@@ -667,21 +683,22 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 3em;
-    padding-bottom: 5em;
+    padding-top: 1.4em;
     padding-left: 1em;
     padding-right: 3em;
     background-color: #F2F2F2;
     line-height: 2.5em;
+    
 }
 .a_propos{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: black;
+    
 }
 .gras_propos{
     font-weight: bold;
+    color: black;
 }
 .nos_hebergt{
     display: flex;
@@ -690,6 +707,7 @@ section{
 }
 .gras_hebergt{
     font-weight: bold;
+    color: black;
 }
 .assistance{
     display: flex;
@@ -698,5 +716,6 @@ section{
 }
 .gras_assist{
     font-weight: bold;
+    color: black;
 }
 /* FIN PIED DE PAGE */
