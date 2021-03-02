@@ -309,10 +309,11 @@ nav a:hover {
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
-    border-radius: 12px;
+    border-radius: 4%;
+    text-decoration: none;
 }
 .auberge_cannebiere img {
-    border-radius: 12px 12pX 0 0;
+    border-radius: 4% 4% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_canneb{
@@ -320,6 +321,7 @@ nav a:hover {
 }
 .texte_normal_canneb{
     font-weight: normal;
+    text-decoration: none;
 }
 /*Modif color des icones étoiles*/
 .auberge_cannebiere_fullstar {
@@ -329,10 +331,7 @@ nav a:hover {
 .auberge_cannebiere_emptystar {
     color: #F2F2F2;
 }
-div .auberge_cannebiere a {
-    text-decoration: none;
-    line-height: .5em;
-}
+
 /*FIN Auberge La Cannebière*/
 
 
@@ -342,10 +341,11 @@ div .auberge_cannebiere a {
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
-    border-radius: 12px;
+    border-radius: 4%;
+    text-decoration: none;
 }
 .hotel_port img {
-    border-radius: 12px 12pX 0 0;
+    border-radius: 4% 4% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_port{
@@ -367,14 +367,15 @@ div .hotel_port a {
 
 /*Hôtel Les Mouettes*/
 .hotel_mouettes {
-    /*display: flex;*/
+    display: flex;
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
-    border-radius: 12px;
+    border-radius: 4%;
+    text-decoration: none;
 }
 .hotel_mouettes img {
-    border-radius: 12px 12pX 0 0;
+    border-radius: 4% 4% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_mouette{
@@ -416,10 +417,10 @@ div .hotel_mouettes a {
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
-    border-radius: 12px;
+    border-radius: 4%;
 }
 .hotel_de_mer img {
-    border-radius: 12px 12pX 0 0;
+    border-radius: 4% 4% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_mer{
@@ -455,10 +456,10 @@ div .hotel_de_mer a {
     flex-direction: column;
     background-color: white;
     border: 5px solid white;
-    border-radius: 12px;
+    border-radius: 4%;
 }
 .auberge_panier img {
-    border-radius: 12px 12pX 0 0;
+    border-radius: 4% 4% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_panier{
@@ -492,10 +493,10 @@ div .auberge_panier a {
 .hotel_amina {
     background-color: white;
     border: 5px solid white;
-    border-radius: 12px;
+    border-radius: 4%;
 }
 .hotel_amina img {
-    border-radius: 12px 12pX 0 0;
+    border-radius: 4% 4% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_amina{
@@ -562,7 +563,7 @@ section{
 
 .hotel_soleil_matin img {
     border: 0px;
-    border-radius: 12px 0 0 12px;
+    border-radius: 4% 0 0 4%;
 }
 
 /*Texte mis en gras sous photos*/
@@ -604,11 +605,11 @@ section{
     background-color: white;
     border: 5px solid white;
     border-bottom: 1px;
-    border-radius: 12px;
+    border-radius: 4%;
 }
 .au_coeur_de_l_eau img {
     border: 0px;
-    border-radius: 12px 0 0 12px;
+    border-radius: 4% 0 0 4%;
 }
 .au_coeur_de_l_eau p{
     padding-left: 1em;
@@ -642,12 +643,12 @@ section{
     background-color: white;
     border: 5px solid white;
     border-bottom: 3.5px;
-    border-radius: 12px;
+    border-radius: 4%;
 }
 
 .hotel_tout_bleu_blanc img {
     border: 0px;
-    border-radius: 12px 0 0 12px;
+    border-radius: 4% 0 0 4%;
 }
 
 .hotel_tout_bleu_blanc p{
@@ -679,43 +680,36 @@ section{
 
 
 /* PIED DE PAGE */
-.titre{
+
+.foot {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 1.4em;
-    padding-left: 1em;
-    padding-right: 3em;
+    justify-content: space-between;
     background-color: #F2F2F2;
-    line-height: 2.5em;
-    
+    border: 1px solid #F2F2F2;
 }
-.a_propos{
+.left_text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
 }
-.gras_propos{
-    font-weight: bold;
-    color: black;
-}
-.nos_hebergt{
+.middle_text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-.gras_hebergt{
-    font-weight: bold;
-    color: black;
-}
-.assistance{
+.right_text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-.gras_assist{
+footer > div span {
     font-weight: bold;
-    color: black;
 }
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    margin: 0em;
+    padding: 1em;
+    line-height: 1px;
+}
+
+
 /* FIN PIED DE PAGE */
