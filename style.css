@@ -138,6 +138,12 @@ nav a:hover {
 .filtre {
     display: flex;
     justify-content: space-between;
+}
+
+.fa_money {
+    display: flex;
+    border: 1px solid #ddebfe;
+    border-radius: 3em;
     align-items: center;
 }
 .fa_money i {
@@ -148,15 +154,8 @@ nav a:hover {
     border-radius: 50%;
     content: "\f3d1";
 }
-.fa_money {
-    display: flex;
-    border: 1px solid #ddebfe;
-    border-radius:3em;
-    align-items: center;
-}
-.fa-money{
-    background-color: #ddebfe;
-    color: #0065FC;
+.fa.fa-money:before {
+    content: "\f3d1";
 }
 .fa-money a{
     margin: 1.5em;
@@ -164,19 +163,16 @@ nav a:hover {
 .fa_money a:hover{
     color: #0065FC;
 }
-.fa_child i{
+
+.fa_child{
     display: flex;
-    justify-content: space-around;
+    border: 1px solid #ddebfe;
+    border-radius: 4%;
     flex-direction: row;
     width: auto;
     border: 1em solid #ddebfe;
     border-radius: 3em;
     content: "\f3d1";
-}
-.fa_child {
-    display: flex;
-    border: 1px solid #ddebfe;
-    border-radius:3em;
     padding-right: 1em;
     align-items: center;
 }
@@ -235,10 +231,7 @@ nav a:hover {
 }
 .filtre {
     display: flex;
-}
-.filtre > div a{
     margin: 2.5em;
-    text-decoration: none;
     color: black;
     font-weight: bold; 
 }
@@ -305,8 +298,8 @@ nav a:hover {
 }
 /*Auberge La Cannebière*/
 .auberge_cannebiere {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
     background-color: white;
     border: 5px solid white;
     border-radius: 4%;
@@ -337,8 +330,8 @@ nav a:hover {
 
 /*Hôtel du port*/
 .hotel_port {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
     background-color: white;
     border: 5px solid white;
     border-radius: 4%;
@@ -367,8 +360,8 @@ div .hotel_port a {
 
 /*Hôtel Les Mouettes*/
 .hotel_mouettes {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
     background-color: white;
     border: 5px solid white;
     border-radius: 4%;
@@ -414,10 +407,11 @@ div .hotel_mouettes a {
 /*Hôtel de la mer*/
 .hotel_de_mer {
     /*display: flex;*/
-    flex-direction: column;
+    /*flex-direction: column;*/
     background-color: white;
     border: 5px solid white;
     border-radius: 4%;
+    text-decoration: none;
 }
 .hotel_de_mer img {
     border-radius: 4% 4% 0 0;
@@ -452,11 +446,12 @@ div .hotel_de_mer a {
 
 /*Auberge Le Panier*/
 .auberge_panier {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
     background-color: white;
     border: 5px solid white;
     border-radius: 4%;
+    text-decoration: none;
 }
 .auberge_panier img {
     border-radius: 4% 4% 0 0;
@@ -494,6 +489,7 @@ div .auberge_panier a {
     background-color: white;
     border: 5px solid white;
     border-radius: 4%;
+    text-decoration: none;
 }
 .hotel_amina img {
     border-radius: 4% 4% 0 0;
@@ -530,7 +526,6 @@ section{
 .les_plus_pop {
     display: flex;
     flex-direction: column;
-    background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 4%;
     margin-left: 3em;
@@ -548,7 +543,7 @@ section{
     background-color: white;
     border: 5px solid white;
     /*border-bottom: 3.5px;*/
-    border-radius: 12px;
+    border-radius: 4%;
 }
 
 .hotel_soleil_matin p{
@@ -557,7 +552,7 @@ section{
 }
 
 .hotel_soleil_matin .fa-star {
-    color: blue;
+    color: #0065FC;
     padding-top: 2.5em;
 }
 
@@ -656,10 +651,12 @@ section{
     padding-right: 2em;
 }
 
-.hotel_tout_bleu_blanc .fa-star {
+.hotel_tout_bleu_blanc_fullstar{
     color: #0065FC;
     padding-top: 2.5em;
-    
+}
+.hotel_tout_bleu_blanc_emptystar{
+    color: #F2F2F2;
 }
 .texte_gras_tout_bleu_blanc{
     font-weight: bold;
@@ -673,9 +670,32 @@ section{
 
 
 /* Activités à Marseille */
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
 
-
-
+/*Vieux Port*/
+.vieux_port img{
+    border: 0px solid;
+    border-radius: 4%;
+    padding-bottom: 2em;
+    text-decoration: none;
+}
+/*FIN Vieux Port*/
+.group_pomegue_frioul {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 4% 4% 0 0;
+}
+.group_pomegue_frioul img{
+    border: 0px solid ;
+    border-radius: 4% 4% 0 0;
+}
 
 
 
