@@ -138,138 +138,164 @@ nav a:hover {
 .filtre {
     display: flex;
     justify-content: space-between;
-}
-
-.fa_money {
-    display: flex;
-    border: 1px solid #ddebfe;
-    border-radius: 3em;
     align-items: center;
-}
-.fa_money i {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    border: 1em solid #ddebfe;
-    border-radius: 50%;
-    content: "\f3d1";
-}
-.fa.fa-money:before {
-    content: "\f3d1";
-}
-.fa-money a{
-    margin: 1.5em;
-}
-.fa_money a:hover{
-    color: #0065FC;
+    padding-bottom: 2em;
+    color: black;
+    font-weight: bold; 
 }
 
-.fa_child{
+.argent i{
     display: flex;
-    border: 1px solid #ddebfe;
-    border-radius: 4%;
+    justify-content: space-between;
     flex-direction: row;
     width: auto;
     border: 1em solid #ddebfe;
     border-radius: 3em;
-    content: "\f3d1";
-    padding-right: 1em;
-    align-items: center;
+    content: "\f3d1";   
 }
-.fa-child{
-    background-color: #ddebfe;
-    color: #0065FC;
-}
-.fa_child a:hover{
-    color: #0065FC;
-}
-.fa_heart i{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    width: auto;
-    border: 1em solid #ddebfe;
-    border-radius: 3em;
-    content: "\f3d1";
-}
-.fa_heart {
+.argent {
     display: flex;
     border: 1px solid #ddebfe;
     border-radius:3em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 3em;
+    align-items: center;
+}
+.argent a{
+    text-decoration: none;
+}
+.argent a:hover{
+    color: #0065FC;
+}
+.fa-money-bill-wave{
+    background-color: #ddebfe;
+    color: #0065FC;    
+}
+.enfant i{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: auto;
+    border: 1em solid #ddebfe;
+    border-radius: 3em;
+    content: "\f3d1";
+}
+.enfant {
+    display: flex;
+    border: 1px solid #ddebfe;
+    border-radius:3em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
     padding-right: 1em;
     align-items: center;
+    text-align: center;
+}
+.enfant a:hover{
+    color: #0065FC;
+}
+.enfant a{
+    text-decoration: none;
+}
+.fa-child{
+    background-color: #ddebfe;
+    color: #0065FC;    
+}
+.coeur i{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: auto;
+    border: 1em solid #ddebfe;
+    border-radius: 3em;
+    content: "\f3d1";
+}
+.coeur {
+    display: flex;
+    border: 1px solid #ddebfe;
+    border-radius:3em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 1em;
+    align-items: center;
+    text-align: center;
+}
+.coeur a:hover{
+    color: #0065FC;
+}
+.coeur a{
+    text-decoration: none;
 }
 .fa-heart{
     background-color: #ddebfe;
     color: #0065FC;    
 }
-.fa_heart a:hover{
-    color: #0065FC;
-}
-.fa_dog i{
+.chien i{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     width: auto;
     border: 1em solid #ddebfe;
     border-radius: 3em;
     content: "\f3d1";
 }
-.fa_dog {
+.chien {
     display: flex;
     border: 1px solid #ddebfe;
     border-radius:3em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
     padding-right: 1em;
     align-items: center;
+    text-align: center;
+}
+.chien a:hover{
+    color: #0065FC;
+}
+.chien a{
+    text-decoration: none;
 }
 .fa-dog{
     background-color: #ddebfe;
     color: #0065FC;    
 }
-.fa_dog a:hover{
-    color: #0065FC;
-}
-.filtre {
-    display: flex;
-    margin: 2.5em;
-    color: black;
-    font-weight: bold; 
-}
+
 .info p{
     font-weight: normal;
-    color: black;
-    padding-left: 1em;
 }
+
 .info i{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     width: auto;
     border: 1em solid #ddebfe;
     border-radius: 3em;
-    /*content: "\f3d1";*/
-}
-.info {
-    margin-top: 3em;
-    display: flex;
-    /*content: "\f3d1";*/
+    content: "\f3d1";
+    margin: 1em;
     color: #0065FC;
-    margin-bottom: 2em;
 }
 
-/*Bloc de photo hébergement*/
-/*Hébergements à Marseille*/
-
-/*FlexBox des blocs hébergement + Les plus populaires*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*border-radius: 4%;*/
-
-/*FlexBox des blocs hébergement + Les plus populaires*/
-
-.plus_logemt{
-    margin-bottom: 2em;
-    margin-top: 2em;
+.fa-info{
+    background-color: #ddebfe;
+    color: #0065FC;    
+}
+.info{
+    display: flex;
+    align-items: center;
+    border-radius:3em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    padding-right: 1em;
+    text-align: center;
+}
+.fa-info :before {
+    content: "\f3d1";
 }
 
 /*Première ligne de photos*/
@@ -298,8 +324,6 @@ nav a:hover {
 }
 /*Auberge La Cannebière*/
 .auberge_cannebiere {
-    /*display: flex;*/
-    /*flex-direction: column;*/
     background-color: white;
     border: 5px solid white;
     border-radius: 4%;
@@ -330,8 +354,6 @@ nav a:hover {
 
 /*Hôtel du port*/
 .hotel_port {
-    /*display: flex;*/
-    /*flex-direction: column;*/
     background-color: white;
     border: 5px solid white;
     border-radius: 4%;
@@ -360,8 +382,6 @@ div .hotel_port a {
 
 /*Hôtel Les Mouettes*/
 .hotel_mouettes {
-    /*display: flex;*/
-    /*flex-direction: column;*/
     background-color: white;
     border: 5px solid white;
     border-radius: 4%;
@@ -406,8 +426,6 @@ div .hotel_mouettes a {
 
 /*Hôtel de la mer*/
 .hotel_de_mer {
-    /*display: flex;*/
-    /*flex-direction: column;*/
     background-color: white;
     border: 5px solid white;
     border-radius: 4%;
@@ -446,8 +464,6 @@ div .hotel_de_mer a {
 
 /*Auberge Le Panier*/
 .auberge_panier {
-    /*display: flex;*/
-    /*flex-direction: column;*/
     background-color: white;
     border: 5px solid white;
     border-radius: 4%;
@@ -518,10 +534,10 @@ div .hotel_amina a {
 
 /*Les plus populaires*/
 /* Cote à cote de Hebergement et Les plus populaires*/
-section{
+/*section{
     display: flex;
     flex-direction: row;
-}
+}*/
 
 .les_plus_pop {
     display: flex;
@@ -536,13 +552,13 @@ section{
 
 /*Hôtel le soleil*/
 
-.hotel_soleil_matin {
+.hotel_soleil_matin{
     display: flex;
     flex-direction: row;
     margin-bottom: 2em;
     background-color: white;
     border: 5px solid white;
-    /*border-bottom: 3.5px;*/
+    border-bottom: 3.5px;
     border-radius: 4%;
 }
 
@@ -677,26 +693,98 @@ aside {
     list-style-type: none;
 }
 
+aside{
+    margin-top: 5em;
+}
+
 /*Vieux Port*/
-.vieux_port img{
-    border: 0px solid;
+
+.v_port {
+    border: 1px solid #DEEBFF;
     border-radius: 4%;
-    padding-bottom: 2em;
     text-decoration: none;
 }
+.v_port img{
+    border-radius: 4% 4% 0 0;
+}
+.v_port p{
+    padding-left: 1.5em;
+}
+
 /*FIN Vieux Port*/
+
+/*Fort de Pomègues + iles du Frioul*/
+/*Fort de Pomègues*/
+.pomegue{
+    border: 1px solid #DEEBFF;
+    border-radius: 4%;
+    text-decoration: none;
+}
+.pomegue img{
+    border-radius: 4% 4% 0 0;
+    margin-bottom: 3em;
+}
+.frioul{
+    border: 1px solid #DEEBFF;
+    border-radius: 4%;
+    text-decoration: none;
+}
+.frioul img{
+    border-radius: 4% 4% 0 0;
+}
 .group_pomegue_frioul {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border: 0px solid white;
     border-radius: 4% 4% 0 0;
 }
 .group_pomegue_frioul img{
-    border: 0px solid ;
+    border: 0px solid #DEEBFF ;
     border-radius: 4% 4% 0 0;
 }
 
+/*Parc national des Calanques*/
+.calanq {
+    border: 1px solid #DEEBFF;
+    border-radius: 4%;
+    text-decoration: none;
+}
+.calanq img{
+    border-radius: 4% 4% 0 0;
+}
+.calanq p{
+    padding-left: 1.5em;
+}
+/*FIN Parc national des Calanques*/
+
+/*Notre-Dame-de-la-Garde + Parc Longchamps*/
+/*Fort de Pomègues*/
+.not_dam{
+    border: 1px solid #DEEBFF;
+    border-radius: 4%;
+    text-decoration: none;
+}
+.not_dam img{
+    border-radius: 4% 4% 0 0;
+    margin-bottom: 3em;
+}
+.par_long{
+    border: 1px solid #DEEBFF;
+    border-radius: 4%;
+    text-decoration: none;
+}
+.par_long img{
+    border-radius: 4% 4% 0 0;
+}
+.group_n_dame_longcham {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4% 4% 0 0;
+}
+.group_n_dame_longcham img{
+    border: 0px solid #DEEBFF ;
+    border-radius: 4% 4% 0 0;
+    margin-bottom: 3em;
+}
 
 
 /* PIED DE PAGE */
