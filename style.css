@@ -3,8 +3,8 @@
     font-family: 'Raleway';
     src: url('polices/Raleway.eot');
     src: url('polices/Raleway.eot?#iefix') format('embedded-opentype'),
-         url('polices/Raleway.woff') format('woff'),
-         url('polices/Raleway.ttf') format('truetype'),
+         /*url('polices/Raleway.woff') format('woff'),*/
+         /*url('polices/Raleway.ttf') format('truetype'),*/
       url('polices/Raleway.svg#Raleway') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -24,6 +24,7 @@ body
 .nav_logo-li{
     justify-content: space-between;
     width: 80%;
+    text-decoration: none;
 }
 .align_liens{
     display: flex;
@@ -39,54 +40,61 @@ ul {
 /*Alignement texte des liens navigation*/
 .padd_hebergt{
     padding: 1.5em;
+    color: black;
+    font-weight: bold;
     text-decoration: none;
+    font-size: 1.3em;
+    padding-bottom: .3em;
 }
-.padd_activ{
-    padding: 1.5em;
-    text-decoration: none;
+.lien_heber a:hover{
+    text-decoration: overline;
+    color: #0065FC;
 }
-.padd_s_insscrire{
-    padding: 1.5em;
-    text-decoration: none;
-}
-
-.lien_heber
- {
+.lien_heber{
     line-height: 3em;
 }
-.padd_hebergt{
+
+.padd_activ{
+    padding: 1.5em;
     color: black;
-    
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding-bottom: .3em;
+}
+.lien_activite a:hover{
+    text-decoration: overline;
+    color: #0065FC;
 }
 .lien_activite{
     line-height: 3em;
 }
-.padd_activ{
-    color: black;
+.padd_s_insscrire{
+    padding: 1.5em;
+    color: #0065FC;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding-bottom: .3em;
+}
+.lien_s_inscrire a:hover{
+    text-decoration: overline;
+    color: #0065FC;
 }
 .lien_s_inscrire {
     line-height: 3em;
 }
-.padd_s_insscrire{
-    color: #0065FC;
-}
-nav a                       
-{
-    font-size: 1.3em;
-    padding-bottom: .3em;
-    text-decoration: none;
-}
 
 /*Apparence au survol liens navig*/
-nav a:hover {
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
-    padding-top: 1.5em;
-}
+
+
+
+
 /*FIN Mise en place liens navigation*/
 
 /*Marge entre titre en H2 et phrase en p*/
 .trouver_hebergt{
+    padding-top: 1em;
     margin: 0;
     margin-bottom: .3em;
 }
@@ -101,17 +109,23 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     width: 30%;
-    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
     border-radius: 4%;
-    margin-bottom: 1em;
+    margin-bottom: 1em;   
 }
 .ico_rech {
     border: 1px solid #DEEBFF;
-    border-radius: 14% 0 0 14%;
+    border-radius: 25% 0 0 25%;
     background-color: #F2F2F2;
     width: 5%;
     padding: 1em;
+    line-height: 1.3em;
 }
+.recherche i{
+    height: 1.5em;
+}
+
 /*Barre de recherche*/
 .tex_rech{
     border: 1px solid #F2F2F2;
@@ -125,7 +139,7 @@ nav a:hover {
 .bout_rech{
     color: white;
     border: 1px solid #F2F2F2;
-    border-radius: 0 10% 10% 0;
+    border-radius: 0 12% 12% 0;
     padding-left: 1.5em;
     padding-right: 1.5em;
     background-color: #0065FC;
@@ -141,9 +155,13 @@ nav a:hover {
     align-items: center;
     padding-bottom: 2em;
     color: black;
-    font-weight: bold; 
+    font-weight: bold;
+    margin-right: 10em;  
 }
-
+.filtre a {
+    font-size: 1.1em;
+    color: black;
+}
 .argent i{
     display: flex;
     justify-content: space-between;
@@ -155,16 +173,18 @@ nav a:hover {
 }
 .argent {
     display: flex;
-    border: 1px solid #ddebfe;
+    border: 3px solid #ddebfe;
     border-radius:3em;
     padding-top: 0em;
     padding-bottom: 0em;
-    padding-left: 0em;
+    /*padding-left: 0em;*/
     padding-right: 3em;
     align-items: center;
 }
 .argent a{
     text-decoration: none;
+    padding-left: 1em;
+    font-size: 1.1em;
 }
 .argent a:hover{
     color: #0065FC;
@@ -184,12 +204,12 @@ nav a:hover {
 }
 .enfant {
     display: flex;
-    border: 1px solid #ddebfe;
+    border: 3px solid #ddebfe;
     border-radius:3em;
     padding-top: 0em;
     padding-bottom: 0em;
     padding-left: 0em;
-    padding-right: 1em;
+    padding-right: 3em;
     align-items: center;
     text-align: center;
 }
@@ -198,6 +218,8 @@ nav a:hover {
 }
 .enfant a{
     text-decoration: none;
+    padding-left: 1em;
+    font-size: 1.1em;
 }
 .fa-child{
     background-color: #ddebfe;
@@ -214,20 +236,22 @@ nav a:hover {
 }
 .coeur {
     display: flex;
-    border: 1px solid #ddebfe;
+    border: 3px solid #ddebfe;
     border-radius:3em;
     padding-top: 0em;
     padding-bottom: 0em;
     padding-left: 0em;
-    padding-right: 1em;
+    padding-right: 2em;
     align-items: center;
-    text-align: center;
+    /*text-align: center;*/
 }
 .coeur a:hover{
     color: #0065FC;
 }
 .coeur a{
     text-decoration: none;
+    padding-left: 1em;
+    font-size: 1.1em;
 }
 .fa-heart{
     background-color: #ddebfe;
@@ -244,12 +268,12 @@ nav a:hover {
 }
 .chien {
     display: flex;
-    border: 1px solid #ddebfe;
+    border: 3px solid #ddebfe;
     border-radius:3em;
     padding-top: 0em;
     padding-bottom: 0em;
     padding-left: 0em;
-    padding-right: 1em;
+    padding-right: 1.5em;
     align-items: center;
     text-align: center;
 }
@@ -258,6 +282,8 @@ nav a:hover {
 }
 .chien a{
     text-decoration: none;
+    padding-left: 1em;
+    font-size: 1.1em;
 }
 .fa-dog{
     background-color: #ddebfe;
@@ -266,6 +292,7 @@ nav a:hover {
 
 .info p{
     font-weight: normal;
+    font-size: 1.1em;
 }
 
 .info i{
@@ -318,7 +345,7 @@ nav a:hover {
 
 .hebergt_marseil{
     background-color: #F2F2F2;
-    border-radius: 4%;
+    border-radius: 2%;
     padding-bottom: 1em;
     margin-bottom: 2em;
 }
@@ -326,11 +353,11 @@ nav a:hover {
 .auberge_cannebiere {
     background-color: white;
     border: 5px solid white;
-    border-radius: 4%;
+    border-radius: 10%;
     text-decoration: none;
 }
 .auberge_cannebiere img {
-    border-radius: 4% 4% 0 0;
+    border-radius: 10% 10% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_canneb{
@@ -360,7 +387,7 @@ nav a:hover {
     text-decoration: none;
 }
 .hotel_port img {
-    border-radius: 4% 4% 0 0;
+    border-radius: 10% 10% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_port{
@@ -384,11 +411,11 @@ div .hotel_port a {
 .hotel_mouettes {
     background-color: white;
     border: 5px solid white;
-    border-radius: 4%;
+    border-radius: 10%;
     text-decoration: none;
 }
 .hotel_mouettes img {
-    border-radius: 4% 4% 0 0;
+    border-radius: 10% 10% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_mouette{
@@ -428,11 +455,11 @@ div .hotel_mouettes a {
 .hotel_de_mer {
     background-color: white;
     border: 5px solid white;
-    border-radius: 4%;
+    border-radius: 10%;
     text-decoration: none;
 }
 .hotel_de_mer img {
-    border-radius: 4% 4% 0 0;
+    border-radius: 10% 10% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_mer{
@@ -466,11 +493,11 @@ div .hotel_de_mer a {
 .auberge_panier {
     background-color: white;
     border: 5px solid white;
-    border-radius: 4%;
+    border-radius: 10%;
     text-decoration: none;
 }
 .auberge_panier img {
-    border-radius: 4% 4% 0 0;
+    border-radius: 10% 10% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_panier{
@@ -504,11 +531,11 @@ div .auberge_panier a {
 .hotel_amina {
     background-color: white;
     border: 5px solid white;
-    border-radius: 4%;
+    border-radius: 10%;
     text-decoration: none;
 }
 .hotel_amina img {
-    border-radius: 4% 4% 0 0;
+    border-radius: 10% 10% 0 0;
 }
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_amina{
@@ -542,29 +569,29 @@ div .hotel_amina a {
 .les_plus_pop {
     display: flex;
     flex-direction: column;
+    background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
-    border-radius: 4%;
+    border-radius: 3%;
     margin-left: 3em;
-    padding-left: 3em;
-    padding-right: 4em;
+    padding-left: 2em;
+    /*padding-right: 4em;*/
     padding-bottom: 3em;
 }
 
 /*Hôtel le soleil*/
 
-.hotel_soleil_matin{
+.soleil_matin{
     display: flex;
     flex-direction: row;
     margin-bottom: 2em;
-    background-color: white;
     border: 5px solid white;
     border-bottom: 3.5px;
     border-radius: 4%;
 }
 
-.hotel_soleil_matin p{
+.soleil_matin p{
     padding-left: 1em;
-    padding-right: 2em;
+
 }
 
 .hotel_soleil_matin .fa-star {
@@ -574,7 +601,7 @@ div .hotel_amina a {
 
 .hotel_soleil_matin img {
     border: 0px;
-    border-radius: 4% 0 0 4%;
+    border-radius: 10% 0 0 10%;
 }
 
 /*Texte mis en gras sous photos*/
@@ -620,7 +647,7 @@ div .hotel_amina a {
 }
 .au_coeur_de_l_eau img {
     border: 0px;
-    border-radius: 4% 0 0 4%;
+    border-radius: 10% 0 0 10%;
 }
 .au_coeur_de_l_eau p{
     padding-left: 1em;
@@ -659,7 +686,7 @@ div .hotel_amina a {
 
 .hotel_tout_bleu_blanc img {
     border: 0px;
-    border-radius: 4% 0 0 4%;
+    border-radius: 10% 0 0 10%;
 }
 
 .hotel_tout_bleu_blanc p{
