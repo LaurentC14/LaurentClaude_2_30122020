@@ -11,13 +11,12 @@
 </head>
 
 <body>
-                <!--Liens navig dans header-->
+                            <!--Liens navig dans header-->
     <nav>
         <ul>
             <li class="nav_logo-li">
                 <a href="#">
-                    <!--Insertion logo Reservia-->
-                    <img src="img/logo/Reservia.svg" alt="logo">
+                <img src="img/logo/Reservia.svg" alt="logo">    <!--Insertion logo Reservia-->
                 </a>
             </li>
             <li class="lien_heber" class="align_liens">
@@ -35,16 +34,16 @@
         <h1 class="trouver_hebergt">Trouver votre hèbergement pour des vacances de rêve</h1>
         <p class="centr_ville"> En plein centre ville ou en pleine nature</p>
 
-                <!--Barre recherche-->
+                            <!--Barre recherche-->
         <div class="recherche">
             <i class="fa fa-map-marker ico_rech" aria-hidden="true"></i>
             <input type="text" class="tex_rech" placeholder="Marseille, France" required>
             <button type="submit" class="bout_rech">Rechercher</button>
         </div>
     </header>
-                <!--icones des filtres-->
+                            <!--icones des filtres-->
     <section class="filtre">
-        <h2>Filtres</h2>
+        <h3>Filtres</h3>
         <div class="argent">
             <i aria-hidden="true" class="fas fa-money-bill-wave fa-fw" class="fa_money"></i>
             <a href="#" title="Economiques">Economiques</a>
@@ -67,13 +66,13 @@
             <i class="fas fa-info"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-                <!--Zone de recherche-->
+                            <!--Zone de recherche-->
     <div>
         <section class="hebergt_marseil">
             <h2 id="hebergements" class="titre_hebergt">Hébergements à Marseille</h2><!--ancre pour hébergement-->
 
-                <!--___________________Hébergements à Marseille___________________-->
-                <!--___________________Première ligne de photos___________________-->
+                            <!--______________Hébergements à Marseille______________-->
+                            <!--______________Première ligne de photos______________-->
 
             <div class="pre_ligne_photo"> <!--Ne pas pas mettre card photo en ligne 'wrap'-->
                 <!--Auberge La Cannebière-->
@@ -182,75 +181,67 @@
         </aside>
     </div>
     
-                <!--___________________Activités à Marseille___________________-->
+                            <!--______________Activités à Marseille______________-->
 
     <section>
         <h2 id="activites">Activités à Marseille</h2>
-        <!--Vieux Port-->
-        <div class="v_port">
+                
+                <!--Vieux Port-->
+                <div class="v_port">
+                    <a href="#" class="vieux_port"> <!--ancre pour activité-->
+                    <img src="img/activites/4_small/section/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" width="350" height="450" title="Vieux Port" alt="Vieux Port" />
+                    </a>
+                    <p>Vieux Port</p>
+                </div>
 
-            <!--ancre pour activité-->
-            <a href="#" class="vieux_port">
-                <img src="img/activites/4_small/section/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" width="350"
-                    height="450" title="Vieux Port" alt="Vieux Port" />
-            </a>
-            <p>Vieux Port</p>
-        </div>
-        <!--class=group_pomegue_frioul-->
-        <div class="group_pomegue_frioul">
-            <!--Fort de Pomègues-->
-            <a href="#" class="pomegue"><img src="img/activites/4_small/section/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                    width="350" height="175" title="Fort de Pomègues" alt="Fort de Pomègues" /></a>
-            <p>Fort de Pomègues</p>
-            <!--iles du Frioul-->
-            <a href="#" class="frioul"><img src="img/activites/4_small/section/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                    width="350" height="140" title="iles du Frioul" alt="iles du Frioul" /></a>
-            <p>iles du Frioul</p>
-        </div>
-        <!--Parc national des Calanques-->
-        <div class="calanq">
-            <a href="#" class="parc_calan"><img src="img/activites/4_small/section/parc_national_des_calanques.PNG"
-                    width="350" height="450" title="Parc national des Calanques"
-                    alt="Parc national des Calanques" /></a>
-            <p>Parc national des Calanques</p>
-        </div>
-        <!--<div class=group_not_dam_par_long>-->
-        <!--Notre-Dame-de-la-Garde-->
-        <div class="group_n_dame_longcham">
-            <a href="#" class="group_not_dam_par_long" class="not_dam"><img
-                    src="img/activites/4_small/section/florian-wehde-xW9e8gdotxI-unsplash.jpg" width="350" height="175"
-                    title="Notre-Dame-de-la-Garde" alt="Notre-Dame-de-la-Garde" /></a>
-            <p>Notre-Dame-de-la-Garde</p>
-            <!--Parc Longchamps-->
-            <a href="#" class="par_long"><img src="img/activites/4_small/section/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                    width="350" height="175" title="Parc Longchamps" alt="Parc Longchamps" /></a>
-            <p>Parc Longchamps</p>
-        </div>
+                        <!--Fort de Pomègues-->           <!--Groupe Fort de Pomègues + iles du Frioul-->
+                <div class="group_pomegue_frioul">
+                    <a href="#" class="pomegue"><img src="img/activites/4_small/section/paul-hermann-QFTrLdQIRhI-unsplash.jpg" width="350" height="175" title="Fort de Pomègues" alt="Fort de Pomègues" />
+                    </a>
+                    <p>Fort de Pomègues</p>
+
+                        <!--iles du Frioul-->
+                    <a href="#" class="frioul"><img src="img/activites/4_small/section/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" width="350" height="140" title="iles du Frioul" alt="iles du Frioul" /></a>
+                    <p>iles du Frioul</p>
+                </div>
+                
+                        <!--Parc national des Calanques-->
+                <div class="calanq">
+                    <a href="#" class="parc_calan"><img src="img/activites/4_small/section/parc_national_des_calanques.PNG" width="350" height="450" title="Parc national des Calanques" alt="Parc national des Calanques" />
+                    </a>
+                    <p>Parc national des Calanques</p>
+                </div>
+                
+                        <!--Notre-Dame-de-la-Garde-->     <!--Groupe Fort de Pomègues + iles du Frioul-->
+                <div class="group_n_dame_longcham">
+                    <a href="#" class="group_not_dam_par_long" class="not_dam"><img src="img/activites/4_small/section/florian-wehde-xW9e8gdotxI-unsplash.jpg" width="350" height="175" title="Notre-Dame-de-la-Garde" alt="Notre-Dame-de-la-Garde" />
+                    </a>
+                    <p>Notre-Dame-de-la-Garde</p>
+                        <!--Parc Longchamps-->
+                <a href="#" class="par_long"><img src="img/activites/4_small/section/lena-paulin-wH2-EJoDcV0-unsplash.jpg" width="350" height="175" title="Parc Longchamps" alt="Parc Longchamps" />
+                </a>
+                    <p>Parc Longchamps</p>
+                </div>
     </section>
-    <!--___________________PIED DE PAGE___________________-->
+                            <!--______________PIED DE PAGE______________-->
 
-    <footer class="foot">
-
-        <div class="left_text">
-            <a href="#"><span>A propos</span></a>
-            <a href="#">Fonctionnement du site</a>
-            <a href="#">Conditions générales de vente</a>
-            <a href="#">Données et confidentialité</a>
-        </div>
-
-        <div class="middle_text">
-
-            <a href="#"><span>Nos Hébergements</span></a>
-            <a href="#">Charte qualité</a>
-            <a href="#">Soumettre votre hôtel</a>
-        </div>
-        <div class="right_text">
-
-            <a href="#"><span>Assistance</span></a>
-            <a href="#">Centre d'aide</a>
-            <a href="#">Nous contacter</a>
-        </div>
-    </footer>
-</body>
-
+            <footer class="foot">
+                <div class="left_text">
+                    <a href="#"><span>A propos</span></a>
+                    <a href="#">Fonctionnement du site</a>
+                    <a href="#">Conditions générales de vente</a>
+                    <a href="#">Données et confidentialité</a>
+                </div>
+                <div class="middle_text">
+                    <a href="#"><span>Nos Hébergements</span></a>
+                    <a href="#">Charte qualité</a>
+                    <a href="#">Soumettre votre hôtel</a>
+                </div>
+                <div class="right_text">
+                    <a href="#"><span>Assistance</span></a>
+                    <a href="#">Centre d'aide</a>
+                    <a href="#">Nous contacter</a>
+                </div>
+            </footer>
+    </body>
 </html>

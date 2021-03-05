@@ -29,6 +29,7 @@ body
 .align_liens{
     display: flex;
     align-items: flex-end;
+    padding-right: 50em; /*décalage lien sur gauche*/
 }
 
 ul {
