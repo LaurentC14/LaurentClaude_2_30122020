@@ -29,7 +29,6 @@ body
 .align_liens{
     display: flex;
     align-items: flex-end;
-    padding-right: 50em; /*décalage lien sur gauche*/
 }
 
 ul {
@@ -326,29 +325,27 @@ ul {
     content: "\f3d1";
 }
 
-/*Première ligne de photos*/
+/*Hébergements à Marseille*/
 .pre_ligne_photo {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;    
     justify-content: space-around;
     margin: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
+    /*padding-left: 1em;*/
+    /*padding-right: 1em;*/
 }
 .pre_ligne_photo p{
     color: black;
 }
-
 .titre_hebergt{
-    padding-top: 1.1em;
-    padding-left: 2em;
+    padding-top: 2.5em;
+    padding-left: 3em;
 }
-
 .hebergt_marseil{
     background-color: #F2F2F2;
     border-radius: 2%;
-    padding-bottom: 1em;
-    margin-bottom: 2em;
+    padding-bottom: 1.4em;
+    margin-bottom: 2.5em;
 }
 /*Auberge La Cannebière*/
 .auberge_cannebiere {
@@ -356,17 +353,22 @@ ul {
     border: 5px solid white;
     border-radius: 10%;
     text-decoration: none;
+    margin-bottom: 2em;
 }
 .auberge_cannebiere img {
     border-radius: 10% 10% 0 0;
 }
-/*Texte mis en gras et normal sous photos*/
 .texte_gras_canneb{
     font-weight: bold;
+    margin: .5em 0 0 .5em  ;
 }
 .texte_normal_canneb{
     font-weight: normal;
     text-decoration: none;
+    margin: .5em;
+}
+.auberge_cannebiere .fa-star{
+    padding-left: .2em;
 }
 /*Modif color des icones étoiles*/
 .auberge_cannebiere_fullstar {
@@ -376,16 +378,15 @@ ul {
 .auberge_cannebiere_emptystar {
     color: #F2F2F2;
 }
-
 /*FIN Auberge La Cannebière*/
-
 
 /*Hôtel du port*/
 .hotel_port {
     background-color: white;
     border: 5px solid white;
-    border-radius: 4%;
+    border-radius: 10%;
     text-decoration: none;
+    margin-bottom: 2em;
 }
 .hotel_port img {
     border-radius: 10% 10% 0 0;
@@ -393,9 +394,14 @@ ul {
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_port{
     font-weight: bold;
+    margin: .5em 0 0 .5em  ;
 }
 .texte_normal_port{
     font-weight: normal;
+    margin: .5em;
+}
+.hotel_port .fa-star{
+    padding-left: .2em;
 }
 /*Modif color des icones étoiles*/
 .hotel_port_fullstar {
@@ -414,6 +420,7 @@ div .hotel_port a {
     border: 5px solid white;
     border-radius: 10%;
     text-decoration: none;
+    margin-bottom: 2em;
 }
 .hotel_mouettes img {
     border-radius: 10% 10% 0 0;
@@ -421,9 +428,14 @@ div .hotel_port a {
 /*Texte mis en gras et normal sous photos*/
 .texte_gras_mouette{
     font-weight: bold;
+    margin: .5em 0 0 .5em;
 }
 .texte_normal_mouette{
     font-weight: normal;
+    margin: .5em;
+}
+.hotel_mouettes .fa-star{
+    padding-left: .2em;
 }
 /*Modif color des icones étoiles*/
 .hotel_mouettes_fullstar {
@@ -458,6 +470,7 @@ div .hotel_mouettes a {
     border: 5px solid white;
     border-radius: 10%;
     text-decoration: none;
+    margin-bottom: 2em;
 }
 .hotel_de_mer img {
     border-radius: 10% 10% 0 0;
@@ -466,10 +479,15 @@ div .hotel_mouettes a {
 .texte_gras_mer{
     font-weight: bold;
     color: black;
+    margin: .5em 0 0 .5em;
 }
 .texte_normal_mer{
     font-weight: normal;
     color: black;
+    margin: .5em;
+}
+.hotel_de_mer .fa-star{
+    padding-left: .2em;
 }
 /*Modif color des icones étoiles*/
 .hotel_de_mer_fullstar {
@@ -496,6 +514,7 @@ div .hotel_de_mer a {
     border: 5px solid white;
     border-radius: 10%;
     text-decoration: none;
+    margin-bottom: 2em;
 }
 .auberge_panier img {
     border-radius: 10% 10% 0 0;
@@ -504,10 +523,15 @@ div .hotel_de_mer a {
 .texte_gras_panier{
     font-weight: bold;
     color: black;
+    margin: .5em 0 0 .5em;
 }
 .texte_normal_panier{
     font-weight: normal;
     color: black;
+    margin: .5em;
+}
+.auberge_panier .fa-star{
+    padding-left: .2em;
 }
 /*Modif color des icones étoiles*/
 .auberge_panier_fullstar {
@@ -525,7 +549,7 @@ div .auberge_panier a {
 
 .titre_afficher_plus{
     font-size: 1.3em;
-    padding-left: 2.5em;
+    padding-left: 4em;
 }
 
 /*Hôtel chez Amina*/
@@ -534,6 +558,7 @@ div .auberge_panier a {
     border: 5px solid white;
     border-radius: 10%;
     text-decoration: none;
+    margin-bottom: 2em;
 }
 .hotel_amina img {
     border-radius: 10% 10% 0 0;
@@ -542,10 +567,15 @@ div .auberge_panier a {
 .texte_gras_amina{
     font-weight: bold;
     color: black;
+    margin: .5em 0 0 .5em;
 }
 .texte_normal_amina{
     font-weight: normal;
     color: black;
+    margin: .5em;
+}
+.hotel_amina .fa-star{
+    padding-left: .2em;
 }
 /*Modif color des icones étoiles*/
 .auberge_panier_fullstar {
@@ -569,21 +599,22 @@ div .hotel_amina a {
 
 .les_plus_pop {
     display: flex;
+    /*justify-content: space-around;*/
     flex-direction: column;
-    background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
-    border-radius: 3%;
-    margin-left: 3em;
-    padding-left: 2em;
+    /*background-color: #F2F2F2;*/
+    /*border: 1px solid #F2F2F2;*/
+    /*border-radius: 3%;*/
+    /*margin-left: 3em;*/
+    /*padding-left: 2em;*/
     /*padding-right: 4em;*/
-    padding-bottom: 3em;
+    /*padding-bottom: 3em;*/
 }
 
 /*Hôtel le soleil*/
 
 .soleil_matin{
-    display: flex;
-    flex-direction: row;
+    /*display: flex;*/
+    /*flex-direction: row;*/
     margin-bottom: 2em;
     border: 5px solid white;
     border-bottom: 3.5px;
