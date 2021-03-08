@@ -13,7 +13,7 @@
 body
 {
     font-family: 'Raleway', Arial, serif;
-    width: 1200px;
+    width: 1500px;
     margin: auto;
     padding-top: 1em;
 }
@@ -328,7 +328,7 @@ ul {
     justify-content: space-around;
     margin: 2em;
     /*padding-left: 1em;*/
-    /*padding-right: 1em;*/
+    padding-right: 13em;
 }
 .pre_ligne_photo p{
     color: black;
@@ -588,26 +588,12 @@ div .hotel_amina a {
 
 /*Les plus populaires*/
 /* Cote à cote de Hebergement et Les plus populaires*/
-/*section{
-    display: flex;
-    flex-direction: row;
-}*/
-
 .cote_a_cote{
     display: flex;
+    flex-direction: row;
 }
-.les_plus_pop {
-    display: flex;
-    /*justify-content: space-around;*/
-    flex-direction: column;
-    /*background-color: #F2F2F2;*/
-    /*border: 1px solid #F2F2F2;*/
-    /*border-radius: 3%;*/
-    /*margin-left: 3em;*/
-    /*padding-left: 2em;*/
-    /*padding-right: 4em;*/
-    /*padding-bottom: 3em;*/
-}
+
+
 
 /*Hôtel le soleil*/
 
@@ -619,12 +605,9 @@ div .hotel_amina a {
     border-bottom: 3.5px;
     border-radius: 4%;
 }
-
 .soleil_matin p{
     padding-left: 1em;
-
 }
-
 .hotel_soleil_matin .fa-star {
     color: #0065FC;
     padding-top: 2.5em;
@@ -665,26 +648,37 @@ div .hotel_amina a {
 }
 
 /*Les plus populaires*/
-
+/*plus_pop*/
 .plus_pop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
     background-color: #F2F2F2;
-    border: 1px solid rgb(242, 242, 242);
-    border-radius: 12px;
-    margin-top: 2em;
+    border: 1px solid #DEEBFF;
+    border-radius: 3%;
+    padding-right: 18em;
+    margin-left: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 3em;
 }
 
 /*Texte mis en gras sous photos*/
+/*plus_pop*/
 .plus_pop p {
     font-weight: bold;
 }
 
 /*Texte mis en normal sous texte*/
+/*plus_pop*/
 .plus_pop span {
     font-weight: normal;
 }
 
 /*Hôtel le soleil 181*/
-.mis_pag_popu1 {
+/*mis_pag_popu1*/
+.soleil_matin {
     display: flex;
     flex-direction: row;
     margin-bottom: 2em;
@@ -692,50 +686,53 @@ div .hotel_amina a {
     border: 5px solid white;
     border-bottom: 3.5px;
     border-radius: 12px;
-    margin-right: 50em;
+    /*margin-right: 10em;*/
 }
-
-.mis_pag_popu1 p{
+/*mis_pag_popu1*/
+.soleil_matin p{
     padding-left: 1em;
     padding-right: 2em;
 }
-
-.mis_pag_popu1 .fa-star {
+/*mis_pag_popu1*/
+.soleil_matin .fa-star {
     color: blue;
     padding-top: 2.5em;
 }
-
-.mis_pag_popu1 img {
+/*mis_pag_popu1*/
+.soleil_matin img {
     border: 0px;
     border-radius: 12px 0 0 12px;
 }
 
 /* FIN Hôtel le soleil */
-
+.titre i {
+    display: flex;
+}
 /*Les plus populaires*/
 /*Au coeur de l'eau Chambres d'hôtes 187*/
-.mis_pag_popu2 {
+/*mis_pag_popu2*/
+.au_coeur_hotes {
     display: flex;
     flex-direction: row;
     margin-bottom: 2em;
     background-color: white;
-    border: 5px solid white;
+    border: 4px solid white;
     border-bottom: 3.5px;
     border-radius: 12px;
-    margin-right: 50em;
+    /*margin-right: 44em;*/
 }
-
-.mis_pag_popu2 img {
+/*mis_pag_popu2*/
+.au_coeur_hotes img {
     border: 0px;
     border-radius: 12px 0 0 12px;
 }
-
-.mis_pag_popu2 p{
+/*mis_pag_popu2*/
+.au_coeur_hotes p{
     padding-left: 1em;
     padding-right: 1em;
 }
-
-.mis_pag_popu2 .fa-star {
+/*mis_pag_popu2*/
+.au_coeur_hotes .fa-star {
     color: blue;
     padding-top: 2.5em;
 }
@@ -743,27 +740,28 @@ div .hotel_amina a {
 
 /*Les plus populaires*/
 /*Hôtel Tout bleu et Blanc 194*/
-.mis_pag_popu3 {
+/*mis_pag_popu3*/
+.bleu_et_blanc {
     display: flex;
     flex-direction: row;
     background-color: white;
     border: 5px solid white;
     border-bottom: 3.5px;
     border-radius: 12px;
-    margin-right: 50em;
+    /*margin-right: 44em;*/
 }
-
-.mis_pag_popu3 img {
+/*mis_pag_popu3*/
+.bleu_et_blanc img {
     border: 0px;
     border-radius: 12px 0 0 12px;
 }
-
-.mis_pag_popu3 p{
+/*mis_pag_popu3*/
+.bleu_et_blanc p{
     padding-left: 1em;
     padding-right: 1em;
 }
-
-.mis_pag_popu3 .fa-star {
+/*mis_pag_popu3*/
+.bleu_et_blanc .fa-star {
     color: blue;
     padding-top: 2.5em;
     
@@ -782,7 +780,7 @@ div .hotel_amina a {
     /*flex-direction: row;*/
     
     /*list-style-type: none;*/
-    /*margin-top: 5em;*/
+    margin-top: 5em;
 }
 .activ_marseil p{
     font-weight: bold;
@@ -807,19 +805,19 @@ div .hotel_amina a {
 /*Fort de Pomègues + iles du Frioul*/
 /*Fort de Pomègues*/
 .pomegue{
-    /*border: 1px solid #DEEBFF;*/
+    border: 1px solid #DEEBFF;
     border-radius: 4%;
     text-decoration: none;
 }
 .pomegue img{
     border-radius: 4% 4% 0 0;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 .pomegue p{
     padding-left: 1.5em;
 }
 .frioul{
-    /*border: 1px solid #DEEBFF;*/
+    border: 1px solid #DEEBFF;
     border-radius: 4%;
     text-decoration: none;
 }
@@ -833,6 +831,7 @@ div .hotel_amina a {
     display: flex;
     flex-direction: column;
     border-radius: 4% 4% 0 0;
+    margin-top: 8em;
 }
 .group_pomegue_frioul img{
     /*border: 0px solid #DEEBFF ;*/
