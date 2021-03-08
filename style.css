@@ -77,6 +77,7 @@ ul {
     font-size: 1.3em;
     padding-bottom: .3em;
 }
+/*Apparence au survol liens navig*/
 .lien_s_inscrire a:hover{
     text-decoration: overline;
     color: #0065FC;
@@ -84,11 +85,6 @@ ul {
 .lien_s_inscrire {
     line-height: 3em;
 }
-
-/*Apparence au survol liens navig*/
-
-
-
 
 /*FIN Mise en place liens navigation*/
 
@@ -454,7 +450,7 @@ div .hotel_mouettes a {
 
 /*Deuxième ligne de photos*/
 
-.deux_ligne_photo {
+/*.deux_ligne_photo {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -462,7 +458,7 @@ div .hotel_mouettes a {
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
-}
+}*/
 
 /*Hôtel de la mer*/
 .hotel_de_mer {
@@ -597,6 +593,9 @@ div .hotel_amina a {
     flex-direction: row;
 }*/
 
+.cote_a_cote{
+    display: flex;
+}
 .les_plus_pop {
     display: flex;
     /*justify-content: space-around;*/
@@ -667,99 +666,133 @@ div .hotel_amina a {
 
 /*Les plus populaires*/
 
-/*Au coeur de l'eau Chambres d'hôtes*/
-.au_coeur_de_l_eau {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2em;
-    background-color: white;
-    border: 5px solid white;
-    border-bottom: 1px;
-    border-radius: 4%;
+.plus_pop {
+    background-color: #F2F2F2;
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 12px;
+    margin-top: 2em;
 }
-.au_coeur_de_l_eau img {
-    border: 0px;
-    border-radius: 10% 0 0 10%;
-}
-.au_coeur_de_l_eau p{
-    padding-left: 1em;
-    padding-right: 2em;
-}
-.au_coeur_de_l_eau .fa-star {
-    color: #0065FC;
-    padding-top: 2.5em;
-}
-.texte_gras_coeur_de_l_eau{
+
+/*Texte mis en gras sous photos*/
+.plus_pop p {
     font-weight: bold;
 }
-.texte_normal_coeur_de_l_eau{
+
+/*Texte mis en normal sous texte*/
+.plus_pop span {
     font-weight: normal;
 }
-.au_coeur_de_l_eau_fullstar{
-    color: #0065FC;
-}
-.au_coeur_de_l_eau_emptystar{
-    color: #F2F2F2;
-}
 
-/*FIN Au coeur de l'eau Chambres d'hôtes */
-
-/*Les plus populaires*/
-/*Hôtel Tout bleu et Blanc*/
-.hotel_tout_bleu_blanc {
+/*Hôtel le soleil 181*/
+.mis_pag_popu1 {
     display: flex;
     flex-direction: row;
     margin-bottom: 2em;
     background-color: white;
     border: 5px solid white;
     border-bottom: 3.5px;
-    border-radius: 4%;
+    border-radius: 12px;
+    margin-right: 50em;
 }
 
-.hotel_tout_bleu_blanc img {
-    border: 0px;
-    border-radius: 10% 0 0 10%;
-}
-
-.hotel_tout_bleu_blanc p{
+.mis_pag_popu1 p{
     padding-left: 1em;
     padding-right: 2em;
 }
 
-.hotel_tout_bleu_blanc_fullstar{
-    color: #0065FC;
+.mis_pag_popu1 .fa-star {
+    color: blue;
     padding-top: 2.5em;
 }
-.hotel_tout_bleu_blanc_emptystar{
-    color: #F2F2F2;
-}
-.texte_gras_tout_bleu_blanc{
-    font-weight: bold;
-}
-.texte_normal_tout_bleu_blanc{
-    font-weight: normal;
+
+.mis_pag_popu1 img {
+    border: 0px;
+    border-radius: 12px 0 0 12px;
 }
 
+/* FIN Hôtel le soleil */
+
+/*Les plus populaires*/
+/*Au coeur de l'eau Chambres d'hôtes 187*/
+.mis_pag_popu2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+    background-color: white;
+    border: 5px solid white;
+    border-bottom: 3.5px;
+    border-radius: 12px;
+    margin-right: 50em;
+}
+
+.mis_pag_popu2 img {
+    border: 0px;
+    border-radius: 12px 0 0 12px;
+}
+
+.mis_pag_popu2 p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.mis_pag_popu2 .fa-star {
+    color: blue;
+    padding-top: 2.5em;
+}
+/*FIN Au coeur de l'eau Chambres d'hôtes */
+
+/*Les plus populaires*/
+/*Hôtel Tout bleu et Blanc 194*/
+.mis_pag_popu3 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 5px solid white;
+    border-bottom: 3.5px;
+    border-radius: 12px;
+    margin-right: 50em;
+}
+
+.mis_pag_popu3 img {
+    border: 0px;
+    border-radius: 12px 0 0 12px;
+}
+
+.mis_pag_popu3 p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.mis_pag_popu3 .fa-star {
+    color: blue;
+    padding-top: 2.5em;
+    
+}
 /* FIN Hôtel Tout bleu et Blanc*/
 /* FIN Les plus populaires*/
 
 
 /* Activités à Marseille */
-aside {
+.activ_marseil {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    list-style-type: none;
+    margin-right: 5em;
+    margin: 1em;
+    /*padding: 5em;*/
+    /*flex-direction: row;*/
+    
+    /*list-style-type: none;*/
+    /*margin-top: 5em;*/
 }
-
-aside{
-    margin-top: 5em;
+.activ_marseil p{
+    font-weight: bold;
+    color: black;
 }
 
 /*Vieux Port*/
 
 .v_port {
-    border: 1px solid #DEEBFF;
+    /*border: 1px solid #DEEBFF;*/
     border-radius: 4%;
     text-decoration: none;
 }
@@ -769,13 +802,12 @@ aside{
 .v_port p{
     padding-left: 1.5em;
 }
-
 /*FIN Vieux Port*/
 
 /*Fort de Pomègues + iles du Frioul*/
 /*Fort de Pomègues*/
 .pomegue{
-    border: 1px solid #DEEBFF;
+    /*border: 1px solid #DEEBFF;*/
     border-radius: 4%;
     text-decoration: none;
 }
@@ -783,13 +815,19 @@ aside{
     border-radius: 4% 4% 0 0;
     margin-bottom: 3em;
 }
+.pomegue p{
+    padding-left: 1.5em;
+}
 .frioul{
-    border: 1px solid #DEEBFF;
+    /*border: 1px solid #DEEBFF;*/
     border-radius: 4%;
     text-decoration: none;
 }
 .frioul img{
     border-radius: 4% 4% 0 0;
+}
+.frioul p{
+    padding-left: 1.5em;
 }
 .group_pomegue_frioul {
     display: flex;
@@ -797,53 +835,36 @@ aside{
     border-radius: 4% 4% 0 0;
 }
 .group_pomegue_frioul img{
-    border: 0px solid #DEEBFF ;
+    /*border: 0px solid #DEEBFF ;*/
     border-radius: 4% 4% 0 0;
 }
 
-/*Parc national des Calanques*/
-.calanq {
-    border: 1px solid #DEEBFF;
-    border-radius: 4%;
-    text-decoration: none;
-}
-.calanq img{
-    border-radius: 4% 4% 0 0;
-}
-.calanq p{
-    padding-left: 1.5em;
-}
-/*FIN Parc national des Calanques*/
 
-/*Notre-Dame-de-la-Garde + Parc Longchamps*/
-/*Fort de Pomègues*/
-.not_dam{
-    border: 1px solid #DEEBFF;
-    border-radius: 4%;
-    text-decoration: none;
-}
-.not_dam img{
-    border-radius: 4% 4% 0 0;
-    margin-bottom: 3em;
-}
-.par_long{
-    border: 1px solid #DEEBFF;
-    border-radius: 4%;
-    text-decoration: none;
-}
-.par_long img{
-    border-radius: 4% 4% 0 0;
-}
-.group_n_dame_longcham {
-    display: flex;
-    flex-direction: column;
-    border-radius: 4% 4% 0 0;
-}
-.group_n_dame_longcham img{
-    border: 0px solid #DEEBFF ;
-    border-radius: 4% 4% 0 0;
-    margin-bottom: 3em;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* PIED DE PAGE */
