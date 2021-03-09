@@ -26,10 +26,10 @@ body
     width: 80%;
     text-decoration: none;
 }
-.align_liens{
+/*.align_liens{
     display: flex;
     align-items: flex-end;
-}
+}*/
 
 ul {
     display: flex;
@@ -48,8 +48,9 @@ ul {
 }
 .lien_heber a:hover{
     text-decoration: overline;
-    color: #0065FC;
+    color: #0065FC;  
 }
+
 .lien_heber{
     line-height: 3em;
 }
@@ -62,6 +63,8 @@ ul {
     font-size: 1.3em;
     padding-bottom: .3em;
 }
+
+
 .lien_activite a:hover{
     text-decoration: overline;
     color: #0065FC;
@@ -676,7 +679,7 @@ div .hotel_amina a {
     font-weight: normal;
 }
 
-/*Hôtel le soleil 181*/
+/*Hôtel le soleil*/
 /*mis_pag_popu1*/
 .soleil_matin {
     display: flex;
@@ -776,11 +779,6 @@ div .hotel_amina a {
     justify-content: space-between;
     margin-right: 5em;
     margin: 1em;
-    /*padding: 5em;*/
-    /*flex-direction: row;*/
-    
-    /*list-style-type: none;*/
-    margin-top: 5em;
 }
 .activ_marseil p{
     font-weight: bold;
@@ -790,8 +788,6 @@ div .hotel_amina a {
 /*Vieux Port*/
 
 .v_port {
-    /*border: 1px solid #DEEBFF;*/
-    border-radius: 4%;
     text-decoration: none;
 }
 .v_port img{
@@ -799,6 +795,10 @@ div .hotel_amina a {
 }
 .v_port p{
     padding-left: 1.5em;
+}
+.bord_vieux_port{
+    border: 1px solid #DEEBFF;
+    border-radius: 4%;
 }
 /*FIN Vieux Port*/
 
@@ -811,7 +811,6 @@ div .hotel_amina a {
 }
 .pomegue img{
     border-radius: 4% 4% 0 0;
-    margin-bottom: 1em;
 }
 .pomegue p{
     padding-left: 1.5em;
@@ -827,43 +826,78 @@ div .hotel_amina a {
 .frioul p{
     padding-left: 1.5em;
 }
-.group_pomegue_frioul {
+.group_pomegue_frioul a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.1em;
+    margin-bottom: 1em;
+}
+.group_pomegue_frioul img{
+    border-radius: 4% 4% 0 0;
+}
+
+/*Parc national des Calanques*/
+.calanq a {
+    text-decoration: none;
+}
+.calanq img{
+    border-radius: 4% 4% 0 0;
+}
+.calanq p{
+    padding-left: 1.5em;
+}
+.bord_parc_calanq{
+    border: 1px solid #DEEBFF;
+    border-radius: 4%;
+}
+.calanq{
+    padding-top: 4.1em;
+}
+/*FIN Parc national des Calanques*/
+
+
+/*Notre-Dame-de-la-Garde + Parc Longchamps*/
+/*Fort de Pomègues*/
+.not_dam{
+    border: 1px solid #DEEBFF;
+    border-radius: 4%;
+    text-decoration: none;
+}
+.not_dam img{
+    border-radius: 4% 4% 0 0;
+    margin-bottom: 3em;
+}
+.group_n_dame_longcham p{
+    padding-left: 1.5em;
+    text-decoration: none;
+}
+.par_long{
+    border: 1px solid #DEEBFF;
+    border-radius: 4%;
+    text-decoration: none;   
+}
+.par_long img{
+    border-radius: 4% 4% 0 0;
+}
+.par_long p{
+    padding-left: 1.5em;
+}
+.group_n_dame_longcham {
     display: flex;
     flex-direction: column;
     border-radius: 4% 4% 0 0;
-    margin-top: 8em;
+    /*padding-top: 4.2em;*/
+    margin-top: 4.1em;
 }
-.group_pomegue_frioul img{
-    /*border: 0px solid #DEEBFF ;*/
+.group_n_dame_longcham img{
+    border: 0px solid #DEEBFF;
     border-radius: 4% 4% 0 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.group_n_dame_longcham a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
 
 
 /* PIED DE PAGE */
@@ -873,6 +907,10 @@ div .hotel_amina a {
     justify-content: space-between;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    padding-right: 3em;
+    padding-left: 3em;
 }
 .left_text {
     display: flex;
@@ -888,15 +926,14 @@ div .hotel_amina a {
 }
 footer > div span {
     font-weight: bold;
+    line-height: 3em;
 }
 footer a {
     text-decoration: none;
     color: black;
-    font-size: 1em;
-    margin: 0em;
+    font-size: 1.2em;
     padding: 1em;
-    line-height: 1px;
+    line-height: .1em;
 }
-
 
 /* FIN PIED DE PAGE */

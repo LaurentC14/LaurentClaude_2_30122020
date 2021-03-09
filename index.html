@@ -12,6 +12,8 @@
 
     <body>
         <!--Liens navig dans header-->
+        <!--Bonjour, personnellement j'ai utilisé padding-top pour définir l'espace entre le barre et le contenu. 
+            Et la barre en question est une border-top dont tu peut définir l'épaisseur que tu souhaites.-->
         <nav>
             <ul>
                 <li class="nav_logo-li">
@@ -19,7 +21,7 @@
                         <!--Insertion logo Reservia-->
                     </a>
                 </li>
-                <li class="lien_heber" class="align_liens">
+                <li class="lien_heber">    <!--class="align_liens"-->
                     <a href="#hebergements" class="padd_hebergt">Hébergements</a>
                         <!--ancre pour hébergements-->
                 </li>
@@ -46,20 +48,20 @@
             <!--icones des filtres-->
         <section class="filtre">
             <h3>Filtres</h3>
-            <div class="argent">
-                <i aria-hidden="true" class="fas fa-money-bill-wave fa-fw" class="fa_money"></i>
+            <div class="argent">             <!--class="fa_money"-->
+                <i aria-hidden="true" class="fas fa-money-bill-wave fa-fw"></i>
                 <a href="#" title="Economiques">Economiques</a>
             </div>
-            <div class="enfant">
-                <i class="fa fa-child" class="fa_child" aria-hidden="true"></i>
+            <div class="enfant">            <!--class="fa_child"-->
+                <i class="fa fa-child" aria-hidden="true"></i>
                 <a href="#" title="Familial">Familial</a>
             </div>
-            <div class="coeur">
-                <i class="fas fa-heart" class="fa_heart"></i>
+            <div class="coeur">             <!--class="fa_heart"-->
+                <i class="fas fa-heart"></i>
                 <a href="#" title="Romantique">Romantique</a>
             </div>
-            <div class="chien">
-                <i class="fas fa-dog" class="fa_dog"></i>
+            <div class="chien">             <!--class="fa_dog"-->
+                <i class="fas fa-dog" ></i>
                 <a href="#" title="Animaux_autorisés">Animaux autorisés</a>
             </div>
         </section>
@@ -127,7 +129,7 @@
                         <p class="texte_gras_panier">Auberge Le Panier</p>
                         <p class="texte_normal_panier">Nuit à partir de 23€</p>
                         <i class="fas fa-star auberge_panier_fullstar"></i>
-                        <iclass="fas fa-star auberge_panier_fullstar"></i>
+                        <i class="fas fa-star auberge_panier_fullstar"></i>
                         <i class="fas fa-star auberge_panier_fullstar"></i>
                         <i class="fas fa-star auberge_panier_fullstar"></i><i class="fas fa-star auberge_panier_emptystar"></i>
                     </a>
@@ -188,14 +190,16 @@
             <div class="v_port">
                 <!--ancre pour activité-->
                 <h2 id="activites">Activités à Marseille</h2>
-                <a href="#" class="vieux_port"><img src="img/activites/4_small/section/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" width="350" height="450" title="Vieux Port" alt="Vieux Port" />
-                </a>
-                <p>Vieux Port</p>
+                <div class="bord_vieux_port">
+                    <a href="#" class="vieux_port"><img src="img/activites/4_small/section/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" width="350" height="450" title="Vieux Port" alt="Vieux Port" />
+                    </a>
+                    <p>Vieux Port</p>
+                </div>
             </div>
                 <!--Fort de Pomègues-->
                 <!--Groupe Fort de Pomègues + iles du Frioul-->
             <div class="group_pomegue_frioul">
-                <a href="#" class="pomegue"><img src="img/activites/4_small/section/paul-hermann-QFTrLdQIRhI-unsplash.jpg" width="350" height="175" title="Fort de Pomègues" alt="Fort de Pomègues" />
+                <a href="#" class="pomegue"><img src="img/activites/4_small/section/paul-hermann-QFTrLdQIRhI-unsplash.jpg" width="350" height="200" title="Fort de Pomègues" alt="Fort de Pomègues" />
                     <p>Fort de Pomègues</p>
                 </a>
                 <!--iles du Frioul-->
@@ -205,16 +209,20 @@
             </div>
                 <!--Parc national des Calanques-->
             <div class="calanq">
-                <a href="#" class="parc_calan"><img src="img/activites/4_small/section/parc_national_des_calanques.PNG" width="350" height="450" title="Parc national des Calanques" alt="Parc national des Calanques" />
-                    <p>Parc national des Calanques</p>
-                </a>
+                <div class="bord_parc_calanq">
+                    <a href="#" class="parc_calan">
+                    <img src="img/activites/4_small/section/parc_national_des_calanques.PNG" width="350" height="450" title="Parc national des Calanques" alt="Parc national des Calanques" />
+                    <p class="text_calaq_none">Parc national des Calanques</p>
+                    </a>
+                </div>
+                    
             </div>
-                <!--Notre-Dame-de-la-Garde-->
                 <!--Groupe Fort de Pomègues + iles du Frioul-->
-            <div class="group_n_dame_longcham">
-                <a href="#" class="group_not_dam_par_long" class="not_dam"><img src="img/activites/4_small/section/florian-wehde-xW9e8gdotxI-unsplash.jpg" width="350" height="175" title="Notre-Dame-de-la-Garde" alt="Notre-Dame-de-la-Garde" />
-                </a>
+                <!--Notre-Dame-de-la-Garde-->
+            <div class="group_n_dame_longcham">     <!--class="not_dam"-->
+                <a href="#" class="not_dam"><img src="img/activites/4_small/section/florian-wehde-xW9e8gdotxI-unsplash.jpg" width="350" height="175" title="Notre-Dame-de-la-Garde" alt="Notre-Dame-de-la-Garde" />
                     <p>Notre-Dame-de-la-Garde</p>
+                </a>
                 <!--Parc Longchamps-->
                 <a href="#" class="par_long"><img src="img/activites/4_small/section/lena-paulin-wH2-EJoDcV0-unsplash.jpg" width="350" height="175" title="Parc Longchamps" alt="Parc Longchamps" />
                     <p>Parc Longchamps</p>
