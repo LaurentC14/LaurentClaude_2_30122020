@@ -16,6 +16,7 @@ body
     margin: auto;
     padding-top: 1em;
 }
+/*@media screen and (max-width: 1280px)*/
 
 /*
 @media screen and (max-width: 768px) {
@@ -60,12 +61,13 @@ ul {
 li .lien_heber a{
     padding-top: 3em;
 }
+/*Apparence au survol liens navig*/
 .lien_heber a:hover{
-    text-decoration: overline;
-    color: #0065FC;
+    border-top: 0.2em solid #0065FC;
 }
 .lien_heber{
     line-height: 3em;
+    border-top: 3em;
 }
 .padd_activ{
     padding: 1.5em;
@@ -75,9 +77,9 @@ li .lien_heber a{
     font-size: 1.3em;
     padding-bottom: .3em;
 }
+/*Apparence au survol liens navig*/
 .lien_activite a:hover{
-    text-decoration: overline;
-    color: #0065FC;
+    border-top: 0.2em solid #0065FC;
 }
 .lien_activite{
     line-height: 3em;
@@ -92,8 +94,7 @@ li .lien_heber a{
 }
 /*Apparence au survol liens navig*/
 .lien_s_inscrire a:hover{
-    text-decoration: overline;
-    color: #0065FC;
+    border-top: 0.2em solid #0065FC;
 }
 .lien_s_inscrire {
     line-height: 3em;
@@ -351,8 +352,8 @@ sont disponibles dans cette ville)*/
     display: flex;
     flex-wrap: wrap;    
     justify-content: space-around;
-    margin: 2em;
-    padding-right: 13em;
+    /*margin: 2em;
+    /*padding-right: 13em;*/
 }
 .pre_ligne_photo p{
     color: black;
@@ -524,7 +525,7 @@ div .hotel_de_mer a {
 }
 /*FIN Hôtel de la mer*/
 
-/* Afficher plus en gras*/
+/* "Afficher plus" en gras*/
 .afficher_en_gras{
     font-weight: bold;
 }
@@ -614,62 +615,10 @@ div .hotel_amina a {
 /* Cote à cote de Hebergement et Les plus populaires*/
 .cote_a_cote{
     display: flex;
-    flex-direction: row;
-}
-
-/*Hôtel le soleil*/
-
-.soleil_matin{
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    margin-bottom: 2em;
-    border: 5px solid white;
-    border-bottom: 3.5px;
-    border-radius: 4%;
-}
-.soleil_matin p{
-    padding-left: 1em;
-}
-.hotel_soleil_matin .fa-star {
-    color: #0065FC;
-    padding-top: 2.5em;
-}
-.hotel_soleil_matin img {
-    border: 0px;
-    border-radius: 10% 0 0 10%;
-}
-
-/*Texte mis en gras sous photos*/
-.texte_gras_soleil_matin {
-    font-weight: bold;
-}
-/*Texte mis en normal sous texte*/
-.texte_normal_soleil_matin {
-    font-weight: normal;
-}
-.hotel_soleil_matin_fullstar{
-    color: #0065FC;
-}
-.hotel_soleil_matin_emptystar{
-    color: #F2F2F2;
-}
-.hotel_soleil_matin .fa-star {
-    padding-top: 2.5em;
-}
-/* FIN Hôtel le soleil */
-
-/*<h2 Les plus populaires </h2>*/
-.titre i {
-    display: flex;
-}
-
-/*Texte mis en gras sous photos*/
-.plus_pop p {
-    font-weight: bold;
 }
 
 /*Les plus populaires*/
-/*plus_pop*/
+/* <aside class="plus_pop">*/
 .plus_pop {
     display: flex;
     flex-wrap: wrap;
@@ -684,46 +633,80 @@ div .hotel_amina a {
     padding-right: 2em;
     padding-bottom: 3em;
 }
-
-/*Texte mis en gras sous photos*/
-/*plus_pop*/
-.plus_pop p {
-    font-weight: bold;
-}
-
-/*Texte mis en normal sous texte*/
-/*plus_pop*/
-.plus_pop span {
-    font-weight: normal;
-}
-
 /*Hôtel le soleil du matin*/
-.soleil_matin {
+.soleil_matin{
     display: flex;
     flex-direction: row;
     margin-bottom: 2em;
-    background-color: white;
     border: 5px solid white;
     border-bottom: 3.5px;
-    border-radius: 12px;
+    border-radius: 4%;
+    background-color: white;
 }
-/*Hôtel le soleil du matin*/
 .soleil_matin p{
+    padding-left: 1em;
+    padding-bottom: 6em;
     padding-left: 1em;
     padding-right: 2em;
 }
-/*Hôtel le soleil du matin*/
-.soleil_matin .fa-star {
-    color: blue;
+.hotel_soleil_matin .fa-star {
+    color: #0065FC;
     padding-top: 2.5em;
 }
-/*Hôtel le soleil du matin*/
 .soleil_matin img {
     border: 0px;
-    border-radius: 12px 0 0 12px;
+    border-radius: 10% 0 0 10%;
+}
+/*Texte mis en gras sous photos*/
+.texte_gras_soleil_matin {
+    font-weight: bold;
+}
+/*Texte mis en normal sous texte*/
+.texte_normal_soleil_matin {
+    font-weight: normal;
+}
+.hotel_soleil_matin_fullstar{
+    color: #0065FC;
+}
+.hotel_soleil_matin_emptystar{
+    color: #F2F2F2;
 }
 
-/* FIN Hôtel le soleil */
+
+/*FIN Hôtel le soleil du matin*/
+
+.plus_pop_titre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*<h2 Les plus populaires </h2>*/
+.titre i {
+    display: flex;
+}
+
+/*Texte mis en gras sous photos*/
+/*.plus_pop p {
+    font-weight: bold;
+}*/
+
+
+
+/*Texte mis en gras sous photos*/
+/*plus_pop*/
+/*.plus_pop p {
+    font-weight: bold;
+}*/
+
+/*Texte mis en normal sous texte*/
+/*plus_pop*/
+/*.plus_pop span {
+    font-weight: normal;
+}*/
+
+
 .titre i {
     display: flex;
 }
