@@ -3,9 +3,7 @@
     font-family: 'Raleway';
     src: url('polices/Raleway.eot');
     src: url('polices/Raleway.eot?#iefix') format('embedded-opentype'),
-         /*url('polices/Raleway.woff') format('woff'),*/
-         /*url('polices/Raleway.ttf') format('truetype'),*/
-      url('polices/Raleway.svg#Raleway') format('svg');
+         url('polices/Raleway.svg#Raleway') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -16,24 +14,6 @@ body
     margin: auto;
     padding-top: 1em;
 }
-/*@media screen and (max-width: 1280px)*/
-
-/*
-@media screen and (max-width: 768px) {
-
-    .search_group,
-    .cote_a_cote,
-    .activ_marseil,
-    .foot {
-        padding: 0rem 5vw;
-        width: 90vw;
-    }
-}*/
-
-
-
-
-
 /* Logo Reservia*/
 .nav_logo-li{
     justify-content: space-between;
@@ -129,7 +109,7 @@ li .lien_heber a{
     background-color: #F2F2F2;
     width: 5%;
     padding: 1em;
-    line-height: 1.3em;
+    line-height: 1.6em;
 }
 .recherche i{
     height: 1.5em;
@@ -146,7 +126,7 @@ li .lien_heber a{
 .bout_rech{
     color: white;
     border: 1px solid #F2F2F2;
-    border-radius: 0 12% 12% 0;
+    border-radius: 0 15% 15% 0;
     padding-left: 1.5em;
     padding-right: 1.5em;
     background-color: #0065FC;
@@ -163,7 +143,7 @@ li .lien_heber a{
     padding-bottom: 2em;
     color: black;
     font-weight: bold;
-    margin-right: 10em;  
+    margin-right: 30em;  
 }
 /*Filtres*/
 .filtre a {
@@ -312,7 +292,8 @@ li .lien_heber a{
 
 /*Plus de 500 logements*/
 .info p{
-    font-weight: normal;
+    font-weight: bold;
+    color: gray;
     font-size: 1.1em;
 }
 .info i{
@@ -352,8 +333,7 @@ sont disponibles dans cette ville)*/
     display: flex;
     flex-wrap: wrap;    
     justify-content: space-around;
-    /*margin: 2em;
-    /*padding-right: 13em;*/
+    margin: 2em
 }
 .pre_ligne_photo p{
     color: black;
@@ -366,10 +346,10 @@ sont disponibles dans cette ville)*/
     background-color: #F2F2F2;
     border-radius: 2%;
     padding-bottom: 1.4em;
-    margin-bottom: 2.5em;
+    margin-bottom: 20em;
 }
-/*Auberge La Cannebière*/
 
+/*Auberge La Cannebière*/
 .auberge_cannebiere {
     background-color: white;
     border: 5px solid white;
@@ -435,7 +415,6 @@ div .hotel_port a {
 }
 /*FIN Hôtel du port*/
 
-
 /*Hôtel Les Mouettes*/
 .hotel_mouettes {
     background-color: white;
@@ -471,21 +450,9 @@ div .hotel_mouettes a {
     line-height: .5em;
 }
 /*FIN Hôtel Les Mouettes*/
-
 /* FIN Première ligne de photos*/
 
 /*Deuxième ligne de photos*/
-
-/*.deux_ligne_photo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 2em;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-}*/
-
 /*Hôtel de la mer*/
 .hotel_de_mer {
     background-color: white;
@@ -571,7 +538,7 @@ div .auberge_panier a {
 
 .titre_afficher_plus{
     font-size: 1.3em;
-    padding-left: 4em;
+    padding-left: 2.5em;
 }
 
 /*Hôtel chez Amina*/
@@ -608,10 +575,8 @@ div .hotel_amina a {
     line-height: .5em;
 }
 /*FIN Hôtel chez Amina*/
-
 /*FIN Deuxième ligne de photos*/
 
-/*Les plus populaires*/
 /* Cote à cote de Hebergement et Les plus populaires*/
 .cote_a_cote{
     display: flex;
@@ -620,147 +585,77 @@ div .hotel_amina a {
 /*Les plus populaires*/
 /* <aside class="plus_pop">*/
 .plus_pop {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
     background-color: #F2F2F2;
-    border: 1px solid #DEEBFF;
     border-radius: 3%;
-    padding-right: 18em;
-    margin-left: 3em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 3em;
+    margin-left: 2.5em;
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    margin-bottom: 20em;
 }
-/*Hôtel le soleil du matin*/
-.soleil_matin{
+/*<h2 Les plus populaires - titre </h2>*/
+.plus_pop_titre  {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 2em;
-    border: 5px solid white;
-    border-bottom: 3.5px;
-    border-radius: 4%;
-    background-color: white;
+    justify-content: space-between;
 }
-.soleil_matin p{
-    padding-left: 1em;
-    padding-bottom: 6em;
+
+/*Les plus populaires*/
+.soleil_matin,
+.au_coeur_de_l_eau,
+.bleu_et_blanc{
+    display: flex;
+    margin-bottom: 2em;
+    border: 3px solid white;
+    border-bottom: 2px;
+    border-radius: 12px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+.soleil_matin p,
+.au_coeur_de_l_eau p,
+.bleu_et_blanc p{
     padding-left: 1em;
     padding-right: 2em;
+    font-size: 1.2em;
 }
-.hotel_soleil_matin .fa-star {
-    color: #0065FC;
-    padding-top: 2.5em;
+.soleil_matin span,
+.au_coeur_de_l_eau span,
+.bleu_et_blanc span{
+    padding-left: 1em;
 }
-.soleil_matin img {
+.soleil_matin img,
+.au_coeur_de_l_eau img,
+.bleu_et_blanc img{
     border: 0px;
     border-radius: 10% 0 0 10%;
 }
-/*Texte mis en gras sous photos*/
-.texte_gras_soleil_matin {
+.soleil_matin .fa-star,
+.au_coeur_de_l_eau .fa-star,
+.bleu_et_blanc .fa-star{
+    padding-top: 2.5em;  
+}
+.texte_gras_soleil_matin,
+.texte_gras_coeur_de_l_eau,
+.texte_gras_tout_bleu_blanc{
     font-weight: bold;
 }
-/*Texte mis en normal sous texte*/
-.texte_normal_soleil_matin {
-    font-weight: normal;
+.texte_normal_soleil_matin,
+.texte_normal_coeur_de_l_eau,
+.texte_normal_tout_bleu_blanc{
+    /*font-weight: normal;*/
+    line-height: 1em;
 }
-.hotel_soleil_matin_fullstar{
+.hotel_soleil_matin_fullstar,
+.coeur_de_l_eau_fullstar,
+.hotel_tout_bleu_blanc_fullstar{
     color: #0065FC;
 }
-.hotel_soleil_matin_emptystar{
+.coeur_de_l_eau_emptystar,
+.hotel_tout_bleu_blanc_emptystar{
     color: #F2F2F2;
 }
-
-
-/*FIN Hôtel le soleil du matin*/
-
-.plus_pop_titre{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/*<h2 Les plus populaires </h2>*/
-.titre i {
-    display: flex;
-}
-
-/*Texte mis en gras sous photos*/
-/*.plus_pop p {
-    font-weight: bold;
-}*/
-
-
-
-/*Texte mis en gras sous photos*/
-/*plus_pop*/
-/*.plus_pop p {
-    font-weight: bold;
-}*/
-
-/*Texte mis en normal sous texte*/
-/*plus_pop*/
-/*.plus_pop span {
-    font-weight: normal;
-}*/
-
-
-.titre i {
-    display: flex;
-}
-/*Les plus populaires2*/
-/*Au coeur de l'eau Chambres d'hôtes*/
-.au_coeur_hotes {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 2em;
-    background-color: white;
-    border: 4px solid white;
-    border-bottom: 3.5px;
-    border-radius: 12px;
-}
-/*Au coeur de l'eau Chambres d'hôtes*/
-.au_coeur_hotes img {
-    border: 0px;
-    border-radius: 12px 0 0 12px;
-}
-.au_coeur_hotes p{
-    padding-left: 1em;
-    padding-right: 1em;
-}
-.au_coeur_hotes .fa-star {
-    color: blue;
-    padding-top: 2.5em;
-}
-/*FIN Au coeur de l'eau Chambres d'hôtes */
-
-/*Les plus populaires3*/
-/*Hôtel Tout bleu et Blanc*/
-.bleu_et_blanc {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border: 5px solid white;
-    border-bottom: 3.5px;
-    border-radius: 12px;
-}
-.bleu_et_blanc img {
-    border: 0px;
-    border-radius: 12px 0 0 12px;
-}
-.bleu_et_blanc p{
-    padding-left: 1em;
-    padding-right: 1em;
-}
-.bleu_et_blanc .fa-star {
-    color: blue;
-    padding-top: 2.5em;
-}
-/* FIN Hôtel Tout bleu et Blanc*/
-/* FIN Les plus populaires*/
-
+/*FIN Les plus populaires*/
 
 /* Activités à Marseille */
 .activ_marseil {
@@ -773,9 +668,7 @@ div .hotel_amina a {
     font-weight: bold;
     color: black;
 }
-
 /*Vieux Port*/
-
 .v_port {
     text-decoration: none;
 }
@@ -788,7 +681,6 @@ div .hotel_amina a {
 .bord_vieux_port{
     border: 1px solid #DEEBFF;
     border-radius: 4%;
-    /*box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 25%);*/
 }
 /*FIN Vieux Port*/
 
@@ -825,7 +717,6 @@ div .hotel_amina a {
 .group_pomegue_frioul img{
     border-radius: 4% 4% 0 0;
 }
-
 /*Parc national des Calanques*/
 .calanq a {
     text-decoration: none;
@@ -839,13 +730,11 @@ div .hotel_amina a {
 .bord_parc_calanq{
     border: 1px solid #DEEBFF;
     border-radius: 4%;
-    /*box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 25%);*/
 }
 .calanq{
     padding-top: 4.2em;
 }
 /*FIN Parc national des Calanques*/
-
 
 /*Notre-Dame-de-la-Garde + Parc Longchamps*/
 /*Fort de Pomègues*/
@@ -889,10 +778,9 @@ div .hotel_amina a {
     flex-direction: column;
     margin-bottom: 2.6em;
 }
-
+/*FIN Notre-Dame-de-la-Garde + Parc Longchamps*/
 
 /* PIED DE PAGE */
-
 .foot {
     display: flex;
     justify-content: space-between;
@@ -900,7 +788,7 @@ div .hotel_amina a {
     border: 1px solid #F2F2F2;
     padding-top: 1em;
     padding-bottom: 3em;
-    padding-right: 3em;
+    padding-right: 20em;
     padding-left: 3em;
 }
 .left_text {
@@ -926,5 +814,4 @@ footer a {
     padding: 1em;
     line-height: .1em;
 }
-
 /* FIN PIED DE PAGE */

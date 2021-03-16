@@ -5,6 +5,7 @@
     <title>Reservia</title>
     <meta charset="utf-8">
     <meta name="description" content="Trouver votre hèbergement pour des vacances de rêve">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo/favicon.PNG">
     <script src="https://kit.fontawesome.com/50a958fe3e.js" crossorigin="anonymous"></script>
@@ -79,8 +80,6 @@
             <div class="pre_ligne_photo">
                 <!--Auberge La Cannebière-->
                 <a href="#" class="auberge_cannebiere">
-                    <!--width="250" height="130"-->
-                    <!--width="310" height="160"-->
                     <img src="img/hebergements/5_bonne_taille/marcus-loke-WQJvWU_HZFo-unsplash.jpg" width="300" height="150" title="Auberge La Cannebière" alt="Auberge La Cannebière" />
                     <p class="texte_gras_canneb">Auberge La Cannebière</p>
                     <p class="texte_normal_canneb">Nuit à partir de 25€</p>
@@ -94,7 +93,7 @@
                 <a href="#" class="hotel_port">
                     <img src="img/hebergements/5_bonne_taille/fred-kleber-gTbaxaVLvsg-unsplash.jpg" width="300" height="150" title="Hôtel du port" alt="Hôtel du port" />
                     <p class="texte_gras_port">Hôtel du port</p>
-                    <p class="texte_normal_port">Niut à partir de 52€</p>
+                    <p class="texte_normal_port">Nuit à partir de 52€</p>
                     <i class="fas fa-star hotel_port_fullstar"></i>
                     <i class="fas fa-star hotel_port_fullstar"></i>
                     <i class="fas fa-star hotel_port_fullstar"></i>
@@ -132,7 +131,7 @@
                     <i class="fas fa-star auberge_panier_fullstar"></i>
                     <i class="fas fa-star auberge_panier_fullstar"></i>
                     <i class="fas fa-star auberge_panier_fullstar"></i><i
-                        class="fas fa-star auberge_panier_emptystar"></i>
+                    class="fas fa-star auberge_panier_emptystar"></i>
                 </a>
                 <!--Hôtel chez Amina-->
                 <a href="#" class="hotel_amina">
@@ -146,7 +145,7 @@
                     <i class="fas fa-star auberge_panier_fullstar"></i>
                 </a>
             </div>
-            <p class="afficher_en_gras titre_afficher_plus">Afficher plus</p>
+                <p class="afficher_en_gras titre_afficher_plus">Afficher plus</p>
         </section>
 
                         <!--______________Les plus populaires______________-->
@@ -154,75 +153,79 @@
         <aside class="plus_pop">
             <div class="plus_pop_titre">
                 <h2 class="titre">Les plus populaires</h2>
-                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-line-chart fa-2x" aria-hidden="true"></i> 
             </div>
             <!--Hôtel le soleil du matin-->
                 <a class="soleil_matin" href="#">
-                    <img src="img/hebergements/5_bonne_taille/aside/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" width="138" height="150" title="Hôtel le soleil du matin" alt="Hôtel le soleil du matin" />
-                    <div class="soleil_matin_legend">
-                    <p class="texte_gras_soleil_matin">Hôtel le soleil du matin</p>
-                    <p class="texte_normal_soleil_matin">Nuit à partir de 128€</p>
-                    <i class="fas fa-star hotel_soleil_matin_fullstar"></i>
-                    <i class="fas fa-star hotel_soleil_matin_fullstar"></i>
-                    <i class="fas fa-star hotel_soleil_matin_fullstar"></i>
-                    <i class="fas fa-star hotel_soleil_matin_fullstar"></i>
-                    <i class="fas fa-star hotel_soleil_matin_fullstar"></i>
+                        <img src="img/hebergements/5_bonne_taille/aside/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
+                        width="138" height="150" title="Hôtel le soleil du matin" alt="Hôtel le soleil du matin" />
+                    <div class="soleil_matin_legend">   <!--CLASS DE REGROUPEMENT-->
+                        <p class="texte_gras_soleil_matin">Hôtel le soleil du matin</p>
+                        <p class="texte_normal_soleil_matin">Nuit à partir de 128€</p>
+                        <span><i class="fas fa-star hotel_soleil_matin_fullstar"></i></span>
+                        <i class="fas fa-star hotel_soleil_matin_fullstar"></i>
+                        <i class="fas fa-star hotel_soleil_matin_fullstar"></i>
+                        <i class="fas fa-star hotel_soleil_matin_fullstar"></i>
+                        <i class="fas fa-star hotel_soleil_matin_fullstar"></i>
                     </div>
                 </a>
             <!--Au coeur de l'eau Chambres d'hôtes-->
-            <div class="au_coeur_hotes">
-                <a href="#">
-                <img src="img/hebergements/5_bonne_taille/aside/aw-creative-VGs8z60yT2c-unsplash.jpg" width="138" height="150" title="Au coeur de l'eau Chambres d'hôtes" alt="Au coeur de l'eau Chambres d'hôtes" />
+                <a class="au_coeur_de_l_eau" href="#">
+                        <img src="img/hebergements/5_bonne_taille/aside/aw-creative-VGs8z60yT2c-unsplash.jpg" 
+                        width="138" height="150" title="Au coeur de l'eau Chambres d'hôtes" alt="Au coeur de l'eau Chambres d'hôtes" />
+                    <div class="au_coeur_de_l_eau_legend">  <!--CLASS DE REGROUPEMENT-->
+                        <p class="texte_gras_coeur_de_l_eau">Au coeur de l'eau Chambres d'hôtes</p>
+                        <p class="texte_normal_coeur_de_l_eau">Nuit à partir de 75€</p>
+                        <span><i class="fas fa-star coeur_de_l_eau_fullstar"></i></span>
+                        <i class="fas fa-star coeur_de_l_eau_fullstar"></i>
+                        <i class="fas fa-star coeur_de_l_eau_fullstar"></i>
+                        <i class="fas fa-star coeur_de_l_eau_fullstar"></i>
+                        <i class="fas fa-star coeur_de_l_eau_emptystar"></i>
+                    </div>
                 </a>
-                <p class="texte_gras_coeur_de_l_eau">Au coeur de l'eau Chambres d'hôtes</p>
-                <p class="texte_normal_coeur_de_l_eau">Nuit à partir de 75€</p>
-                <i class="fas fa-star au_coeur_de_l_eau_fullstar"></i>
-                <i class="fas fa-star au_coeur_de_l_eau_fullstar"></i>
-                <i class="fas fa-star au_coeur_de_l_eau_fullstar"></i>
-                <i class="fas fa-star au_coeur_de_l_eau_fullstar"></i>
-                <i class="fas fa-star au_coeur_de_l_eau_emptystar"></i>
-            </div>
             <!--Hôtel Tout bleu et Blanc-->
-            <div class="bleu_et_blanc">
-                <a href="#">
-                <img src="img/hebergements/5_bonne_taille/aside/febrian-zakaria-sjvU0THccQA-unsplash.jpg" width="138" height="150" title="Hôtel Tout bleu et Blanc" alt="Hôtel Tout bleu et Blanc" /></a>
-                <p class="texte_gras_tout_bleu_blanc">Hôtel Tout bleu et Blanc</p>
-                <p class="texte_normal_tout_bleu_blanc">Nuit à partir de 68€</p>
-                <i class="fas fa-star hotel_tout_bleu_blanc_fullstar"></i>
-                <i class="fas fa-star hotel_tout_bleu_blanc_fullstar"></i>
-                <i class="fas fa-star hotel_tout_bleu_blanc_fullstar"></i>
-                <i class="fas fa-star hotel_tout_bleu_blanc_fullstar"></i>
-                <i class="fas fa-star hotel_tout_bleu_blanc_emptystar"></i>
-            </div>
+                <a class="bleu_et_blanc" href="#">
+                        <img src="img/hebergements/5_bonne_taille/aside/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
+                        width="138" height="150" title="Hôtel Tout bleu et Blanc" alt="Hôtel Tout bleu et Blanc" />
+                    <div class="bleu_et_blanc_legend">  <!--CLASS DE REGROUPEMENT-->
+                        <p class="texte_gras_tout_bleu_blanc">Hôtel Tout bleu et Blanc</p>
+                        <p class="texte_normal_tout_bleu_blanc">Nuit à partir de 68€</p>
+                        <span><i class="fas fa-star hotel_tout_bleu_blanc_fullstar"></i></span>
+                        <i class="fas fa-star hotel_tout_bleu_blanc_fullstar"></i>
+                        <i class="fas fa-star hotel_tout_bleu_blanc_fullstar"></i>
+                        <i class="fas fa-star hotel_tout_bleu_blanc_fullstar"></i>
+                        <i class="fas fa-star hotel_tout_bleu_blanc_emptystar"></i>
+                    </div>
+                </a>
         </aside>
     </div>
                         <!--______________Activités à Marseille______________-->
 
     <section class="activ_marseil">
-        <!--Vieux Port-->
+                    <!--Vieux Port-->
             <div class="v_port">
                 <h2 id="activites">Activités à Marseille</h2>   <!--ancre pour activité-->
-                <div class="bord_vieux_port">
-                    <a href="#" class="vieux_port">
+                    <div class="bord_vieux_port">
+                        <a href="#" class="vieux_port">
                         <img src="img/activites/4_small/section/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" width="350" height="450" title="Vieux Port" alt="Vieux Port" />
-                    </a>
-                        <p>Vieux Port</p>
-                </div>
+                        </a>
+                            <p>Vieux Port</p>
+                    </div>
             </div>
-        <!--Groupe Fort de Pomègues + iles du Frioul-->
+                    <!--Groupe Fort de Pomègues + iles du Frioul-->
             <div class="group_pomegue_frioul">
                 <a href="#" class="pomegue">
-        <!--Fort de Pomègues-->
+                    <!--Fort de Pomègues-->
                     <img src="img/activites/4_small/section/paul-hermann-QFTrLdQIRhI-unsplash.jpg" width="350" height="200" title="Fort de Pomègues" alt="Fort de Pomègues" />
                     <p>Fort de Pomègues</p>
                 </a>
-        <!--iles du Frioul-->
+                    <!--iles du Frioul-->
                 <a href="#" class="frioul">
                     <img src="img/activites/4_small/section/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" width="350" height="140" title="iles du Frioul" alt="iles du Frioul" />
                     <p>iles du Frioul</p>
                 </a>
             </div>
-        <!--Parc national des Calanques-->
+                    <!--Parc national des Calanques-->
             <div class="calanq">
                 <div class="bord_parc_calanq">
                     <a href="#" class="parc_calan">
@@ -231,15 +234,14 @@
                     </a>
                 </div>
             </div>
-        <!--Groupe Fort de Pomègues + iles du Frioul-->
-            
+                    <!--Groupe Fort de Pomègues + iles du Frioul-->
             <div class="group_n_dame_longcham">
-                <!--Notre-Dame-de-la-Garde-->
+                    <!--Notre-Dame-de-la-Garde-->
                 <a href="#" class="not_dam">
                     <img src="img/activites/4_small/section/florian-wehde-xW9e8gdotxI-unsplash.jpg" width="350" height="175" title="Notre-Dame-de-la-Garde" alt="Notre-Dame-de-la-Garde" />
                     <p>Notre-Dame-de-la-Garde</p>
                 </a>
-                <!--Parc Longchamps-->
+                    <!--Parc Longchamps-->
                 <a href="#" class="par_long">
                     <img src="img/activites/4_small/section/lena-paulin-wH2-EJoDcV0-unsplash.jpg" width="350" height="175" title="Parc Longchamps" alt="Parc Longchamps" />
                     <p>Parc Longchamps</p>
