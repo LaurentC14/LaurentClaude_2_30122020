@@ -14,6 +14,7 @@ body
     margin: auto;
     padding-top: 1em;
 }
+
 /* Logo Reservia*/
 .nav_logo-li{
     justify-content: space-between;
@@ -346,7 +347,7 @@ sont disponibles dans cette ville)*/
     background-color: #F2F2F2;
     border-radius: 2%;
     padding-bottom: 1.4em;
-    margin-bottom: 20em;
+    margin-bottom: 30em;
 }
 
 /*Auberge La Cannebière*/
@@ -663,6 +664,7 @@ div .hotel_amina a {
     justify-content: space-between;
     margin-right: 5em;
     margin: 1em;
+    font-family: 'Raleway', Arial, serif;
 }
 .activ_marseil p{
     font-weight: bold;
@@ -711,8 +713,8 @@ div .hotel_amina a {
 .group_pomegue_frioul a {
     display: flex;
     flex-direction: column;
-    margin-top: 4.1em;
-    margin-bottom: 2em;
+    margin-top: 4.2em;
+    margin-bottom: -.4em;
 }
 .group_pomegue_frioul img{
     border-radius: 4% 4% 0 0;
@@ -766,8 +768,8 @@ div .hotel_amina a {
     display: flex;
     flex-direction: column;
     border-radius: 4% 4% 0 0;
-    /*padding-top: 4.2em;*/
     margin-top: 4.2em;
+    margin-bottom: -.4em;
 }
 .group_n_dame_longcham img{
     border: 0px solid #DEEBFF;
@@ -790,6 +792,7 @@ div .hotel_amina a {
     padding-bottom: 3em;
     padding-right: 20em;
     padding-left: 3em;
+    margin-right: -5em;
 }
 .left_text {
     display: flex;
@@ -815,3 +818,12 @@ footer a {
     line-height: .1em;
 }
 /* FIN PIED DE PAGE */
+
+
+/* Responsive*/
+
+@media screen and (max-width: 1100px){
+    .body{
+        width: 100%;
+    }
+}
