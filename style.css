@@ -89,8 +89,10 @@ li .lien_heber a{
     margin-bottom: .3em;
 }
 .centr_ville{
-    font-size: 20px;
+    font-size: 1.1em;
     margin: 0;
+    color: gray;
+    font-weight: bold;
 }
 /*FIN Marge entre titre en H2 et phrase en p*/
 
@@ -116,6 +118,7 @@ li .lien_heber a{
     height: 1.5em;
 }
 .tex_rech{
+    color: black;
     border: 1px solid #F2F2F2;
     padding-top: .5em;
     padding-bottom: 1em;
@@ -334,7 +337,7 @@ sont disponibles dans cette ville)*/
     display: flex;
     flex-wrap: wrap;    
     justify-content: space-around;
-    margin: 2em
+    margin: 2em;
 }
 .pre_ligne_photo p{
     color: black;
@@ -345,9 +348,9 @@ sont disponibles dans cette ville)*/
 }
 .hebergt_marseil{
     background-color: #F2F2F2;
-    border-radius: 2%;
+    border-radius: 1.5%;
     padding-bottom: 1.4em;
-    margin-bottom: 30em;
+    margin-bottom: 3em;
 }
 
 /*Auberge La Cannebière*/
@@ -366,9 +369,11 @@ sont disponibles dans cette ville)*/
     margin: .5em 0 0 .5em  ;
 }
 .texte_normal_canneb{
-    font-weight: normal;
     text-decoration: none;
     margin: .5em;
+}
+.texte_normal_canneb p{
+    font-weight: bold;
 }
 .auberge_cannebiere .fa-star{
     padding-left: .2em;
@@ -579,20 +584,21 @@ div .hotel_amina a {
 /*FIN Deuxième ligne de photos*/
 
 /* Cote à cote de Hebergement et Les plus populaires*/
-.cote_a_cote{
+/*.cote_a_cote{
     display: flex;
-}
+}*/
 
 /*Les plus populaires*/
 /* <aside class="plus_pop">*/
 .plus_pop {
     background-color: #F2F2F2;
-    border-radius: 3%;
-    margin-left: 2.5em;
+    border-radius: 1.5%;
+    padding-right: 50em;    /*50em est le max avant décalage photo*/
     padding-left: 3em;
     padding-top: 3em;
     padding-bottom: 2em;
-    margin-bottom: 20em;
+    margin-left: 2.5em;
+    margin-bottom: 0em;
 }
 /*<h2 Les plus populaires - titre </h2>*/
 .plus_pop_titre  {
@@ -606,6 +612,7 @@ div .hotel_amina a {
 .bleu_et_blanc{
     display: flex;
     margin-bottom: 2em;
+    margin-right: 0em;
     border: 3px solid white;
     border-bottom: 2px;
     border-radius: 12px;
@@ -820,10 +827,45 @@ footer a {
 /* FIN PIED DE PAGE */
 
 
-/* Responsive*/
 
-@media screen and (max-width: 1100px){
-    .body{
-        width: 100%;
+/* R E S P O N S I V E - V E R S I O N - M O B I L E */
+
+/* Responsive*/
+/*Affichage pour tous les suports*/
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        width: auto;
     }
 }
+/*Coupre de la phrase ">Trouver votre hèbergement pour des vacances de rêve"*/
+@media screen and (min-width: 1024px) {
+    .trouver_hebergt {
+      word-wrap: break-word;
+    }
+  }
+/*Remplacement du bouton "Rechercher" par icone loupe*/
+  /*@media screen and (min-width: 1024px) {
+    .bout_rech {
+        <i class="fa fa-search" aria-hidden="true"></i>;
+    }
+  }*/
+  
+@media screen and (min-width: 1024px) {     
+    .argent i{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: auto;
+        border: 1em solid #ddebfe;
+        border-radius: 3em;
+        content: "\f3d1";   
+    }
+  }
+
+
+
+/*Filtres version mobile*/
+ 
+/*FIN Filtres version mobile*/
