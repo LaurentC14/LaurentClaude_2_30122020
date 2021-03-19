@@ -303,18 +303,18 @@ li .lien_heber a{
 .info i{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    width: auto;
+    /*flex-direction: row;*/
+    /*width: auto;*/
     border: 1em solid #ddebfe;
     border-radius: 3em;
     content: "\f3d1";
     margin: 1em;
     color: #0065FC;
 }
-.fa-info{
+/*.fa-info{
     background-color: #ddebfe;
-    color: #0065FC;    
-}
+    color: #0065FC;
+}*/
 .info{
     display: flex;
     align-items: center;
@@ -327,9 +327,9 @@ li .lien_heber a{
 }
 /*Rond autour du i (Plus de 500 logements 
 sont disponibles dans cette ville)*/
-.fa-info :before {
+/*.fa-info :before {
     content: "\f3d1";
-}
+}*/
 /*FIN Plus de 500 logements*/
 
 /*Hébergements à Marseille*/
@@ -349,8 +349,9 @@ sont disponibles dans cette ville)*/
 .hebergt_marseil{
     background-color: #F2F2F2;
     border-radius: 1.5%;
-    padding-bottom: 1.4em;
-    margin-bottom: 3em;
+    /*padding-bottom: 1.4em;
+    margin-bottom: 3em;*/
+    width: 67%;
 }
 
 /*Auberge La Cannebière*/
@@ -584,86 +585,98 @@ div .hotel_amina a {
 /*FIN Deuxième ligne de photos*/
 
 /* Cote à cote de Hebergement et Les plus populaires*/
-/*.cote_a_cote{
+.cote_a_cote{
     display: flex;
-}*/
+    justify-content: space-between;
+}
 
 /*Les plus populaires*/
 /* <aside class="plus_pop">*/
 .plus_pop {
     background-color: #F2F2F2;
     border-radius: 1.5%;
-    padding-right: 50em;    /*50em est le max avant décalage photo*/
+    /*
+    padding-right: 50em;    
     padding-left: 3em;
     padding-top: 3em;
     padding-bottom: 2em;
     margin-left: 2.5em;
     margin-bottom: 0em;
+    */
+    width: 30%;
 }
 /*<h2 Les plus populaires - titre </h2>*/
 .plus_pop_titre  {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 /*Les plus populaires*/
-.soleil_matin,
+/*.soleil_matin,
 .au_coeur_de_l_eau,
-.bleu_et_blanc{
+.bleu_et_blanc*/
+
+.plus_pop_carte {
     display: flex;
-    margin-bottom: 2em;
-    margin-right: 0em;
     border: 3px solid white;
     border-bottom: 2px;
     border-radius: 12px;
+    /*
+    margin-bottom: 2em;
+    margin-right: 0em;
+    */
+    max-width: 95%;
     background-color: white;
     text-decoration: none;
     color: black;
+    /*border: 3px solid white;
+    border-bottom: 2px;
+    border-radius: 12px;*/
 }
-.soleil_matin p,
-.au_coeur_de_l_eau p,
-.bleu_et_blanc p{
-    padding-left: 1em;
-    padding-right: 2em;
-    font-size: 1.2em;
-}
-.soleil_matin span,
-.au_coeur_de_l_eau span,
-.bleu_et_blanc span{
+
+.plus_pop_carte span
+{
     padding-left: 1em;
 }
-.soleil_matin img,
+
+/*.soleil_matin img,
 .au_coeur_de_l_eau img,
-.bleu_et_blanc img{
+.bleu_et_blanc img*/
+
+.plus_pop_carte img
+{
     border: 0px;
     border-radius: 10% 0 0 10%;
 }
-.soleil_matin .fa-star,
+
+/*.soleil_matin .fa-star,
 .au_coeur_de_l_eau .fa-star,
-.bleu_et_blanc .fa-star{
-    padding-top: 2.5em;  
+.bleu_et_blanc .fa-star*/
+
+.plus_pop_carte .fa-star
+{
+    padding-top: 2.5em;
 }
-.texte_gras_soleil_matin,
-.texte_gras_coeur_de_l_eau,
-.texte_gras_tout_bleu_blanc{
+
+.plus_pop_carte_texte_gras{
     font-weight: bold;
 }
-.texte_normal_soleil_matin,
-.texte_normal_coeur_de_l_eau,
-.texte_normal_tout_bleu_blanc{
+
+.plus_pop_carte_texte_normal{
     /*font-weight: normal;*/
     line-height: 1em;
 }
-.hotel_soleil_matin_fullstar,
-.coeur_de_l_eau_fullstar,
-.hotel_tout_bleu_blanc_fullstar{
+.plus_pop_carte_fullstar{
     color: #0065FC;
 }
-.coeur_de_l_eau_emptystar,
-.hotel_tout_bleu_blanc_emptystar{
+.plus_pop_carte_emptystar{
     color: #F2F2F2;
 }
 /*FIN Les plus populaires*/
+
 
 /* Activités à Marseille */
 .activ_marseil {
@@ -868,4 +881,4 @@ footer a {
 
 /*Filtres version mobile*/
  
-/*FIN Filtres version mobile*/
+/*FIN Filtres version mobile*/ 
