@@ -837,6 +837,10 @@ footer a {
     padding: 1em;
     line-height: .1em;
 }
+.gris{
+    color: gray;
+    font-weight: bold;
+}
 /* FIN PIED DE PAGE */
 
 
