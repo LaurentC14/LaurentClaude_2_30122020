@@ -632,9 +632,9 @@ div .hotel_amina a {
     background-color: white;
     text-decoration: none;
     color: black;
-    /*border: 3px solid white;
+    /*border: 3px solid white;*/
     border-bottom: 2px;
-    border-radius: 12px;*/
+    border-radius: 12px;
 }
 
 .plus_pop_carte span
@@ -663,11 +663,14 @@ div .hotel_amina a {
 
 .plus_pop_carte_texte_gras{
     font-weight: bold;
+    padding-left: 1em;
+
 }
 
 .plus_pop_carte_texte_normal{
     /*font-weight: normal;*/
     line-height: 1em;
+    padding-left: 1em;
 }
 .plus_pop_carte_fullstar{
     color: #0065FC;
