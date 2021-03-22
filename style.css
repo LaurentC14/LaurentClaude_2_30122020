@@ -351,7 +351,7 @@ sont disponibles dans cette ville)*/
     border-radius: 1.5%;
     /*padding-bottom: 1.4em;
     margin-bottom: 3em;*/
-    width: 67%;
+    width: 63%; /*67%*/
 }
 
 /*Auberge La Cannebière*/
@@ -593,16 +593,17 @@ div .hotel_amina a {
 /*Les plus populaires*/
 /* <aside class="plus_pop">*/
 .plus_pop {
+    
     background-color: #F2F2F2;
-    border-radius: 1.5%;
-    /*
-    padding-right: 50em;    
-    padding-left: 3em;
-    padding-top: 3em;
-    padding-bottom: 2em;
-    margin-left: 2.5em;
-    margin-bottom: 0em;
-    */
+    border-radius: 2%;
+    
+    /*padding-right: 1em;*/
+    padding-left: 2.4em;
+    padding-top: 1em;
+    /*padding-bottom: 2em;*/
+    /*margin-left: 2.5em;*/
+    /*margin-bottom: 0em;*/
+    
     width: 30%;
 }
 /*<h2 Les plus populaires - titre </h2>*/
@@ -610,8 +611,9 @@ div .hotel_amina a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2em;
+    /*padding-left: 0em;*/
     padding-right: 2em;
+    padding-bottom: 1em;
 }
 
 /*Les plus populaires*/
@@ -624,10 +626,10 @@ div .hotel_amina a {
     border: 3px solid white;
     border-bottom: 2px;
     border-radius: 12px;
-    /*
-    margin-bottom: 2em;
-    margin-right: 0em;
-    */
+    width: 85%;
+    margin-bottom: 3em;
+    /*margin-right: 0em;*/
+    
     max-width: 95%;
     background-color: white;
     text-decoration: none;
