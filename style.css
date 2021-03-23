@@ -680,17 +680,18 @@ div .hotel_amina a {
 .cote_a_cote {
     display: flex;
     justify-content: space-between;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 /*Les plus populaires*/
 /* <aside class="plus_pop">*/
 .plus_pop {
-
     background-color: #F2F2F2;
     border-radius: 2%;
-
-    /*padding-right: 1em;*/
-    padding-left: 2.4em;
+    padding-right: 1em;
+    /*margin-left: 2em;*/
+    padding-left: 2em;
     padding-top: 1em;
     /*padding-bottom: 2em;*/
     /*margin-left: 2.5em;*/
@@ -716,19 +717,18 @@ div .hotel_amina a {
 
 .plus_pop_carte {
     display: flex;
-    border: 3px solid white;
-    border-bottom: 2px;
+    border: 5px solid white;
+    /*border-bottom: 2px;*/
     border-radius: 12px;
-    width: 85%;
+    width: 80%;
     margin-bottom: 3em;
     /*margin-right: 0em;*/
-
     max-width: 95%;
     background-color: white;
     text-decoration: none;
     color: black;
     /*border: 3px solid white;*/
-    border-bottom: 2px;
+    /*border-bottom: 2px;*/
     border-radius: 12px;
 }
 
@@ -761,12 +761,13 @@ div .hotel_amina a {
 
 .plus_pop_carte_texte_normal {
     /*font-weight: normal;*/
-    line-height: 1em;
+    line-height: 0em;
     padding-left: 1em;
 }
 
 .plus_pop_carte_fullstar {
     color: #0065FC;
+    /*display: inline-block;*/
 }
 
 .plus_pop_carte_emptystar {
@@ -782,6 +783,7 @@ div .hotel_amina a {
     justify-content: space-between;
     margin-right: 5em;
     margin: 1em;
+    margin-top: 2em;
     font-family: 'Raleway', Arial, serif;
 }
 
@@ -938,7 +940,7 @@ div .hotel_amina a {
     padding-bottom: 3em;
     padding-right: 20em;
     padding-left: 3em;
-    margin-right: -5em;
+    margin-right: -3em;
 }
 
 .left_text {
@@ -990,9 +992,8 @@ footer a {
 
 /*Coupure de la phrase ">Trouver votre hèbergement pour des vacances de rêve"*/
 @media all and (max-width: 1500px) {
-    .breakAll {
+    .trouver_hebergt {
         word-break: break-all;
-        line-height: 2px;
     }
 }
 
@@ -1004,12 +1005,10 @@ footer a {
          line-height: 2px;
         <i class="fa fa-search" aria-hidden="true"></i>
 /*Aucune idée comment on fait cela*/
-}
-}
 
 /* icones des filtres */
-@media all and (max-width: 1500px) {
-    .argent i {
+/*@media all and (max-width: 1500px) {
+    .filtre i{
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -1046,33 +1045,26 @@ footer a {
 }
 
 /*Coupure de la phrase "Plus de 500 logements sont disponibles dans cette ville"*/
-@media all and (max-width: 1500px) {
-    .breakAll_disponibles {
-        word-break: break-all;
-        font-size: 1.5em;
-    }
-}
-/* A FINIR = FONT-SIZE NE FONCTIONNE PAS */
-
 /* Plus de 500 logements
 sont disponibles dans cette ville viré à gauche*/
 @media all and (max-width: 1500px) {
     .media_center {
-        text-align: left;        
+        word-break: break-all;
+        text-align: left;
+        font-size: 1.5em;
     }
 }
-/* SEMBLE OK */
-
+/* A FINIR = FONT-SIZE NE FONCTIONNE PAS */
 
 
 /* Pour copier/coller */
 /*@media all and (max-width: 1500px)*/
 
 
-
+/*
 @media all and (max-width: 1500px) {
     .plus_pop {}
-}
+}*/
 
 
 
