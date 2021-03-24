@@ -1,0 +1,47 @@
+/* R E S P O N S I V E - V E R S I O N - M O B I L E */
+
+/*Affichage pour tous les suports*/
+@media screen and (max-width: 1500px) {
+    .body {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .filtre {
+        display: block;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .media_center {
+        word-break: break-all;
+        text-align: left;
+        font-size: 1.5em;
+    }
+}
+
+/*Coupure de la phrase ">Trouver votre hèbergement pour des vacances de rêve"*/
+@media screen and (max-width: 1500px) {
+    .trouver_hebergt {
+        word-break: break-all;
+    }
+}
+
+/*En plein centre ville ou en pleine nature*/
+@media screen and (max-width: 1500px) {
+    .centr_ville {
+        font-weight: normal;
+        color: gray;
+        font-size: 1.5em;
+    }
+}
+
+/*Filtres en colonne version mobile*/
+@media screen and (max-width: 1500px) {
+    .filtre {
+        font-size: 1.4em;
+        flex-wrap: wrap;
+    }
+}

@@ -3,6 +3,7 @@
     src: url('font/Raleway-Regular.ttf') format('opentype');
     font-weight: 400;
 }
+
 @font-face {
     font-family: 'Raleway';
     src: url('font/Raleway-Bold.ttf') format('opentype');
@@ -343,13 +344,11 @@ li .lien_heber a {
 }
 
 .info i {
-    display: flex;
-    justify-content: space-between;
-    /*flex-direction: row;*/
-    /*width: auto;*/
-    border: 1em solid #ddebfe;
-    border-radius: 3em;
-    content: "\f3d1";
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*border: 1em solid #ddebfe;*/
+    /*border-radius: 3em;*/
+    content: "\f05a";
     margin: 1em;
     color: #0065FC;
 }
@@ -371,9 +370,13 @@ li .lien_heber a {
 
 /*Rond autour du i (Plus de 500 logements 
 sont disponibles dans cette ville)*/
-/*.fa-info :before {
-    content: "\f3d1";
-}*/
+.fa-info {
+    height: 20px; 
+		width: 20px; 
+		/*background-color: blue;*/
+		border: 3px solid #F2F2F2;
+		border-radius: 50%; 
+}
 /*FIN Plus de 500 logements*/
 
 /*Hébergements à Marseille*/
@@ -687,7 +690,6 @@ div .hotel_amina a {
 }
 
 /*Les plus populaires*/
-/* <aside class="plus_pop">*/
 .plus_pop {
     background-color: #F2F2F2;
     border-radius: 2%;
@@ -702,7 +704,7 @@ div .hotel_amina a {
     width: 30%;
 }
 
-/*<h2 Les plus populaires - titre </h2>*/
+/* Les plus populaires - titre */
 .plus_pop_titre {
     display: flex;
     justify-content: space-between;
@@ -980,96 +982,3 @@ footer a {
 
 /* FIN PIED DE PAGE */
 
-
-
-/* R E S P O N S I V E - V E R S I O N - M O B I L E */
-
-/* Responsive*/
-/*Affichage pour tous les suports*/
-@media all and (max-width: 1500px) {
-    body {
-        width: auto;
-    }
-}
-
-/*Coupure de la phrase ">Trouver votre hèbergement pour des vacances de rêve"*/
-@media all and (max-width: 1500px) {
-    .trouver_hebergt {
-        word-break: break-all;
-    }
-}
-
-/* SEMBLE OK */
-
-/*Remplacement du bouton "Rechercher" par icone loupe*/
-/* @media screen and (min-width: 1024px) {
-    .bout_rech {
-         line-height: 2px;
-        <i class="fa fa-search" aria-hidden="true"></i>
-/*Aucune idée comment on fait cela*/
-
-/* icones des filtres */
-/*@media all and (max-width: 1500px) {
-    .filtre i{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        width: auto;
-        border: 1em solid #ddebfe;
-        border-radius: 3em;
-        content: "\f3d1";
-    }
-}
-
-/* A TERMINER -  A TERMINER - A TERMINER -*/
-
-
-/*En plein centre ville ou en pleine nature*/
-@media all and (max-width: 1500px) {
-    .centr_ville {
-        font-weight: normal;
-        color: gray;
-        font-size: 1.5em;
-    }
-}
-
-/*Filtres en colonne version mobile*/
-@media all and (max-width: 1500px) {
-    .filtre {
-        font-size: 1.4em;
-    }
-}
-
-@media all and (max-width: 1500px) {
-    .filtre {
-        flex-wrap: wrap;
-    }
-}
-
-/*Coupure de la phrase "Plus de 500 logements sont disponibles dans cette ville"*/
-/* Plus de 500 logements
-sont disponibles dans cette ville viré à gauche*/
-@media all and (max-width: 1500px) {
-    .media_center {
-        word-break: break-all;
-        text-align: left;
-        font-size: 1.5em;
-    }
-}
-/* A FINIR = FONT-SIZE NE FONCTIONNE PAS */
-
-
-/* Pour copier/coller */
-/*@media all and (max-width: 1500px)*/
-
-
-/*
-@media all and (max-width: 1500px) {
-    .plus_pop {}
-}*/
-
-
-
-
-
-/*FIN Filtres version mobile*/
