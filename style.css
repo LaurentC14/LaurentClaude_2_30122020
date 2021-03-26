@@ -370,9 +370,13 @@ li .lien_heber a {
 
 /*Rond autour du i (Plus de 500 logements 
 sont disponibles dans cette ville)*/
-/*.fa-info :before {
-    content: "\f3d1";
-}*/
+.fa-info { 
+    height: 20px; 
+    width: 20px; 
+    border: 3px solid #F2F2F2;
+    border-radius: 50%;
+     
+} 
 /*FIN Plus de 500 logements*/
 
 /*Hébergements à Marseille*/
@@ -975,6 +979,10 @@ footer a {
     color: gray;
     font-weight: bold;
 }
+.ico_loup{
+    display: none;
+}
+
 
 /* FIN PIED DE PAGE */
 
@@ -985,18 +993,38 @@ footer a {
 
 /*Affichage pour tous les suports*/
 @media screen and (max-width: 600px) {
-    .body {
+    body {
         display: block;
     }
 
-    .breakAll_hebergement {
-        word-break: break-all;
+    .trouver_hebergt{
+        width: 80%;
     }
 
     .centr_ville {
         font-weight: normal;
         color: gray;
-        font-size: 1.5em;
+        font-size: 1.4em;
+    }
+
+    .bout_rech {
+        display: none;
+    }
+
+    .ico_loup {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-color: #0065FC;
+        color: white;
+        height: 50px;
+        width: 60px;
+        font-size: 30px;
+        border-radius: 1em;
+        border: none;
+        margin-left: -25px;
+
     }
 
     .filtre {
@@ -1010,11 +1038,18 @@ footer a {
     }
 
     .media_center {
-        word-break: break-all;
+        white-space: normal;
         text-align: left;
         font-size: 1.5em;
+        font-weight: normal;
     }
+    
+.pre_ligne_photo{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 
+}
     .cote_a_cote {
         display: block;
         
@@ -1029,4 +1064,24 @@ footer a {
         justify-content: space-between;
         width: 100%;
     }
+    .activ_marseil{
+        display: flex;
+        flex-direction: column;
+    }
+   
+   
+
+    .pre_ligne_photo:nth-child(1) {
+        order: 2;
+    }
+    .plus_pop:nth-child(2) {
+        order: 1;
+    }
+    .activ_marseil:nth-child(3) {
+        order: 3;
+    }
+    
+    
+    
+    
 }
