@@ -370,13 +370,9 @@ li .lien_heber a {
 
 /*Rond autour du i (Plus de 500 logements 
 sont disponibles dans cette ville)*/
-.fa-info {
-    height: 20px; 
-		width: 20px; 
-		/*background-color: blue;*/
-		border: 3px solid #F2F2F2;
-		border-radius: 50%; 
-}
+/*.fa-info :before {
+    content: "\f3d1";
+}*/
 /*FIN Plus de 500 logements*/
 
 /*Hébergements à Marseille*/
@@ -982,3 +978,55 @@ footer a {
 
 /* FIN PIED DE PAGE */
 
+
+
+
+/* R E S P O N S I V E - V E R S I O N - M O B I L E */
+
+/*Affichage pour tous les suports*/
+@media screen and (max-width: 600px) {
+    .body {
+        display: block;
+    }
+
+    .breakAll_hebergement {
+        word-break: break-all;
+    }
+
+    .centr_ville {
+        font-weight: normal;
+        color: gray;
+        font-size: 1.5em;
+    }
+
+    .filtre {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        /*width: 30%;*/
+
+    }
+
+    .media_center {
+        word-break: break-all;
+        text-align: left;
+        font-size: 1.5em;
+    }
+
+    .cote_a_cote {
+        display: block;
+        
+    }
+
+    .plus_pop{
+        order: 2 ;
+    }
+    .respon_filter{
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
