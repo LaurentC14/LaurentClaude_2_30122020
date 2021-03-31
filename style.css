@@ -701,7 +701,6 @@ div .hotel_amina a {
     /*padding-bottom: 2em;*/
     /*margin-left: 2.5em;*/
     /*margin-bottom: 0em;*/
-
     width: 30%;
 }
 
@@ -989,19 +988,21 @@ footer a {
 /* FIN PIED DE PAGE */
 
 
-
-
 /* R E S P O N S I V E - V E R S I O N - M O B I L E */
 
 /*Affichage pour tous les suports*/
 @media screen and (max-width: 600px) {
     body {
         display: block;
+    }
 
+    nav {
+        padding-right: 80%;
     }
 
     .nav_logo-li {
         padding-right: 0;
+        padding-right: 80%;
     }
 
     .trouver_hebergt {
@@ -1009,17 +1010,20 @@ footer a {
         /*ok*/
     }
 
+
+    /* A   F I N A L I S E R*/
     .centr_ville {
         font-weight: normal;
         color: gray;
         font-size: 1.4em;
+        padding-right: 70%;
     }
 
     .bout_rech {
         display: none;
     }
 
-  /* A   F I N A L I S E R*/
+    /* A   F I N A L I S E R*/
     .ico_loup {
         display: flex;
         align-items: center;
@@ -1035,67 +1039,83 @@ footer a {
         margin-left: 1em;
     }
 
-    /* A VOIR OU A VIRER ????*/
-    /*.media_filter_enfant_coeur {
+
+    .filtre {
         display: block;
         display: flex;
-        flex-direction: row;
-        width: 90%;
-    }*/
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        /*flex-wrap: nowrap;*/
+        /*margin: 10px;*/
+        /*padding-right: 40%;*/
 
-    .argent {
-        display: block;
-        display: flex;
-        border: 3px solid #ddebfe;
-        border-radius: 3em;
-        padding-top: 0em;
-        padding-bottom: 0em;
-        padding-right: 4em;
-        align-items: center;
-        width: 15%;
     }
 
-    .argent a {
-        text-decoration: none;
-        padding-left: 1em;
-        font-size: 1.1em;
-    }
-
-    .argent a:hover {
-        color: #0065FC;
-    }
-
-    .fa-money-bill-wave {
-        background-color: #ddebfe;
-        color: #0065FC;
-    }
- 
     /* A   F I N A L I S E R*/
     .info p {
         display: block;
         font-weight: normal;
         color: gray;
+        padding-right: 70%;
+
+    }
+
+    .cote_a_cote {
+        display: block;
+
+    }
+
+    .hebergt_marseil {
         padding-right: 80%;
+        background-color: white;
+
     }
 
-    .cote_a_cote{
+    .titre_hebergt {
         display: block;
+        padding-left: 0;
+    }
+
+    .cards_hebergement {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        margin: 0em;
+        margin-right: 70%;
 
     }
-    .cards_hebergement{
+
+    .plus_pop {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10%;
+        padding-left: 1em;
+    }
+
+    .plus_pop_titre {
+        padding-right: 5em;
+    }
+
+    .activ_marseil {
         display: block;
         display: flex;
         flex-direction: column;
     }
-    .activ_marseil{
+
+    .foot {
         display: block;
-        display: flex;
-        flex-direction: column;
-    }
-    .foot{
-        display: block;
-        display: hiden;  /*Intéressant*/
-        /*display: flex;
-        flex-direction: column;*/
-    }
+        display: hiden;
+   }
+   .titre_afficher_plus{
+       display: block;
+       padding-left: 0em;
+   }
+   .activ_marseil{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 70%;
+   }
 }
