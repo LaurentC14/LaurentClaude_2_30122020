@@ -17,23 +17,23 @@ body {
     padding-top: 1em;
 }
 
-/* Logo Reservia*/
+
 .nav_logo-li {
     justify-content: space-between;
     width: 80%;
     text-decoration: none;
 }
 
-/* Mise en place liens navigation */
+
 ul {
     display: flex;
-    /*suppression des puces de navig*/
+
     list-style-type: none;
-    /*Logo décalé sur la gauche*/
+
     padding-left: 0;
 }
 
-/*Alignement texte des liens navigation*/
+
 .padd_hebergt {
     padding: 1.5em;
     color: black;
@@ -47,7 +47,7 @@ li .lien_heber a {
     padding-top: 3em;
 }
 
-/*Apparence au survol liens navig*/
+
 .lien_heber a:hover {
     border-top: 0.2em solid #0065FC;
 }
@@ -66,7 +66,7 @@ li .lien_heber a {
     padding-bottom: .3em;
 }
 
-/*Apparence au survol liens navig*/
+
 .lien_activite a:hover {
     border-top: 0.2em solid #0065FC;
 }
@@ -84,7 +84,7 @@ li .lien_heber a {
     padding-bottom: .3em;
 }
 
-/*Apparence au survol liens navig*/
+
 .lien_s_inscrire a:hover {
     border-top: 0.2em solid #0065FC;
 }
@@ -93,9 +93,9 @@ li .lien_heber a {
     line-height: 3em;
 }
 
-/*FIN Mise en place liens navigation*/
 
-/*Marge entre titre en H2 et phrase en p*/
+
+
 .trouver_hebergt {
     padding-top: 1em;
     margin: 0;
@@ -109,9 +109,6 @@ li .lien_heber a {
     font-weight: bold;
 }
 
-/*FIN Marge entre titre en H2 et phrase en p*/
-
-/*Mise en place barre rechercher*/
 .recherche {
     display: flex;
     flex-direction: row;
@@ -157,9 +154,6 @@ li .lien_heber a {
     font-weight: bold;
 }
 
-/* FIN Mise en place barre rechercher*/
-
-/*Mise en place barre des Filtres*/
 .filtre {
     display: flex;
     justify-content: space-between;
@@ -170,15 +164,14 @@ li .lien_heber a {
     margin-right: 30em;
 }
 
-/*Filtres*/
+
 .filtre a {
     font-size: 1.1em;
     color: black;
 }
 
-/*FIN Filtres*/
 
-/*Economiques*/
+
 .argent i {
     display: flex;
     justify-content: space-between;
@@ -214,9 +207,9 @@ li .lien_heber a {
     color: #0065FC;
 }
 
-/*FIN Economiques*/
 
-/*Familial*/
+
+
 .enfant i {
     display: flex;
     justify-content: space-between;
@@ -254,9 +247,9 @@ li .lien_heber a {
     color: #0065FC;
 }
 
-/*FIN Familial*/
 
-/*Romantique*/
+
+
 .coeur i {
     display: flex;
     justify-content: space-between;
@@ -293,9 +286,6 @@ li .lien_heber a {
     color: #0065FC;
 }
 
-/*FIN Romantique*/
-
-/*Animaux autorisés*/
 .chien i {
     display: flex;
     justify-content: space-between;
@@ -333,10 +323,6 @@ li .lien_heber a {
     color: #0065FC;
 }
 
-/*FIN Animaux autorisés*/
-/*FIN Mise en place barre des Filtres*/
-
-/*Plus de 500 logements*/
 .info p {
     font-weight: bold;
     color: gray;
@@ -344,19 +330,12 @@ li .lien_heber a {
 }
 
 .info i {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*border: 1em solid #ddebfe;*/
-    /*border-radius: 3em;*/
+
     content: "\f05a";
     margin: 1em;
     color: #0065FC;
 }
 
-/*.fa-info{
-    background-color: #ddebfe;
-    color: #0065FC;
-}*/
 .info {
     display: flex;
     align-items: center;
@@ -368,8 +347,6 @@ li .lien_heber a {
     text-align: center;
 }
 
-/*Rond autour du i (Plus de 500 logements 
-sont disponibles dans cette ville)*/
 .fa-info {
     height: 20px;
     width: 20px;
@@ -378,9 +355,6 @@ sont disponibles dans cette ville)*/
 
 }
 
-/*FIN Plus de 500 logements*/
-
-/*Hébergements à Marseille*/
 .cards_hebergement {
     display: flex;
     flex-wrap: wrap;
@@ -400,13 +374,12 @@ sont disponibles dans cette ville)*/
 .hebergt_marseil {
     background-color: #F2F2F2;
     border-radius: 1.5%;
-    /*padding-bottom: 1.4em;
-    margin-bottom: 3em;*/
+
     width: 63%;
-    /*67%*/
+
 }
 
-/*Auberge La Cannebière*/
+
 .auberge_cannebiere {
     background-color: white;
     border: 5px solid white;
@@ -437,19 +410,19 @@ sont disponibles dans cette ville)*/
     padding-left: .2em;
 }
 
-/*Modif color des icones étoiles*/
+
 .auberge_cannebiere_fullstar {
     color: #0065FC;
 }
 
-/*Modif color des icones étoiles*/
+
 .auberge_cannebiere_emptystar {
     color: #F2F2F2;
 }
 
-/*FIN Auberge La Cannebière*/
 
-/*Hôtel du port*/
+
+
 .hotel_port {
     background-color: white;
     border: 5px solid white;
@@ -462,7 +435,7 @@ sont disponibles dans cette ville)*/
     border-radius: 10% 10% 0 0;
 }
 
-/*Texte mis en gras et normal sous photos*/
+
 .texte_gras_port {
     font-weight: bold;
     margin: .5em 0 0 .5em;
@@ -477,7 +450,7 @@ sont disponibles dans cette ville)*/
     padding-left: .2em;
 }
 
-/*Modif color des icones étoiles*/
+
 .hotel_port_fullstar {
     color: #0065FC;
 }
@@ -487,9 +460,7 @@ div .hotel_port a {
     line-height: .5em;
 }
 
-/*FIN Hôtel du port*/
 
-/*Hôtel Les Mouettes*/
 .hotel_mouettes {
     background-color: white;
     border: 5px solid white;
@@ -502,7 +473,6 @@ div .hotel_port a {
     border-radius: 10% 10% 0 0;
 }
 
-/*Texte mis en gras et normal sous photos*/
 .texte_gras_mouette {
     font-weight: bold;
     margin: .5em 0 0 .5em;
@@ -517,7 +487,6 @@ div .hotel_port a {
     padding-left: .2em;
 }
 
-/*Modif color des icones étoiles*/
 .hotel_mouettes_fullstar {
     color: #0065FC;
 }
@@ -531,11 +500,6 @@ div .hotel_mouettes a {
     line-height: .5em;
 }
 
-/*FIN Hôtel Les Mouettes*/
-/* FIN Première ligne de photos*/
-
-/*Deuxième ligne de photos*/
-/*Hôtel de la mer*/
 .hotel_de_mer {
     background-color: white;
     border: 5px solid white;
@@ -548,7 +512,6 @@ div .hotel_mouettes a {
     border-radius: 10% 10% 0 0;
 }
 
-/*Texte mis en gras et normal sous photos*/
 .texte_gras_mer {
     font-weight: bold;
     color: black;
@@ -565,12 +528,10 @@ div .hotel_mouettes a {
     padding-left: .2em;
 }
 
-/*Modif color des icones étoiles*/
 .hotel_de_mer_fullstar {
     color: #0065FC;
 }
 
-/*Modif color des icones étoiles*/
 .hotel_de_mer_emptystar {
     color: #F2F2F2;
 }
@@ -580,14 +541,10 @@ div .hotel_de_mer a {
     line-height: .5em;
 }
 
-/*FIN Hôtel de la mer*/
-
-/* "Afficher plus" en gras*/
 .afficher_en_gras {
     font-weight: bold;
 }
 
-/*Auberge Le Panier*/
 .auberge_panier {
     background-color: white;
     border: 5px solid white;
@@ -600,7 +557,6 @@ div .hotel_de_mer a {
     border-radius: 10% 10% 0 0;
 }
 
-/*Texte mis en gras et normal sous photos*/
 .texte_gras_panier {
     font-weight: bold;
     color: black;
@@ -617,12 +573,10 @@ div .hotel_de_mer a {
     padding-left: .2em;
 }
 
-/*Modif color des icones étoiles*/
 .auberge_panier_fullstar {
     color: #0065FC;
 }
 
-/*Modif color des icones étoiles*/
 .auberge_panier_emptystar {
     color: #F2F2F2;
 }
@@ -632,14 +586,11 @@ div .auberge_panier a {
     line-height: .5em;
 }
 
-/*FIN Auberge Le Panier*/
-
 .titre_afficher_plus {
     font-size: 1.3em;
     padding-left: 2.5em;
 }
 
-/*Hôtel chez Amina*/
 .hotel_amina {
     background-color: white;
     border: 5px solid white;
@@ -652,7 +603,6 @@ div .auberge_panier a {
     border-radius: 10% 10% 0 0;
 }
 
-/*Texte mis en gras et normal sous photos*/
 .texte_gras_amina {
     font-weight: bold;
     color: black;
@@ -669,7 +619,6 @@ div .auberge_panier a {
     padding-left: .2em;
 }
 
-/*Modif color des icones étoiles*/
 .auberge_panier_fullstar {
     color: #0065FC;
 }
@@ -679,10 +628,6 @@ div .hotel_amina a {
     line-height: .5em;
 }
 
-/*FIN Hôtel chez Amina*/
-/*FIN Deuxième ligne de photos*/
-
-/* Cote à cote de Hebergement et Les plus populaires*/
 .cote_a_cote {
     display: flex;
     justify-content: space-between;
@@ -690,49 +635,40 @@ div .hotel_amina a {
     margin-right: 1em;
 }
 
-/*Les plus populaires*/
 .plus_pop {
     background-color: #F2F2F2;
     border-radius: 2%;
     padding-right: 1em;
-    /*margin-left: 2em;*/
+
     padding-left: 2em;
     padding-top: 1em;
-    /*padding-bottom: 2em;*/
-    /*margin-left: 2.5em;*/
-    /*margin-bottom: 0em;*/
+
     width: 30%;
 }
 
-/* Les plus populaires - titre */
 .plus_pop_titre {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*padding-left: 0em;*/
+
     padding-right: 2em;
     padding-bottom: 1em;
 }
 
-/*Les plus populaires*/
-/*.soleil_matin,
-.au_coeur_de_l_eau,
-.bleu_et_blanc*/
 
 .plus_pop_carte {
     display: flex;
     border: 5px solid white;
-    /*border-bottom: 2px;*/
+
     border-radius: 12px;
     width: 80%;
     margin-bottom: 3em;
-    /*margin-right: 0em;*/
+
     max-width: 95%;
     background-color: white;
     text-decoration: none;
     color: black;
-    /*border: 3px solid white;*/
-    /*border-bottom: 2px;*/
+
     border-radius: 12px;
 }
 
@@ -740,18 +676,12 @@ div .hotel_amina a {
     padding-left: 1em;
 }
 
-/*.soleil_matin img,
-.au_coeur_de_l_eau img,
-.bleu_et_blanc img*/
 
 .plus_pop_carte img {
     border: 0px;
     border-radius: 10% 0 0 10%;
 }
 
-/*.soleil_matin .fa-star,
-.au_coeur_de_l_eau .fa-star,
-.bleu_et_blanc .fa-star*/
 
 .plus_pop_carte .fa-star {
     padding-top: 2.5em;
@@ -764,24 +694,20 @@ div .hotel_amina a {
 }
 
 .plus_pop_carte_texte_normal {
-    /*font-weight: normal;*/
+
     line-height: 0em;
     padding-left: 1em;
 }
 
 .plus_pop_carte_fullstar {
     color: #0065FC;
-    /*display: inline-block;*/
+
 }
 
 .plus_pop_carte_emptystar {
     color: #F2F2F2;
 }
 
-/*FIN Les plus populaires*/
-
-
-/* Activités à Marseille */
 .activ_marseil {
     display: flex;
     justify-content: space-between;
@@ -796,7 +722,6 @@ div .hotel_amina a {
     color: black;
 }
 
-/*Vieux Port*/
 .v_port {
     text-decoration: none;
 }
@@ -814,10 +739,6 @@ div .hotel_amina a {
     border-radius: 4%;
 }
 
-/*FIN Vieux Port*/
-
-/*Fort de Pomègues + iles du Frioul*/
-/*Fort de Pomègues*/
 .pomegue {
     border: 1px solid #DEEBFF;
     border-radius: 4%;
@@ -857,7 +778,6 @@ div .hotel_amina a {
     border-radius: 4% 4% 0 0;
 }
 
-/*Parc national des Calanques*/
 .calanq a {
     text-decoration: none;
 }
@@ -879,10 +799,6 @@ div .hotel_amina a {
     padding-top: 4.2em;
 }
 
-/*FIN Parc national des Calanques*/
-
-/*Notre-Dame-de-la-Garde + Parc Longchamps*/
-/*Fort de Pomègues*/
 .not_dam {
     border: 1px solid #DEEBFF;
     border-radius: 4%;
@@ -932,9 +848,6 @@ div .hotel_amina a {
     margin-bottom: 2.6em;
 }
 
-/*FIN Notre-Dame-de-la-Garde + Parc Longchamps*/
-
-/* PIED DE PAGE */
 .foot {
     display: flex;
     justify-content: space-between;
@@ -985,14 +898,71 @@ footer a {
 }
 
 
-/* FIN PIED DE PAGE */
-
-
-/* R E S P O N S I V E - V E R S I O N - M O B I L E */
-
-/*Affichage pour tous les suports*/
 @media screen and (max-width: 600px) {
-    body {
+    body{
+        width: 100%;
+    }
+    ul{
+        flex-wrap: wrap;
+        margin-bottom: 1.5em;
+    }
+    .nav_logo-li{
+        width: 40%;
+        padding: .5em 0 0 1.2em;
+    }
+    .lien_s_inscrire{
+        line-height: 4em;
+        padding-left: 2em;
+    }
+    .lien_heber{
+        order: 1;
+    }
+    .lien_activite{
+        order: 1;
+    }
+    header{
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+    .trouver_hebergt{
+        font-size: 1.3em;
+        padding-top: 0;
+    }
+    .centr_ville{
+        font-weight: normal;
+    }
+    .recherche{
+        padding-top: 0.5em;
+        padding-bottom: 0;
+    }
+    .bout_rech{
+        display: none;
+    }
+    .ico_loup{
+        display: inline-block;
+        padding: .9em;
+        color: white;
+        background-color: #0065fc;
+        border: .1em solid black;
+        border-radius: 0 .9em .9em 0;
+    }
+    .filtre{
+        width: 90%;
+        margin: 0 auto 0 auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 0;
+    }
+    .info p{
+        width: 90%;
+        margin: 0 auto 0 auto;
+        font-weight: normal;
+        font-size: 0.8em;
+    }
+    
+
+    /*body {
+        
         display: block;
     }
 
@@ -1007,11 +977,11 @@ footer a {
 
     .trouver_hebergt {
         padding-right: 67%;
-        /*ok*/
+
     }
 
 
-    /* A   F I N A L I S E R*/
+
     .centr_ville {
         font-weight: normal;
         color: gray;
@@ -1023,11 +993,11 @@ footer a {
         display: none;
     }
 
-    /* A   F I N A L I S E R*/
+
     .ico_loup {
         display: flex;
         align-items: center;
-        /*text-align: center;*/
+
         justify-content: center;
         background-color: #0065FC;
         color: white;
@@ -1046,13 +1016,11 @@ footer a {
         justify-content: space-around;
         flex-direction: column;
         align-items: flex-start;
-        /*flex-wrap: nowrap;*/
-        /*margin: 10px;*/
-        /*padding-right: 40%;*/
+
 
     }
 
-    /* A   F I N A L I S E R*/
+
     .info p {
         display: block;
         font-weight: normal;
@@ -1106,16 +1074,17 @@ footer a {
 
     .foot {
         display: block;
-        display: hiden;
-   }
-   .titre_afficher_plus{
-       display: block;
-       padding-left: 0em;
-   }
-   .activ_marseil{
-    display: block;
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 70%;
-   }
+    }
+
+    .titre_afficher_plus {
+        display: block;
+        padding-left: 0em;
+    }
+
+    .activ_marseil {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 70%;
+    }*/
 }
