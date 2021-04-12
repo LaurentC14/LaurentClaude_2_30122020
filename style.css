@@ -27,9 +27,7 @@ body {
 
 ul {
     display: flex;
-
     list-style-type: none;
-
     padding-left: 0;
 }
 
@@ -374,7 +372,6 @@ li .lien_heber a {
 .hebergt_marseil {
     background-color: #F2F2F2;
     border-radius: 1.5%;
-
     width: 63%;
 
 }
@@ -898,193 +895,213 @@ footer a {
 }
 
 
+/*__________VERSION MOBILE___________________________________________*/
+
 @media screen and (max-width: 600px) {
-    body{
+    body {
         width: 100%;
     }
-    ul{
+
+    ul {
         flex-wrap: wrap;
         margin-bottom: 1.5em;
     }
-    .nav_logo-li{
+
+    .nav_logo-li {
         width: 40%;
         padding: .5em 0 0 1.2em;
     }
-    .lien_s_inscrire{
+
+    .lien_s_inscrire {
         line-height: 4em;
         padding-left: 2em;
     }
-    .lien_heber{
+
+    .lien_heber {
         order: 1;
     }
-    .lien_activite{
+
+    .lien_activite {
         order: 1;
     }
-    header{
+
+    header {
         width: 90%;
         margin: 0 auto 0 auto;
-    }
-    .trouver_hebergt{
-        font-size: 1.3em;
-        padding-top: 0;
-    }
-    .centr_ville{
-        font-weight: normal;
-    }
-    .recherche{
-        padding-top: 0.5em;
-        padding-bottom: 0;
-    }
-    .bout_rech{
-        display: none;
-    }
-    .ico_loup{
-        display: inline-block;
-        padding: .9em;
-        color: white;
-        background-color: #0065fc;
-        border: .1em solid black;
-        border-radius: 0 .9em .9em 0;
-    }
-    .filtre{
-        width: 90%;
-        margin: 0 auto 0 auto;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-bottom: 0;
-    }
-    .info p{
-        width: 90%;
-        margin: 0 auto 0 auto;
-        font-weight: normal;
-        font-size: 0.8em;
-    }
-    
-
-    /*body {
-        
-        display: block;
-    }
-
-    nav {
-        padding-right: 80%;
-    }
-
-    .nav_logo-li {
-        padding-right: 0;
-        padding-right: 80%;
     }
 
     .trouver_hebergt {
-        padding-right: 67%;
-
+        font-size: 1.3em;
+        padding-top: 0;
     }
-
-
 
     .centr_ville {
         font-weight: normal;
-        color: gray;
-        font-size: 1.4em;
-        padding-right: 70%;
+    }
+
+
+    .recherche {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        border-radius: 4%;
+        margin-bottom: 1em;
+    }
+
+    .recherche i {
+        line-height: 1.2em;
     }
 
     .bout_rech {
         display: none;
     }
 
-
     .ico_loup {
-        display: flex;
-        align-items: center;
-
-        justify-content: center;
-        background-color: #0065FC;
+        display: inline-block;
+        padding: .9em;
         color: white;
-        height: 60px;
-        width: 60px;
-        font-size: 20px;
-        border-radius: 30%;
-        border: none;
-        margin-left: 1em;
+        background-color: #0065fc;
+        border: .1em solid #0065fc;
+        border-radius: .9em .9em .9em .9em;
     }
 
 
     .filtre {
         display: block;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: flex-start;
-
-
     }
 
+    .filtre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2em;
+        color: black;
+        font-weight: bold;
+        margin-right: 30em;
+        margin-left: 13em;
+    }
+    .filtre h3{
+        margin-left: -18em;
+    }
+    
+    .filtre a {
+        font-size: 1.1em;
+        color: black;
+    }
+    .argent {
+        margin-right: 10em;
+        margin-bottom: .5em;
+        border: 3px solid #ddebfe;
+        border-radius: 3em;
+    }
+
+    .enfant {
+        margin-right: 14em;
+        margin-bottom: .5em;
+    }
+
+    .coeur {
+        margin-right: 12em;
+        margin-bottom: .5em;
+    }
+
+    .chien {
+        margin-right: 5.5em;
+        margin-bottom: .5em;
+        padding-right: 10em;
+    }
 
     .info p {
-        display: block;
-        font-weight: normal;
+        font-weight: bold;
         color: gray;
-        padding-right: 70%;
-
+        font-size: 1.1em;
+        text-align: left;
     }
-
     .cote_a_cote {
-        display: block;
-
+        display: flex;
+        flex-direction: column;
+        margin: 0;
     }
 
     .hebergt_marseil {
-        padding-right: 80%;
-        background-color: white;
-
-    }
-
-    .titre_hebergt {
-        display: block;
-        padding-left: 0;
-    }
-
-    .cards_hebergement {
-        display: block;
-        display: flex;
-        flex-direction: column;
-        margin: 0em;
-        margin-right: 70%;
-
+        width: 100%;        
+        order:2;
     }
 
     .plus_pop {
-        display: block;
-        display: flex;
-        flex-direction: column;
-        margin-right: 10%;
-        padding-left: 1em;
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 0.5em;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 1em;  
     }
 
     .plus_pop_titre {
-        padding-right: 5em;
+        justify-content: space-around;
+    }
+
+    .plus_pop_carte {
+        margin: 0.5em auto;
+        align-items: center;
     }
 
     .activ_marseil {
-        display: block;
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .activ_marseil img {
+        height: 10em;
+        object-fit: cover;
     }
 
     .foot {
-        display: block;
+        flex-direction: column;
+        padding-right: 0;
+        margin-right: 0;
     }
+}
 
-    .titre_afficher_plus {
-        display: block;
-        padding-left: 0em;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*__________VERSION TABLETTE___________________________________________*/
+@media screen and (min-width: 601px) and (max-width: 1024px ) {
+    body {
+        width: 100%;
     }
-
-    .activ_marseil {
-        display: block;
-        display: flex;
+    ul {
         flex-wrap: wrap;
-        padding-right: 70%;
-    }*/
+        margin-bottom: 1.5em;
+    }
+    .trouver_hebergt{
+        text-align: center;
+    }
+    .argent{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .enfant{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .coeur{
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
