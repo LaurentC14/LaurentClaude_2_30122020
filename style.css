@@ -1,15 +1,3 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('font/Raleway-Regular.ttf') format('opentype');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('font/Raleway-Bold.ttf') format('opentype');
-    font-weight: 700;
-}
-
 body {
     font-family: 'Raleway', Arial, serif;
     width: 1500px;
@@ -943,7 +931,7 @@ footer a {
     body {
         width: 100%;
     }
-
+/*Mise en place des liens*/
     ul {
         flex-wrap: wrap;
         margin-bottom: 1.5em;
@@ -966,11 +954,15 @@ footer a {
     .lien_activite {
         order: 1;
     }
-
-    header {
+/*FIN Mise en place des liens*/
+    
+/*Barre de recherche*/
+header {
         width: 90%;
         margin: 0 auto 0 auto;
     }
+/*FIN Barre de recherche*/
+
 /*Marge entre titre en H2 et phrase en p*/
     .trouver_hebergt {
         font-size: 1.3em;
@@ -1057,23 +1049,26 @@ footer a {
     }
 /*FIN Ligne des filtres*/
 
+/*Plus de 500 logements*/
     .info p {
         font-weight: bold;
         color: gray;
         font-size: 1.1em;
         text-align: left;
     }
+    /*Mise cote à cote "Hébergements à Marseille" et 
+    "Les plus populaires"*/
     .cote_a_cote {
         display: flex;
         flex-direction: column;
         margin: 0;
     }
-
+/* Largeur et mise en 2emme position "Hébergements à Marseille"*/
     .hebergt_marseil {
         width: 100%;        
         order:2;
     }
-
+/*Mise en page "Les plus populaires"*/
     .plus_pop {
         width: 100%;
         max-width: 100%;
@@ -1082,22 +1077,22 @@ footer a {
         padding-right: 0;
         margin-bottom: 1em;  
     }
-
+/*Alignement icone et titre "Les plus populaires"*/
     .plus_pop_titre {
         justify-content: space-around;
     }
-
+/*Alignement des cards "Les plus populaires"*/
     .plus_pop_carte {
         margin: 0.5em auto;
         align-items: center;
     }
-
+/*Mise en page "Activités à Marseille"*/
     .activ_marseil {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
+/*Hauteur et largeur des images "Activités à Marseille"*/
     .activ_marseil img {
         height: 10em;
         object-fit: cover;
@@ -1116,17 +1111,20 @@ footer a {
 
 /*__________VERSION TABLETTE___________________________________________*/
 @media screen and (min-width: 601px) and (max-width: 1024px ) {
+    /*Largeur et marge du body*/
     body {
         width: 100%;
-        margin-left: 1em;
     }
+    /*Lien de navigation*/
     ul {
         margin-bottom: 1.5em;
     }
+    /*Mise en page "Trouver votre hèbergement...*/
     .trouver_hebergt{
         text-align: center;
         padding-right: .6em;
     }
+    /*Mise en page des Filtres*/
     .argent{
         padding-right: 1em;
     }
@@ -1155,17 +1153,22 @@ footer a {
         padding-left: .5em;
         padding-right: .5em;
     }
+    /*Fin mise en page des Filtres*/
+
+    /*Mise en colonne des Cards "Hébergements à Marseille" 
+    et "Les plus populaires"*/
     .cote_a_cote {
         display: flex;
         flex-direction: column;
         margin: 0;
     }
-
+    /* Largeur et ordre d'affichage du bloc
+    "Hébergements à Marseille"*/
     .hebergt_marseil {
         width: 100%;        
         order:2;
     }
-
+/*Mise en page "Les plus populaires"* comme Version Mob*/
     .plus_pop {
         width: 100%;
         max-width: 100%;
@@ -1174,27 +1177,27 @@ footer a {
         padding-right: 0;
         margin-bottom: 1em;  
     }
-
+    /*Mise en page du titre et de l'icone fa-line-chart*/
     .plus_pop_titre {
         justify-content: space-around;
     }
-
+    /*Mise en page et centrage Cards "Les plus populaires"*/
     .plus_pop_carte {
         margin: 0.5em auto;
         align-items: center;
     }
-
+    /*Mise en colonne et centrage Cards "Activités à Marseille"*/
     .activ_marseil {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
+    /*Hauteur et largeur des images "Activités à Marseille"*/
     .activ_marseil img {
         height: 10em;
         object-fit: cover;
     }
-
+    /*Mise en page pied de page, tout en colonne*/
     .foot {
         flex-direction: column;
         padding-right: 0;
