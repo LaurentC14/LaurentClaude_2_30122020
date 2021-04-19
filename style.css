@@ -92,7 +92,7 @@ li .lien_heber a {
     font-size: 1.1em;
     margin: 0;
     color: gray;
-    font-weight: bold;
+    font-weight: normal;
 }
 /*FIN Marge entre titre en H2 et phrase en p*/
 
@@ -312,7 +312,7 @@ li .lien_heber a {
 /*Icone + texte Plus de 500 logements*/
 
 .info p {
-    font-weight: bold;
+    font-weight: normal;
     color: gray;
     font-size: 1.1em;
 }
@@ -914,7 +914,7 @@ footer a {
 
 .gris {
     color: gray;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* FIN PIED DE PAGE */
