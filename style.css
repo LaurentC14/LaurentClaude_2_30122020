@@ -83,7 +83,7 @@ li .lien_heber a {
 /*Marge entre titre en H2 et phrase en p*/
 
 .trouver_hebergt {
-    padding-top: 1em;
+    padding-top: .3em;
     margin: 0;
     margin-bottom: .3em;
 }
@@ -934,17 +934,28 @@ footer a {
 /*Mise en place des liens*/
     ul {
         flex-wrap: wrap;
-        margin-bottom: 1.5em;
+        margin-bottom: 2.5em;
+        /*margin-right: -8em;*/
     }
-
+    .padd_activ {
+        padding: 1.5em;
+        color: black;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 1.3em;
+        padding-bottom: .3em;
+    }
     .nav_logo-li {
         width: 40%;
         padding: .5em 0 0 1.2em;
     }
-
+    .lien_heber a:hover {
+        border-bottom: 0.2em solid #0065FC;
+    }
     .lien_s_inscrire {
         line-height: 4em;
         padding-left: 2em;
+        margin-left: 2.5em
     }
 
     .lien_heber {
@@ -965,11 +976,13 @@ header {
 
 /*Marge entre titre en H2 et phrase en p*/
     .trouver_hebergt {
-        font-size: 1.3em;
+        font-size: 1.43em;
         padding-top: 0;
+        margin-right: 3em;
     }
     .centr_ville {
         font-weight: normal;
+        margin-top: .7em;
     }
 /*FIN Marge entre titre en H2 et phrase en p*/
 
@@ -1022,21 +1035,26 @@ header {
     }
     
     .filtre a {
-        font-size: 1.1em;
+        font-size: 1.2em;
         color: black;
     }
     .argent {
-        margin-right: 10em;
+        margin-right: 13em;
         margin-bottom: .5em;
         border: 3px solid #ddebfe;
         border-radius: 3em;
+        /*padding-right: 1em;*/
+        margin-left: 0em;
     }
-
+    .argent a{
+        padding-left: .5em;
+        margin-right: -2.1em;
+    }
     .enfant {
-        margin-right: 14em;
+        margin-right: 13.7em;
         margin-bottom: .5em;
+        padding-right: 3em;
     }
-
     .coeur {
         margin-right: 12em;
         margin-bottom: .5em;
@@ -1051,7 +1069,7 @@ header {
 
 /*Plus de 500 logements*/
     .info p {
-        font-weight: bold;
+        font-weight: normal;
         color: gray;
         font-size: 1.1em;
         text-align: left;
@@ -1067,6 +1085,11 @@ header {
     .hebergt_marseil {
         width: 100%;        
         order:2;
+        background-color: white;
+    }
+    .titre_hebergt {
+        padding-top: 0em;
+        padding-left: 2.2em;
     }
 /*Mise en page "Les plus populaires"*/
     .plus_pop {
@@ -1075,16 +1098,22 @@ header {
         padding-bottom: 0.5em;
         padding-left: 0;
         padding-right: 0;
-        margin-bottom: 1em;  
+        margin-bottom: 3em;  
     }
 /*Alignement icone et titre "Les plus populaires"*/
     .plus_pop_titre {
-        justify-content: space-around;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 2em;
+        padding-bottom: 1em;
     }
+
 /*Alignement des cards "Les plus populaires"*/
     .plus_pop_carte {
         margin: 0.5em auto;
         align-items: center;
+        margin-bottom: 1em;
     }
 /*Mise en page "Activités à Marseille"*/
     .activ_marseil {
@@ -1102,7 +1131,7 @@ header {
         flex-direction: column;
         padding-right: 0;
         margin-right: 0;
-        text-align: center;
+        text-align: left;
     }
     
 }
