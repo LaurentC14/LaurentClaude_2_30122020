@@ -87,6 +87,10 @@ li .lien_heber a {
     margin: 0;
     margin-bottom: .3em;
 }
+.branch_dev_master{
+    color: red;
+    text-align: center;
+}
 
 .centr_ville {
     font-size: 1.1em;
