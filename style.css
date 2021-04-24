@@ -244,7 +244,7 @@ form {
 }
 
 /*Les plus populaires*/
-#hebergements {
+.hebergements {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -252,7 +252,7 @@ form {
     height: 805px;
 }
 
-#hebergements h3:last-child {
+.hebergements h3:last-child {
     font-size: 1.4em;
     margin: 5% 0px 0px 5px;
 }
@@ -560,7 +560,7 @@ nav {
 /*Recherche*/
 /*titre*/
 .titre h2 {
-    font-size: 1.7em;
+    font-size: 1.6em;
     margin-bottom: 0px;
 }
 
@@ -611,14 +611,14 @@ nav {
 }
 
 /*Hébergement*/
-#hebergements {
+.hebergements {
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 7.5%;
     height: 1700px;
 }
 
-#hebergements h3:last-child {
+.hebergements h3:last-child {
     font-size: 1.3em;
     margin: 7.5% 0px 0px 0px;
 }
@@ -919,14 +919,14 @@ footer p {
 
 
     /*Hébergement*/
-    #hebergements {
+    .hebergements {
         flex-direction: column;
         justify-content: flex-start;
         margin-top: 10%;
         height: 2200px;
     }
 
-    #hebergements h3:last-child {
+    .hebergements h3:last-child {
         font-size: 1.25em;
         margin: 8.5% 0px 0px 0px;
     }
