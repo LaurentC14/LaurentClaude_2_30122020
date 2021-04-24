@@ -1,11 +1,13 @@
-/*Version desktop*/
-/*Définition de la page et de la police*/
 body {
     margin: 0px;
     max-width: 100%;
     font-family: 'Raleway', sans-serif;
     background-color: #FFFFFF;
 }
+/*Version desktop*/
+/*Définition de la page et de la police*/
+
+
 
 /*Définition du bloc de "Recherche" à "Activité" */
 main {
@@ -330,6 +332,9 @@ aside {
 .plus_populaire-box img{
     flex-direction: column;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 /*Images*/
 .plus_populaire-box figure {
@@ -658,8 +663,10 @@ aside {
 }
 
 .plus_populaire-box img {
-    
     width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 
 .plus_populaire-box figcaption {
